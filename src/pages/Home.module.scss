@@ -1,0 +1,44 @@
+@import "./../SCSS/abstracts/variables.scss";
+
+.header{
+    height: 1000px;
+    width: 100%;
+    background-color: $bg2; 
+
+    &__myName{
+        padding-top: 300px;
+        text-align: center;
+        color: $text2;
+        font-size: 3rem;
+    }
+
+    &__mytitle{
+        padding-top: 1rem;
+        text-align: center;
+        color: $text2;
+        font-size: 2rem;
+    }
+}
+
+.title{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services {
+    width: 70%;
+    height: 410px;
+    margin: auto;
+    display: flex;
+
+    &__card {
+        margin: auto;
+        width: 420px;
+        height: 350px;
+        background-color: $bg3;
+        border-radius: 10px;
+    }
+
+
+}
