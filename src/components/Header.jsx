@@ -20,13 +20,13 @@ const Header = () => {
             className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}
           >
             <a className={styles.nav__item} href={"/"}>
-              Page One
+              Home
             </a>
             <a className={styles.nav__item} href={"/"}>
-              Page Two
+              Skills
             </a>
             <a className={styles.nav__item} href={"/"}>
-              Page Three
+              Portfolio
             </a>
             <div className={styles.nav__button__container}>
               <Button />

@@ -5,6 +5,15 @@
     width: 100%;
     background-color: $bg2; 
 
+    &__box{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 90%;
+        padding-top: 4rem;
+        
+    }
+
     &__myName{
         padding-top: 300px;
         text-align: center;
@@ -14,9 +23,16 @@
 
     &__mytitle{
         padding-top: 1rem;
-        text-align: center;
+        text-align: left;
         color: $text2;
         font-size: 2rem;
+    }
+
+    &__photo1{
+        width: 350px;
+        margin-top:14rem;
+        margin-left: 60px;
+        border-radius: 20px;
     }
 }
 
