@@ -1,0 +1,15 @@
+@import "./../SCSS/abstracts/variables.scss";
+
+.test{
+    
+    h2{
+        color:$text3;
+        font-size: 3rem;
+    }
+
+    h3{
+        color: $primary;
+        font-size: 4rem;
+    }
+
+}

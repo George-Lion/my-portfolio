@@ -1,9 +1,13 @@
-import "./App.scss";
+import React from "react";
+import Header from "./components/Header";
+import styles from "./App.module.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>HOLA MUNDO!</h1>
+      <Header />
+      <h1 className={styles.locura}>HOLA MUNDO!</h1>
+      <h1>QUE LOCURA</h1>
     </div>
   );
 }
