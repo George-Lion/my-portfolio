@@ -1,0 +1,21 @@
+*{
+    /* estilos  definidos para  el navegador */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    /*estilos definidos para todos los li*/
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border:none;
+    background: none;
+    font-family: var(--font-poppins);
+}
