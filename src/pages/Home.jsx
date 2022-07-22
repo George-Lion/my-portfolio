@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../img/Traveland1.png";
 import img2 from "../img/me.png";
+import img3 from "../img/StarWars.jpg";
 import pdf from "../resources/Jorge_Leon_CV.pdf";
 import styles from "./Home.module.scss";
 
@@ -72,7 +73,7 @@ const Lop = () => {
 
       <div className={styles.bloc2}>
         <div className={styles.bloc2__me} data-aos="fade-up">
-          Sobre mí
+          About me
         </div>
         <div className={styles.bloc2__content}>
           <div data-aos="zoom-out-right">
@@ -97,7 +98,7 @@ const Lop = () => {
                 download="Jorge_Leon_CV.pdf"
                 title="Download CV"
               >
-                Descargar CV
+                Download CV
               </a>
             </div>
           </div>
@@ -106,7 +107,7 @@ const Lop = () => {
 
       {/*  PORTFOLIO */}
 
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center">
         <p className={styles.title}>Portfolio</p>
       </div>
 
@@ -162,20 +163,86 @@ const Lop = () => {
             </div>
           </div>
         </div>
+
+        {/*  CARD 2 */}
+
         <div className={styles.services__card}>
-          <div className={styles.head}></div>
+          <div className={styles.services__card__head}>
+            <a
+              type="button"
+              href={url4}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className={styles.services__card__head} src={img3} />
+            </a>
+          </div>
+          <div className={styles.services__card__down}>
+            <h3 className={styles.services__card__down__title}>
+              Stars Wars block API.
+            </h3>
+            <div className={styles.services__card__down__tecno}>
+              <h5 className={styles.services__card__down__tecno__code}>
+                JavaScript
+              </h5>
+              <h5 className={styles.services__card__down__tecno__code}>
+                React
+              </h5>
+              <h5 className={styles.services__card__down__tecno__code}>CSS</h5>
+            </div>
+            <div className={styles.services__card__down__links}>
+              <a
+                className={styles.services__card__down__links__link}
+                href="https://github.com/George-Lion/FINAL-PROJECT-X"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
+              <a
+                className={styles.services__card__down__links__link}
+                href={url4}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Webside
+              </a>
+            </div>
+          </div>
         </div>
+
+        {/*  CARD 3 */}
+
         <div className={styles.services__card}>
           <div className={styles.head}></div>
         </div>
       </div>
 
-      {/* HABILIDADES */}
+      {/* SKILLS */}
 
-      <div data-aos="fade-up">
-        <p className={styles.title}>Habilidades</p>
+      <div className={styles.skills} data-aos="fade-up">
+        <p className={styles.title}>Skills</p>
+        <div className={styles.skills__box}>
+          <div className={styles.skills__box__frontEnd}>
+            <div className={styles.skills__box__frontEnd__icon}>
+              <i className="fab fa-html5"></i>
+            </div>
+            <div className={styles.skills__box__frontEnd__icon}>
+              <i className="fab fa-css3-alt"></i>
+            </div>
+            <div className={styles.skills__box__frontEnd__icon}>
+              <i className="fab fa-js-square"></i>
+            </div>
+            <div className={styles.skills__box__frontEnd__icon}>
+              <i className="fab fa-react"></i>
+            </div>
+            <div className={styles.skills__box__frontEnd__icon}>
+              <i className="fab fa-figma"></i>
+            </div>
+          </div>
+          <div className={styles.skills__box__backEnd}></div>
+        </div>
       </div>
-      <div className={styles.skills}></div>
     </Fragment>
   );
 };

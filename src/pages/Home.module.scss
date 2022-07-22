@@ -124,7 +124,7 @@
 
 .services {
     width: 70%;
-    height: 410px;
+    height: 700px;
     margin: auto;
     display: flex;
     
@@ -208,7 +208,20 @@
 
 .skills{
     margin-top: 20px;
-    height: 300px;
+    height: 500px;
     width: 100%;
-    background: $bg4;
+    background: $bg5;
+
+    &__box{
+
+        &__frontEnd{
+            display: flex;
+            &__icon{
+                color: $text2;
+                font-size: 3rem;
+                margin-right: 20px;
+            }
+            
+        }
+    }
 }
