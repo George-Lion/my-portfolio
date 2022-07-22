@@ -4,6 +4,10 @@
 
 3-Icon: npm i react-icons
 
-3-Cambiamos las extenciones de los archivos .css por .scss como tamb ien de las importaciones.
+4-Animate on Scroll: npm install aos --save
 
-4-Creamos el la carpeta src una carpeta llamada SCSS
+Importe! secuencias de comandos, estilos e inicialice AOS:
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();

@@ -11,6 +11,7 @@ $ubuntu-font: "Ubuntu", sans-serif;
 $bg: rgb(255, 255, 255);
 $bg2: #17202A ;
 $bg3:#208BDB;
+$bg4: #0a3a5f;
 $text: rgb(15, 15, 15);
 $text2: rgb(240, 240, 240);
 $text3: rgb(0, 121, 30);
@@ -27,6 +28,18 @@ $md: 48em;
 $lg: 64em;
 $xl: 75em;
 
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+  }
+
+@mixin scale($scale) { @include transform(scale($scale)); }
+
+@mixin translate($x, $y) { @include transform(translate($x, $y)); }
+  
 @mixin breakpoint($point) {
     @if $point == md {
         @media (min-width: $md) {
