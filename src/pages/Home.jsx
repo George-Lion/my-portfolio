@@ -2,6 +2,8 @@ import React, { Fragment, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import img1 from "../img/Traveland1.png";
+import img2 from "../img/me.png";
+import pdf from "../resources/Jorge_Leon_CV.pdf";
 import styles from "./Home.module.scss";
 
 const Lop = () => {
@@ -19,14 +21,14 @@ const Lop = () => {
       <div className={styles.header}>
         <div className={styles.header__box}>
           <div className="" data-aos="fade-right">
-            <h1 className={styles.header__myName}>Hola, Soy Jorge</h1>
-            <p className={styles.header__mytitle}>Full Stack Developer</p>
-            <div className={styles.header__icons}>
+            <h1 className={styles.header__box__myName}>Jorge León</h1>
+            <p className={styles.header__box__mytitle}>Full Stack Developer</p>
+            <div className={styles.header__box__icons}>
               <a
                 href={url1}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.header__icon}
+                className={styles.header__box__icon}
                 type="button"
                 onClick={() => {}}
               >
@@ -37,7 +39,7 @@ const Lop = () => {
                 href={url2}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.header__icon}
+                className={styles.header__box__icon}
               >
                 <i className="fab fa-linkedin-in" title="Linkedin"></i>
               </a>
@@ -46,26 +48,67 @@ const Lop = () => {
                 href={url3}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.header__icon}
+                className={styles.header__box__icon}
               >
                 <i className="fab fa-instagram" title="Instagram"></i>
               </a>
             </div>
           </div>
-          <div data-aos="fade-up">
+          <div data-aos="fade-up-right">
             <img
-              className={styles.header__photo1}
+              className={styles.header__box__photo1}
               src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Traveland page"
             />
           </div>
+          <p className={styles.header__box__dedication}>
+            {" "}
+            Full Stack Developer y diseñador UI. Viviendo en Madrid-España.
+          </p>
         </div>
       </div>
-      <div data-aos="fade-up">
-        <p className={styles.title}>Portfolio</p>
+
+      {/* ABOUT ME */}
+
+      <div className={styles.bloc2}>
+        <div className={styles.bloc2__me} data-aos="fade-up">
+          Sobre mí
+        </div>
+        <div className={styles.bloc2__content}>
+          <div data-aos="zoom-out-right">
+            <img className={styles.bloc2__content__picture1} src={img2} />
+          </div>
+          <div className={styles.bloc2__content__box1} data-aos="fade-up-left">
+            <p className={styles.bloc2__content__box1__text1}>
+              {" "}
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic.
+            </p>
+            <div>
+              <a
+                className={styles.bloc2__content__box1__button}
+                href={pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Jorge_Leon_CV.pdf"
+                title="Download CV"
+              >
+                Descargar CV
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/*  PORTFOLIO */}
+
+      <div data-aos="fade-up">
+        <p className={styles.title}>Portfolio</p>
+      </div>
 
       <div
         className={styles.services}

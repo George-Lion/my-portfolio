@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
 import styles from "./Header.module.scss";
-
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
@@ -9,34 +8,40 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuToggler = () => setMenuOpen((p) => !p);
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <div className={styles.header}>
       <div className={styles.header__content}>
-        <div>
-          <span className={styles.logo}>Jorge León</span>
+        <div data-aos="zoom-in">
+          <span className={styles.logo}>
+            <i className="fab fa-gg-circle"></i>
+          </span>
         </div>
         <div>
           <nav
             className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}
           >
-            <a className={styles.nav__item} href={"/"}>
-              Home
-            </a>
-            <a className={styles.nav__item} href={"/"}>
-              Skills
-            </a>
-            <a className={styles.nav__item} href={"/"}>
-              Portfolio
-            </a>
-            <div className={styles.nav__button__container}>
-              <Button />
+            <div data-aos="fade-left">
+              <a className={styles.nav__item} href={"/"}>
+                Home
+              </a>
+            </div>
+            <div data-aos="fade-left">
+              <a className={styles.nav__item} href={"/"}>
+                Skills
+              </a>
+            </div>
+            <div data-aos="fade-left">
+              <a className={styles.nav__item} href={"/"}>
+                Portfolio
+              </a>
             </div>
           </nav>
         </div>
         <div>
-          <div className={styles.header__button__container}>
-            <Button />
-          </div>
           <button className={styles.header__toggler} onClick={menuToggler}>
             {!menuOpen ? <BiMenuAltRight /> : <AiOutlineCloseSquare />}
           </button>
@@ -44,10 +49,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
-
-const Button = () => {
-  return <button className={styles.button}>Click me</button>;
 };
 
 export default Header;

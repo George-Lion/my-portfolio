@@ -1,0 +1,33 @@
+@import "./../SCSS/abstracts/variables.scss";
+
+.topBtn{
+    position: relative;
+  }
+  .iconPosition{
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+    font-size: 4rem;
+    color: $text2;
+    background-color: $resalt;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    animation: movebtn 3s ease-in-out infinite;
+    transition: all .5s ease-in-out;
+  }
+
+  @keyframes movebtn {
+    0%{
+      transform: translateY(0px);
+    }
+    75%{
+      transform: translateY(-20px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }

@@ -1,24 +1,22 @@
 @import "./../SCSS/abstracts/variables.scss";
 
 .header{
-    height: 1000px;
+    height: 900px;
     width: 100%;
     background-color: $bg2; 
 
     &__box{
         display: flex;
         margin: auto;
-        justify-content: center;
-        width: 90%;
-        padding-top: 4rem;
+        justify-content: space-between;
+        width: 77%;
         
-    }
-
     &__myName{
-        padding-top: 300px;
+        padding-top: 200px;
         text-align: center;
+        text-align: left;
         color: $text2;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     &__mytitle{
@@ -36,6 +34,7 @@
     }
     &__icon{
         margin-right: 30px;
+        margin-top: 30px;
         
         &:hover {
             transform: scale(1.2);
@@ -47,12 +46,22 @@
 
     &__photo1{
         width: 350px;
-        margin-top:16rem;
+        margin-top:12rem;
         margin-left: 60px;
         border-radius: 20px;
     }
 
+     &__dedication{
+        width: 350px;
+        margin-top:16rem;
+        margin-left: 60px;
+        color: $text2;
+        text-align: justify;
+        line-height: 1.2;
+        font-size: 1.2rem;
+    }
     
+}
     
 }
 
@@ -60,6 +69,57 @@
     padding-top: 2rem;
     text-align: center;
     font-size: 2rem;
+    color: $text2;
+}
+
+.bloc2{
+    height: 650px;
+    background-color: $bg5;
+
+    &__me{
+        color: $text2;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    &__content{
+        display: flex;
+        width: 900px;
+        margin: auto;
+       
+        
+        &__picture1{
+            height: 400px;
+        }
+
+        &__box1{
+            justify-content: right;
+            margin: auto;
+    
+
+            &__text1{ 
+                color: $text2;
+                width: 400px;
+                text-align: justify;
+                line-height: 1.2;
+                margin-bottom: 60px;
+            }
+
+            &__button{
+                padding: 20px;
+                background-color: $resalt;
+                color: $text2;
+                border-radius: 10px;
+             
+                &:active {
+                    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+                    transform: translateY(2px);
+                  
+                }
+            }
+        }
+    }
 }
 
 .services {
@@ -67,12 +127,15 @@
     height: 410px;
     margin: auto;
     display: flex;
+    
+    
 
     &__card {
         margin: auto;
         width: 420px;
         height: 360px;
         border-radius: 10px;
+        background-color: $bg;
         box-shadow: 15px 15px 10px #48529944;
 
         &__head{
@@ -127,8 +190,13 @@
                         margin:0px 0px 0px 5px;
                         border-radius: 10px;
                         text-align: center;
+
+                        &:active {
+                            box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+                            transform: translateY(2px);
+                          
+                        }
                     }
-            
             
                 }
             }
