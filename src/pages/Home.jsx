@@ -59,10 +59,9 @@ const Lop = () => {
               alt="Traveland page"
             />
           </div>
-          <p className={styles.header__box__dedication}>
-            {" "}
-            Full Stack Developer y diseñador UI. Viviendo en Madrid-España.
-          </p>
+          <div data-aos="fade-left">
+            <p className={styles.header__box__dedication}> </p>
+          </div>
         </div>
       </div>
 
@@ -80,38 +79,130 @@ const Lop = () => {
         <p className={styles.skills__title}>Skills</p>
         <div className={styles.skills__box}>
           <div className={styles.skills__box__frontEnd}>
-            <div className={styles.skills__box__frontEnd__title}>
+            <div
+              className={styles.skills__box__frontEnd__title}
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
               <h4>Frontend</h4>
             </div>
             <div className={styles.skills__box__frontEnd__icons}>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fab fa-html5"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    HTML5
+                  </p>
+                </div>
               </div>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fab fa-css3-alt"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    CSS3
+                  </p>
+                </div>
               </div>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fab fa-js-square"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    JavaScript
+                  </p>
+                </div>
               </div>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fab fa-react"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    React
+                  </p>
+                </div>
               </div>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fab fa-figma"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    Figma
+                  </p>
+                </div>
               </div>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fab fa-sass"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    Sass
+                  </p>
+                </div>
               </div>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fab fa-bootstrap"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    Bootstrap
+                  </p>
+                </div>
               </div>
-              <div className={styles.skills__box__frontEnd__icons__icon}>
+              <div
+                className={styles.skills__box__frontEnd__icons__icon}
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+              >
                 <i className="fas fa-mobile-alt"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    Responsive web
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* BACKEND */}
+          {/* BACKEND SKILLS*/}
 
           <div className={styles.skills__box__backEnd}>
             <div className={styles.skills__box__backEnd__title}>
@@ -120,9 +211,23 @@ const Lop = () => {
             <div className={styles.skills__box__backEnd__icons}>
               <div className={styles.skills__box__backEnd__icons__icon}>
                 <i className="fab fa-python"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    Python
+                  </p>
+                </div>
               </div>
               <div className={styles.skills__box__backEnd__icons__icon}>
                 <i className="fab fa-npm"></i>
+                <div>
+                  <p
+                    className={styles.skills__box__frontEnd__icons__icon__title}
+                  >
+                    NPM
+                  </p>
+                </div>
               </div>
               <div className={styles.skills__box__backEnd__icons__icon}>
                 <i className="fab fa-js-square"></i>

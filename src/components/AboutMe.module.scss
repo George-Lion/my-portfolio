@@ -4,6 +4,12 @@
     height: 900px;
     background-color: $bg5;
 
+    $breakpoint-tablet: 500px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
+
+
     &__me{
         color: $text2;
         font-size: 2.5rem;
@@ -15,15 +21,41 @@
         display: flex;
         width: 900px;
         margin: auto;
+
+        $breakpoint-tablet: 500px;
+        @media (max-width: $breakpoint-tablet) {
+            display: block;
+            justify-content: centers;
+            width: 100%;
+        }
        
         
         &__picture1{
             height: 400px;
+
+            $breakpoint-tablet: 500px;
+            @media (max-width: $breakpoint-tablet) {
+                margin-left: 60px;
+            }
+
+            $breakpoint-tablet: 420px;
+                @media (max-width: $breakpoint-tablet) {
+                    height: 310px;
+                   justify-content: center;
+                    margin-bottom: 10px;
+                    
+                }
+       
         }
 
         &__box1{
             justify-content: right;
             margin: auto;
+
+            $breakpoint-tablet: 500px;
+        @media (max-width: $breakpoint-tablet) {
+           justify-content: left;
+        }
     
 
             &__text1{ 
@@ -32,6 +64,21 @@
                 text-align: justify;
                 line-height: 1.2;
                 margin-bottom: 60px;
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                   margin-left: 40px;
+                }
+
+                $breakpoint-tablet: 420px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 320px;
+                    text-align: justify;
+                    line-height: 1.4;
+                    margin: auto;
+                    font-size: 0.8rem;
+                    margin-bottom: 30px;
+                }
             }
 
             &__button{
@@ -40,6 +87,21 @@
                 color: $text2;
                 border-radius: 10px;
              
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                  
+                   margin-left: 40px;
+                }
+
+                $breakpoint-tablet: 420px;
+                @media (max-width: $breakpoint-tablet) {
+                   justify-content: center;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    
+                    
+                }
+
                 &:active {
                     box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
                     transform: translateY(2px);

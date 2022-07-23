@@ -89,12 +89,10 @@
     &__item {
         display: block;
         padding: $spacing-md;
-
+        cursor: pointer;
         text-decoration: none;
         color: inherit;
-
         height: 100%;
-
         transition: 0.3s ease color;
         &:hover {
             color: $resalt;

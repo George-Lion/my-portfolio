@@ -7,15 +7,12 @@ const AboutMe = () => {
   return (
     <Fragment>
       <div className={styles.bloc2} id="about">
-        <div className={styles.bloc2__me} data-aos="fade-up">
-          About me
-        </div>
-        s
+        <div className={styles.bloc2__me}>About me</div>s
         <div className={styles.bloc2__content}>
-          <div data-aos="zoom-out-right">
+          <div>
             <img className={styles.bloc2__content__picture1} src={img2} />
           </div>
-          <div className={styles.bloc2__content__box1} data-aos="fade-up-left">
+          <div className={styles.bloc2__content__box1}>
             <p className={styles.bloc2__content__box1__text1}>
               {" "}
               Lorem Ipsum is simply dummy text of the printing and typesetting

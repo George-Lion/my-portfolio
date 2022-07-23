@@ -5,11 +5,22 @@
     width: 100%;
     background-color: $bg2; 
 
+    $breakpoint-tablet: 500px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 500px;
+    }
+
     &__box{
         display: flex;
         margin: auto;
         justify-content: space-between;
         width: 77%;
+
+        $breakpoint-tablet: 500px;
+        @media (max-width: $breakpoint-tablet) {
+            width: 500px;
+            display: block;
+        }
         
     &__myName{
         padding-top: 200px;
@@ -47,14 +58,14 @@
     &__photo1{
         width: 350px;
         margin-top:12rem;
-        margin-left: 60px;
+       
         border-radius: 20px;
     }
 
      &__dedication{
         width: 350px;
         margin-top:16rem;
-        margin-left: 60px;
+
         color: $text2;
         text-align: justify;
         line-height: 1.2;
@@ -71,6 +82,7 @@
     height: 550px;
     width: 100%;
     background: $bg5;
+    $breakpoint-tablet: 500px;
 
     &__title{
         color: $text2;
@@ -78,16 +90,26 @@
         text-align: center;
         margin-bottom: 20px;
         padding-top: 40px;
+
+        
     }
 
     &__box{
       display: flex;
+
+      $breakpoint-tablet: 500px;
+      @media (max-width: $breakpoint-tablet) {
+          display: block;
+      }
 
         &__frontEnd{
             margin-top: 50px;
             width: 900px;
             height: 100px;
                 
+            @media (max-width: $breakpoint-tablet) {
+                width: 450px;
+            }
             &__title{
                 color: $text2;
                 font-size: 1.4rem;
@@ -97,13 +119,23 @@
 
             &__icons{
                 display: flex;
-                
                 justify-content: center;
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                    display: block;
+                }
 
                 &__icon{
                     color: $text2;
                     font-size: 3rem;
                     margin-right: 20px;
+                    text-align: center;
+
+                    &__title{
+                        font-size: 0.8rem;
+                        margin-top: 5px;
+                    }
                 }
             }
         }
@@ -112,7 +144,9 @@
             margin-top: 50px;
             width: 900px;
             height: 100px;
-            background-color: red;
+            @media (max-width: $breakpoint-tablet) {
+                width: 450px;
+            }
                 
             &__title{
                 color: $text2;
@@ -125,11 +159,16 @@
                 display: flex;
                 
                 justify-content: center;
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                    display: block;
+                }
 
                 &__icon{
                     color: $text2;
                     font-size: 3rem;
                     margin-right: 20px;
+                    text-align: center;
                 }
             }
         }

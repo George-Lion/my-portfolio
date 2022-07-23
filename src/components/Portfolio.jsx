@@ -9,7 +9,7 @@ const Portfolio = () => {
     <Fragment>
       <div className={styles.portfolio} id="portfolio">
         <div>
-          <p className={styles.portfolio__title}>Portfolio</p>
+          <p className={styles.portfolio__title}>- Portfolio</p>
         </div>
 
         <div
