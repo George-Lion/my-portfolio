@@ -1,17 +1,14 @@
 import React, { Fragment, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img1 from "../img/Traveland1.png";
-import img2 from "../img/me.png";
-import img3 from "../img/StarWars.jpg";
-import pdf from "../resources/Jorge_Leon_CV.pdf";
 import styles from "./Home.module.scss";
+import AboutMe from "../components/AboutMe";
+import Portfolio from "../components/Portfolio";
 
 const Lop = () => {
   let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
   let url3 = "https://www.instagram.com/accounts/login/";
-  let url4 = "https://traveland-v2.herokuapp.com/";
 
   useEffect(() => {
     AOS.init();
@@ -71,176 +68,82 @@ const Lop = () => {
 
       {/* ABOUT ME */}
 
-      <div className={styles.bloc2}>
-        <div className={styles.bloc2__me} data-aos="fade-up">
-          About me
-        </div>
-        <div className={styles.bloc2__content}>
-          <div data-aos="zoom-out-right">
-            <img className={styles.bloc2__content__picture1} src={img2} />
-          </div>
-          <div className={styles.bloc2__content__box1} data-aos="fade-up-left">
-            <p className={styles.bloc2__content__box1__text1}>
-              {" "}
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic.
-            </p>
-            <div>
-              <a
-                className={styles.bloc2__content__box1__button}
-                href={pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Jorge_Leon_CV.pdf"
-                title="Download CV"
-              >
-                Download CV
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <AboutMe />
 
       {/*  PORTFOLIO */}
 
-      <div data-aos="fade-up" data-aos-anchor-placement="top-center">
-        <p className={styles.title}>Portfolio</p>
-      </div>
-
-      <div
-        className={styles.services}
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom"
-      >
-        <div className={styles.services__card}>
-          <div className={styles.services__card__head}>
-            <a
-              type="button"
-              href={url4}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className={styles.services__card__head} src={img1} />
-            </a>
-          </div>
-          <div className={styles.services__card__down}>
-            <h3 className={styles.services__card__down__title}>
-              Traveland web app.
-            </h3>
-            <div className={styles.services__card__down__tecno}>
-              <h5 className={styles.services__card__down__tecno__code}>
-                JavaScript
-              </h5>
-              <h5 className={styles.services__card__down__tecno__code}>
-                React
-              </h5>
-              <h5 className={styles.services__card__down__tecno__code}>CSS</h5>
-              <h5 className={styles.services__card__down__tecno__code}>
-                Python
-              </h5>
-            </div>
-            <div className={styles.services__card__down__links}>
-              <a
-                className={styles.services__card__down__links__link}
-                href="https://github.com/George-Lion/FINAL-PROJECT-X"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code
-              </a>
-              <a
-                className={styles.services__card__down__links__link}
-                href={url4}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Webside
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/*  CARD 2 */}
-
-        <div className={styles.services__card}>
-          <div className={styles.services__card__head}>
-            <a
-              type="button"
-              href={url4}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className={styles.services__card__head} src={img3} />
-            </a>
-          </div>
-          <div className={styles.services__card__down}>
-            <h3 className={styles.services__card__down__title}>
-              Stars Wars block API.
-            </h3>
-            <div className={styles.services__card__down__tecno}>
-              <h5 className={styles.services__card__down__tecno__code}>
-                JavaScript
-              </h5>
-              <h5 className={styles.services__card__down__tecno__code}>
-                React
-              </h5>
-              <h5 className={styles.services__card__down__tecno__code}>CSS</h5>
-            </div>
-            <div className={styles.services__card__down__links}>
-              <a
-                className={styles.services__card__down__links__link}
-                href="https://github.com/George-Lion/FINAL-PROJECT-X"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Code
-              </a>
-              <a
-                className={styles.services__card__down__links__link}
-                href={url4}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Webside
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/*  CARD 3 */}
-
-        <div className={styles.services__card}>
-          <div className={styles.head}></div>
-        </div>
-      </div>
+      <Portfolio />
 
       {/* SKILLS */}
 
-      <div className={styles.skills} data-aos="fade-up">
-        <p className={styles.title}>Skills</p>
+      <div className={styles.skills} id="skills">
+        <p className={styles.skills__title}>Skills</p>
         <div className={styles.skills__box}>
           <div className={styles.skills__box__frontEnd}>
-            <div className={styles.skills__box__frontEnd__icon}>
-              <i className="fab fa-html5"></i>
+            <div className={styles.skills__box__frontEnd__title}>
+              <h4>Frontend</h4>
             </div>
-            <div className={styles.skills__box__frontEnd__icon}>
-              <i className="fab fa-css3-alt"></i>
-            </div>
-            <div className={styles.skills__box__frontEnd__icon}>
-              <i className="fab fa-js-square"></i>
-            </div>
-            <div className={styles.skills__box__frontEnd__icon}>
-              <i className="fab fa-react"></i>
-            </div>
-            <div className={styles.skills__box__frontEnd__icon}>
-              <i className="fab fa-figma"></i>
+            <div className={styles.skills__box__frontEnd__icons}>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fab fa-html5"></i>
+              </div>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fab fa-css3-alt"></i>
+              </div>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fab fa-js-square"></i>
+              </div>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fab fa-react"></i>
+              </div>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fab fa-figma"></i>
+              </div>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fab fa-sass"></i>
+              </div>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fab fa-bootstrap"></i>
+              </div>
+              <div className={styles.skills__box__frontEnd__icons__icon}>
+                <i className="fas fa-mobile-alt"></i>
+              </div>
             </div>
           </div>
-          <div className={styles.skills__box__backEnd}></div>
+
+          {/* BACKEND */}
+
+          <div className={styles.skills__box__backEnd}>
+            <div className={styles.skills__box__backEnd__title}>
+              <h4>Backend</h4>
+            </div>
+            <div className={styles.skills__box__backEnd__icons}>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fab fa-python"></i>
+              </div>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fab fa-npm"></i>
+              </div>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fab fa-js-square"></i>
+              </div>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fab fa-react"></i>
+              </div>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fab fa-figma"></i>
+              </div>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fab fa-sass"></i>
+              </div>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fab fa-bootstrap"></i>
+              </div>
+              <div className={styles.skills__box__backEnd__icons__icon}>
+                <i className="fas fa-mobile-alt"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Fragment>

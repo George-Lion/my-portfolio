@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
-import styles from "./Header.module.scss";
+import styles from "./Navbar.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
+import { Link } from "react-scroll";
 
-const Header = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuToggler = () => setMenuOpen((p) => !p);
 
@@ -25,19 +26,37 @@ const Header = () => {
             className={`${styles.nav} ${menuOpen ? styles[`nav--open`] : {}}`}
           >
             <div data-aos="fade-left">
-              <a className={styles.nav__item} href={"/"}>
-                Home
-              </a>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={styles.nav__item}
+              >
+                About me
+              </Link>
             </div>
             <div data-aos="fade-left">
-              <a className={styles.nav__item} href={"/"}>
-                Skills
-              </a>
-            </div>
-            <div data-aos="fade-left">
-              <a className={styles.nav__item} href={"/"}>
+              <Link
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={styles.nav__item}
+              >
                 Portfolio
-              </a>
+              </Link>
+            </div>
+            <div data-aos="fade-left">
+              <Link
+                to="skills"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={styles.nav__item}
+              >
+                Skills
+              </Link>
             </div>
           </nav>
         </div>
@@ -51,4 +70,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
