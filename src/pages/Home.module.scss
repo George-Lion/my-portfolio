@@ -65,163 +65,73 @@
     
 }
 
-.title{
-    padding-top: 2rem;
-    text-align: center;
-    font-size: 2rem;
-    color: $text2;
-}
-
-.bloc2{
-    height: 650px;
-    background-color: $bg5;
-
-    &__me{
-        color: $text2;
-        font-size: 2.5rem;
-        text-align: center;
-        padding-top: 30px;
-    }
-
-    &__content{
-        display: flex;
-        width: 900px;
-        margin: auto;
-       
-        
-        &__picture1{
-            height: 400px;
-        }
-
-        &__box1{
-            justify-content: right;
-            margin: auto;
-    
-
-            &__text1{ 
-                color: $text2;
-                width: 400px;
-                text-align: justify;
-                line-height: 1.2;
-                margin-bottom: 60px;
-            }
-
-            &__button{
-                padding: 20px;
-                background-color: $resalt;
-                color: $text2;
-                border-radius: 10px;
-             
-                &:active {
-                    box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-                    transform: translateY(2px);
-                  
-                }
-            }
-        }
-    }
-}
-
-.services {
-    width: 70%;
-    height: 700px;
-    margin: auto;
-    display: flex;
-    
-    
-
-    &__card {
-        margin: auto;
-        width: 420px;
-        height: 360px;
-        border-radius: 10px;
-        background-color: $bg;
-        box-shadow: 15px 15px 10px #48529944;
-
-        &__head{
-            width: 420px;
-            border-radius: 10px 10px 0px 0px;
-        }
-
-            &__down{
-                width: 100%;
-                height: 90px;
-                border-radius: 0px 0px 10px 10px;
-
-                &__title{
-                    margin: 10px 0px 10px 20px;
-                    color:$text;
-                }
-
-                &__tecno{
-                    display: flex;
-                    width: 400px;
-                    height: 20px;
-                    margin: auto;
-                    margin-top: 4px;
-
-                    &__code{
-                        color:$text2;
-                        font-size: 0.7rem;
-                        padding: 3px;
-                        background: rgb(38, 97, 136);
-                        width: 85px;
-                        height: 20px;
-                        margin:0px 0px 0px 5px;
-                        border-radius: 10px;
-                        text-align: center;
-                    }
-                }
-
-                &__links{
-                    display: flex;
-                    width: 400px;
-                    height: 20px;
-                    margin: auto;
-                    margin-top: 4px;
-
-                    &__link{
-                        color:$text2;
-                        font-size: 0.7rem;
-                        padding: 3px;
-                        background: rgb(56, 66, 73);
-                        width: 85px;
-                        height: 20px;
-                        margin:0px 0px 0px 5px;
-                        border-radius: 10px;
-                        text-align: center;
-
-                        &:active {
-                            box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-                            transform: translateY(2px);
-                          
-                        }
-                    }
-            
-                }
-            }
-        
-    }
-
-}
 
 
 .skills{
-    margin-top: 20px;
-    height: 500px;
+    height: 550px;
     width: 100%;
     background: $bg5;
 
+    &__title{
+        color: $text2;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+
     &__box{
+      display: flex;
 
         &__frontEnd{
-            display: flex;
-            &__icon{
+            margin-top: 50px;
+            width: 900px;
+            height: 100px;
+                
+            &__title{
                 color: $text2;
-                font-size: 3rem;
-                margin-right: 20px;
+                font-size: 1.4rem;
+                text-align: center;
+                margin-bottom: 20px;
             }
-            
+
+            &__icons{
+                display: flex;
+                
+                justify-content: center;
+
+                &__icon{
+                    color: $text2;
+                    font-size: 3rem;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        &__backEnd{
+            margin-top: 50px;
+            width: 900px;
+            height: 100px;
+            background-color: red;
+                
+            &__title{
+                color: $text2;
+                font-size: 1.4rem;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            &__icons{
+                display: flex;
+                
+                justify-content: center;
+
+                &__icon{
+                    color: $text2;
+                    font-size: 3rem;
+                    margin-right: 20px;
+                }
+            }
         }
     }
 }
