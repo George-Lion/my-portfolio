@@ -2,175 +2,143 @@
 
 .header{
     height: 900px;
-    width: 100%;
+    max-width: 1280px;
     background-color: $bg2; 
+    margin: auto;
 
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
-        width: 500px;
+        width: 100%;
     }
 
-    &__box{
-        display: flex;
-        margin: auto;
-        justify-content: space-between;
-        width: 77%;
+        &__box{
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            width: 95%;
 
-        $breakpoint-tablet: 500px;
-        @media (max-width: $breakpoint-tablet) {
-            width: 500px;
-            display: block;
-        }
-        
-    &__myName{
-        padding-top: 200px;
-        text-align: center;
-        text-align: left;
-        color: $text2;
-        font-size: 4rem;
-    }
-
-    &__mytitle{
-        padding-top: 1rem;
-        text-align: left;
-        color: $text2;
-        font-size: 2rem;
-    }
-    &__icons{
-        color: $text2;
-        font-size: 2.2rem;
-        margin-top: 30px;
-        display: flex;
-        
-    }
-    &__icon{
-        margin-right: 30px;
-        margin-top: 30px;
-        
-        &:hover {
-            transform: scale(1.2);
-        }
-    }
-    &:hover __icon{
-        background: #000;
-    }
-
-    &__photo1{
-        width: 350px;
-        margin-top:12rem;
-       
-        border-radius: 20px;
-    }
-
-     &__dedication{
-        width: 350px;
-        margin-top:16rem;
-
-        color: $text2;
-        text-align: justify;
-        line-height: 1.2;
-        font-size: 1.2rem;
-    }
-    
-}
-    
-}
-
-
-
-.skills{
-    height: 550px;
-    width: 100%;
-    background: $bg5;
-    $breakpoint-tablet: 500px;
-
-    &__title{
-        color: $text2;
-        font-size: 3rem;
-        text-align: center;
-        margin-bottom: 20px;
-        padding-top: 40px;
-
-        
-    }
-
-    &__box{
-      display: flex;
-
-      $breakpoint-tablet: 500px;
-      @media (max-width: $breakpoint-tablet) {
-          display: block;
-      }
-
-        &__frontEnd{
-            margin-top: 50px;
-            width: 900px;
-            height: 100px;
-                
+            $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
-                width: 450px;
+                width: 100%;
+                display: block;
             }
-            &__title{
-                color: $text2;
-                font-size: 1.4rem;
+                
+            &__myName{
+                padding-top: 200px;
                 text-align: center;
-                margin-bottom: 20px;
-            }
-
-            &__icons{
-                display: flex;
-                justify-content: center;
+                width: 100%;
+                text-align: left;
+                color: $text2;
+                font-size: 4rem;
+                z-index: 10;
+                
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
-                    display: block;
-                }
-
-                &__icon{
-                    color: $text2;
-                    font-size: 3rem;
-                    margin-right: 20px;
+                    padding-top: 90px;
+                    font-size: 3.3rem;
                     text-align: center;
-
-                    &__title{
-                        font-size: 0.8rem;
-                        margin-top: 5px;
-                    }
                 }
-            }
-        }
 
-        &__backEnd{
-            margin-top: 50px;
-            width: 900px;
-            height: 100px;
-            @media (max-width: $breakpoint-tablet) {
-                width: 450px;
+                $breakpoint-tablet: 420px;
+                        @media (max-width: $breakpoint-tablet) {
+                            padding-top: 90px;
+                            font-size: 3rem;
+                            text-align: center;
+                        }
             }
-                
-            &__title{
+
+            &__mytitle{
+                padding-top: 1rem;
+                text-align: left;
                 color: $text2;
-                font-size: 1.4rem;
-                text-align: center;
-                margin-bottom: 20px;
-            }
+                font-size: 2rem;
 
-            &__icons{
-                display: flex;
-                
-                justify-content: center;
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
-                    display: block;
+                    font-size: 2rem;
+                    text-align: center;
                 }
 
-                &__icon{
-                    color: $text2;
-                    font-size: 3rem;
-                    margin-right: 20px;
+                $breakpoint-tablet: 420px;
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: 1.7rem;
+                    width: 100%;
                     text-align: center;
                 }
             }
+            &__icons{
+                color: $text2;
+                font-size: 2.2rem;
+                margin-top: 30px;
+                display: flex;
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 100%;
+                    font-size: 1.6rem;
+                    justify-content: center;
+                    position: absolute;
+                    top: 530px;
+                }
+                
+            }
+            &__icon{
+                margin-right: 30px;
+                margin-top: 30px;
+                
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        
+            &__photo1{
+                width: 350px;
+                margin-top:12rem;
+                border-radius: 20px;
+                position: relative;
+                z-index: -1;
+                left: -100px;
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 90%;
+                    left: 25px;
+                    position: absolute;
+                    top: -140px;
+                    
+                }
+            }
+
+            &__dedication{
+                width: 350px;
+                margin-top:16rem;
+                
+                z-index: 0;
+                color: $text2;
+                text-align: justify;
+                line-height: 1.2;
+                font-size: 1.2rem;
+            }
+    
         }
-    }
+
+        
+          /*       &__locoo{ 
+                    position: absolute;
+                    z-index: 1000;
+                            &__letricas{
+                                color:rgb(235, 8, 8);
+                                font-size: 3rem;
+                                position: absolute;
+                                z-index: 2000;
+                                bottom: 300px;
+                                text-align: center;
+                                background-color: blue;
+                                width: 100%;
+                                
+                        }
+                } */
 }
+
+

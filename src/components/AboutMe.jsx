@@ -7,32 +7,297 @@ const AboutMe = () => {
   return (
     <Fragment>
       <div className={styles.bloc2} id="about">
-        <div className={styles.bloc2__me}>About me</div>s
-        <div className={styles.bloc2__content}>
-          <div>
-            <img className={styles.bloc2__content__picture1} src={img2} />
-          </div>
-          <div className={styles.bloc2__content__box1}>
-            <p className={styles.bloc2__content__box1__text1}>
-              {" "}
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic.
-            </p>
+        <div className={styles.bloc2__box}>
+          <div className={styles.bloc2__box__content}>
             <div>
-              <a
-                className={styles.bloc2__content__box1__button}
-                href={pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Jorge_Leon_CV.pdf"
-                title="Click to download CV"
-              >
-                Download CV
-              </a>
+              <img
+                className={styles.bloc2__box__content__picture1}
+                src={img2}
+              />
+            </div>
+            <div className={styles.bloc2__box__content__box1}>
+              <div>
+                <p className={styles.bloc2__box__content__box1__text0}>
+                  Discover
+                </p>
+              </div>
+              <div className={styles.bloc2__box__content__box1__me}>
+                About me
+              </div>
+              <div className={styles.bloc2__box__content__box1__line}></div>
+              <p className={styles.bloc2__box__content__box1__text1}>
+                {" "}
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <div>
+                <a
+                  className={styles.bloc2__box__content__box1__text1__button}
+                  href={pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Jorge_Leon_CV.pdf"
+                  title="Click to download CV"
+                >
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* SKILLS */}
+
+          <div className={styles.bloc2__box__skills} id="skills">
+            <div className={styles.bloc2__box__skills__title}>
+              <p>Skills</p>
+            </div>
+            <div className={styles.bloc2__box__skills__position}>
+              <div className={styles.bloc2__box__skills__position__line}></div>
+            </div>
+            <div className={styles.bloc2__box__skills__box}>
+              <div className={styles.bloc2__box__skills__box__frontEnd}>
+                <div
+                  className={styles.bloc2__box__skills__box__frontEnd__title}
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                >
+                  <h4>Frontend</h4>
+                </div>
+                <div
+                  className={styles.bloc2__box__skills__box__frontEnd__icons}
+                >
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fab fa-html5"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        HTML5
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fab fa-css3-alt"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        CSS3
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fab fa-js-square"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        JavaScript
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fab fa-react"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        React
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fab fa-figma"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Figma
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fab fa-sass"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Sass
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fab fa-bootstrap"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Bootstrap
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                    }
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <i className="fas fa-mobile-alt"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Responsive web
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* BACKEND SKILLS*/}
+
+              <div className={styles.bloc2__box__skills__box__backEnd}>
+                <div className={styles.bloc2__box__skills__box__backEnd__title}>
+                  <h4>Backend</h4>
+                </div>
+                <div className={styles.bloc2__box__skills__box__backEnd__icons}>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fab fa-python"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Python
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fab fa-npm"></i>
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        NPM
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fab fa-js-square"></i>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fab fa-react"></i>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fab fa-figma"></i>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fab fa-sass"></i>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fab fa-bootstrap"></i>
+                  </div>
+                  <div
+                    className={
+                      styles.bloc2__box__skills__box__backEnd__icons__icon
+                    }
+                  >
+                    <i className="fas fa-mobile-alt"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,8 +1,9 @@
 @import "./../SCSS/abstracts/variables.scss";
 
 .portfolio{
-    width: 100%;
-    height: 890px;
+    max-width: 1280px;
+    margin: auto;
+    height: 1000px;
     background-color: $bg2;
 
     $breakpoint-tablet: 500px;
@@ -20,7 +21,7 @@
     }
 
     &__services {
-        width: 70%;
+        width: 90%;
         height: 500px;
         margin: auto;
         display: flex;
