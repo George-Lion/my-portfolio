@@ -4,17 +4,24 @@ import styles from "./Navbar.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { Link } from "react-scroll";
+import useLocalStorage from "use-local-storage";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuToggler = () => setMenuOpen((p) => !p);
+  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
 
   useEffect(() => {
     AOS.init();
   });
 
   return (
-    <div className={styles.header}>
+    <div className={styles.header} data-theme={theme}>
       <div className={styles.header__content}>
         <div data-aos="zoom-in">
           <span className={styles.logo}>
@@ -49,14 +56,19 @@ const Navbar = () => {
             </div>
             <div data-aos="fade-left">
               <Link
-                to="skills"
+                to="contact"
                 spy={true}
                 smooth={true}
                 duration={500}
                 className={styles.nav__item}
               >
-                Skills
+                Contact
               </Link>
+            </div>
+            <div data-aos="fade-left">
+              <div className="theme-toggle">
+                <i onClick={switchTheme} className="fas fa-toggle-on"></i>
+              </div>
             </div>
           </nav>
         </div>
@@ -69,5 +81,8 @@ const Navbar = () => {
     </div>
   );
 };
-
+export const switchTheme = () => {
+  const newTheme = theme === "light" ? "dark" : "light";
+  setTheme(newTheme);
+};
 export default Navbar;

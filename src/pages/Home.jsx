@@ -3,7 +3,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from "./Home.module.scss";
 import AboutMe from "../components/AboutMe";
+import img5 from "../img/e.png";
 import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
 
 const Lop = () => {
   let url1 = "https://github.com/George-Lion";
@@ -12,7 +14,7 @@ const Lop = () => {
 
   useEffect(() => {
     AOS.init();
-  });
+  }, []);
 
   return (
     <Fragment>
@@ -55,7 +57,7 @@ const Lop = () => {
           <div data-aos="fade-up-right">
             <img
               className={styles.header__box__photo1}
-              src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src={img5}
               alt="Traveland page"
             />
           </div>
@@ -64,6 +66,7 @@ const Lop = () => {
           </div>
         </div>
       </div>
+      <div className={styles.header__bottom}></div>
 
       {/* ABOUT ME */}
 
@@ -73,7 +76,9 @@ const Lop = () => {
 
       <Portfolio />
 
-      {/* SKILLS */}
+      {/* Contact */}
+
+      <Contact />
     </Fragment>
   );
 };

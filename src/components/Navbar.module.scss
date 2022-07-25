@@ -2,10 +2,11 @@
 
 @import "./../SCSS/abstracts/variables.scss";
 
+
 .header {
-    height: $header-height;
-    background: $bg2;
-    color: $text2;
+    height:var;
+    background: var(--background);
+    color: var(--text-primary);
     z-index: 1000;
     width: 100%;
     padding-top: 40px;
@@ -119,7 +120,7 @@
     @include breakpoint(md) {
         position: static;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         background: initial;
         width: auto;
         padding: 0;
