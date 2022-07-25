@@ -6,6 +6,8 @@
 
 4-Scroll: npm install react-scroll
 
+5-Mensajeria: npm i emailjs-com
+
 5-Animate on Scroll: npm install aos --save
 
 Importe! secuencias de comandos, estilos e inicialice AOS:

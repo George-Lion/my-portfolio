@@ -6,11 +6,22 @@ import AboutMe from "../components/AboutMe";
 import img5 from "../img/e.png";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
+import useLocalStorage from "use-local-storage";
+import { switchTheme } from "../components/Navbar";
 
 const Lop = () => {
   let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
   let url3 = "https://www.instagram.com/accounts/login/";
+
+  /*  dark mode */
+
+  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
 
   useEffect(() => {
     AOS.init();
@@ -18,7 +29,7 @@ const Lop = () => {
 
   return (
     <Fragment>
-      <div className={styles.header}>
+      <div className={styles.header} data-theme={theme}>
         <div className={styles.header__box}>
           <div className="" data-aos="fade-right">
             <h1 className={styles.header__box__myName}>Jorge León</h1>

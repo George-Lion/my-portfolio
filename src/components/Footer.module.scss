@@ -1,14 +1,14 @@
 @import "./../SCSS/abstracts/variables.scss";
 
 .footer {
-    height: 228px;
+    height: 100px;
     width: 100%;
    /*  background: $bg2; */
    background: $bg2;
     color: $text2;
 
     &__copyright{
-        margin-top: 140px;
+        margin-top: 120px;
         text-align: center;
     }
 }

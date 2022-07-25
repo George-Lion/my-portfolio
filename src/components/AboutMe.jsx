@@ -1,27 +1,35 @@
 import React, { Fragment } from "react";
 import pdf from "../resources/Jorge_Leon_CV.pdf";
 import img2 from "../img/me.png";
+import { SiPostgresql, SiFlask, SiMysql } from "react-icons/si";
+
 import styles from "./AboutMe.module.scss";
 
 const AboutMe = () => {
   return (
     <Fragment>
       <div className={styles.bloc2} id="about">
-        <div className={styles.bloc2__box}>
-          <div className={styles.bloc2__box__content}>
+        <div className={styles.bloc2__box} data-aos="fade-up">
+          <div className={styles.bloc2__box__content} data-aos="fade-up">
             <div>
               <img
                 className={styles.bloc2__box__content__picture1}
                 src={img2}
               />
             </div>
-            <div className={styles.bloc2__box__content__box1}>
+            <div
+              className={styles.bloc2__box__content__box1}
+              data-aos="fade-up"
+            >
               <div>
                 <p className={styles.bloc2__box__content__box1__text0}>
                   Discover
                 </p>
               </div>
-              <div className={styles.bloc2__box__content__box1__me}>
+              <div
+                className={styles.bloc2__box__content__box1__me}
+                data-aos="fade-up"
+              >
                 About me
               </div>
               <div className={styles.bloc2__box__content__box1__line}></div>
@@ -32,7 +40,7 @@ const AboutMe = () => {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
               </p>
-              <div>
+              <div data-aos="fade-up">
                 <a
                   className={styles.bloc2__box__content__box1__text1__button}
                   href={pdf}
@@ -50,7 +58,10 @@ const AboutMe = () => {
           {/* SKILLS */}
 
           <div className={styles.bloc2__box__skills} id="skills">
-            <div className={styles.bloc2__box__skills__title}>
+            <div
+              className={styles.bloc2__box__skills__title}
+              data-aos="fade-up"
+            >
               <p>Skills</p>
             </div>
             <div className={styles.bloc2__box__skills__position}>
@@ -76,7 +87,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fab fa-html5"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -94,7 +105,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fab fa-css3-alt"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -112,7 +123,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fab fa-js-square"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -130,7 +141,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fab fa-react"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -148,7 +159,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fab fa-figma"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -166,7 +177,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fab fa-sass"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -184,7 +195,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fab fa-bootstrap"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -202,7 +213,7 @@ const AboutMe = () => {
                     data-aos-anchor-placement="center-bottom"
                   >
                     <i className="fas fa-mobile-alt"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -218,17 +229,23 @@ const AboutMe = () => {
               {/* BACKEND SKILLS*/}
 
               <div className={styles.bloc2__box__skills__box__backEnd}>
-                <div className={styles.bloc2__box__skills__box__backEnd__title}>
+                <div
+                  className={styles.bloc2__box__skills__box__backEnd__title}
+                  data-aos="fade-up"
+                >
                   <h4>Backend</h4>
                 </div>
-                <div className={styles.bloc2__box__skills__box__backEnd__icons}>
+                <div
+                  className={styles.bloc2__box__skills__box__backEnd__icons}
+                  data-aos="fade-up"
+                >
                   <div
                     className={
                       styles.bloc2__box__skills__box__backEnd__icons__icon
                     }
                   >
                     <i className="fab fa-python"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -242,9 +259,10 @@ const AboutMe = () => {
                     className={
                       styles.bloc2__box__skills__box__backEnd__icons__icon
                     }
+                    data-aos="fade-up"
                   >
                     <i className="fab fa-npm"></i>
-                    <div>
+                    <div data-aos="fade-up">
                       <p
                         className={
                           styles.bloc2__box__skills__box__frontEnd__icons__icon__title
@@ -258,43 +276,52 @@ const AboutMe = () => {
                     className={
                       styles.bloc2__box__skills__box__backEnd__icons__icon
                     }
+                    data-aos="fade-up"
                   >
-                    <i className="fab fa-js-square"></i>
+                    <SiPostgresql />
+                    <div data-aos="fade-up">
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Postgre
+                      </p>
+                    </div>
                   </div>
                   <div
                     className={
                       styles.bloc2__box__skills__box__backEnd__icons__icon
                     }
+                    data-aos="fade-up"
                   >
-                    <i className="fab fa-react"></i>
+                    <SiFlask />
+                    <div data-aos="fade-up">
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Flask
+                      </p>
+                    </div>
                   </div>
                   <div
                     className={
                       styles.bloc2__box__skills__box__backEnd__icons__icon
                     }
+                    data-aos="fade-up"
                   >
-                    <i className="fab fa-figma"></i>
-                  </div>
-                  <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
-                  >
-                    <i className="fab fa-sass"></i>
-                  </div>
-                  <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
-                  >
-                    <i className="fab fa-bootstrap"></i>
-                  </div>
-                  <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
-                  >
-                    <i className="fas fa-mobile-alt"></i>
+                    <SiMysql />
+                    <div data-aos="fade-up">
+                      <p
+                        className={
+                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Mysql
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
