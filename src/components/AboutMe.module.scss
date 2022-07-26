@@ -3,11 +3,14 @@
 .bloc2{
     height: 100%;
     background-color: $bg5;
-    height: 950px;
+    max-height: 2000px;
+    min-height: 950px;
     width: 100%;
+
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
         width: 100%;
+        padding-bottom: 100px;
     }
 
     &__box{
@@ -193,6 +196,11 @@
                     margin-top: 50px;
                     width: 60%;
                     height: 100px;
+
+                    $breakpoint-tablet: 500px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
                              
                     @media (max-width: $breakpoint-tablet) {
                         width: 450px;
@@ -211,7 +219,7 @@
         
                         $breakpoint-tablet: 500px;
                         @media (max-width: $breakpoint-tablet) {
-                            display: block;
+                            
                         }
         
                         &__icon{
@@ -219,6 +227,12 @@
                             font-size: 2.5rem;
                             margin-right: 20px;
                             text-align: center;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                font-size: 2rem;
+                                margin-right: 10px;
+                            }
         
                             &__title{
                                 font-size: 0.8rem;
@@ -250,7 +264,7 @@
                         justify-content: center;
                         $breakpoint-tablet: 500px;
                         @media (max-width: $breakpoint-tablet) {
-                            display: block;
+                            
                         }
         
                         &__icon{
@@ -258,6 +272,12 @@
                             font-size: 2.5rem;
                             margin-right: 20px;
                             text-align: center;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                font-size: 2rem;
+                                margin-right: 10px;
+                            }
                         }
                     }
                 }
