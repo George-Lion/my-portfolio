@@ -1,9 +1,9 @@
 @import "./../SCSS/abstracts/variables.scss";
 
 .header{
-    height: 625px;
+    
     max-width: 1280px;
-    background: var(--background);
+    min-height: 850px;
     margin: auto;
 
     $breakpoint-tablet: 500px;
@@ -138,11 +138,7 @@
                                 
                         }
                 } */
-&__bottom{
-    width: 100%;
-    height: 300px;
-    background-color:black;
-}
+
             }
 
 

@@ -36,8 +36,8 @@ const Contact = () => {
   return (
     <Fragment>
       <div className={styles.contact} id="contact">
-        <div className={styles.contact__master} data-aos="fade-up">
-          <div className={styles.contact__master__content1} data-aos="fade-up">
+        <div className={styles.contact__master}>
+          <div className={styles.contact__master__content1}>
             <h5 className={styles.contact__master__content1__more}>
               Do you want to know something more?
             </h5>
@@ -46,27 +46,28 @@ const Contact = () => {
               className={styles.contact__master__content1__line}
               data-aos="fade-up"
             ></div>
-            <div className={styles.contact__master__content1__icon}>
-              <a
-                href={url2}
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className={styles.contact__master__ikon}>
+              <div className={styles.contact__master__ikon__icon}>
+                <a
+                  href={url2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-aos="fade-up"
+                >
+                  {" "}
+                  <i className="fab fa-linkedin-in" title="Linkedin"></i>
+                </a>
+              </div>
+              <div
+                className={styles.contact__master__ikon__icon}
                 data-aos="fade-up"
               >
                 {" "}
-                <i className="fab fa-linkedin-in" title="Linkedin"></i>
-              </a>
-            </div>
-            <div
-              className={styles.contact__master__content1__icon}
-              data-aos="fade-up"
-            >
-              {" "}
-              <i className="fab fa-instagram" title="Instagram"></i>
+                <i className="fab fa-instagram" title="Instagram"></i>
+              </div>
             </div>
           </div>
-
-          <div className={styles.contact__master__box1} data-aos="fade-up">
+          <div className={styles.contact__master__box1}>
             <form
               onSubmit={onSubmit}
               className={styles.contact__master__box1__content2}

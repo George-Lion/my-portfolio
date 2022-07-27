@@ -2,28 +2,29 @@
 
 .bloc2{
     height: 100%;
-    background-color: $bg5;
+    background-color: $m2;
     max-height: 2000px;
-    min-height: 950px;
+    min-height: 1000px;
     width: 100%;
 
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
         width: 100%;
         padding-bottom: 100px;
+        height: 1400px;
     }
 
     &__box{
         margin: auto;
         max-width: 1280px;
+        padding-top: 50px;
 
         &__content{
             display: flex;
             justify-content: left;
             width: 95%;
             margin: auto;
-            padding-top: 40px;
-
+           
             $breakpoint-tablet: 600px;
             @media (max-width: $breakpoint-tablet) {
                 display: block;
@@ -93,7 +94,7 @@
                     max-width: 600px;
                     text-align: justify;
                     line-height: 1.4;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     margin-top: 25px;
                     word-break: break-all;
                     margin-bottom: 70px;
@@ -101,7 +102,9 @@
 
                     $breakpoint-tablet: 500px;
                     @media (max-width: $breakpoint-tablet) {
-                    margin-left: 40px;
+                    margin: auto;
+                    max-width: 400px;
+                    font-size: 1rem;
                     }
 
                     $breakpoint-tablet: 420px;
@@ -149,66 +152,86 @@
 
         }
 
-        &__skills{
-            margin: auto;
-            height: 350px;
-           width: 95%;
-            background: $bg5;
+        &__b1{
+            width: 1280px;
+            display: flex;
+
             $breakpoint-tablet: 500px;
-           /*  border: 2px;
-            border-color: red;
-            border: solid; */
-            margin-top: 100px;     
-        
-            &__title{
-                color: $text2;
-                width: 100%;
-                font-size: 1.7rem;
-                text-align: left;
-                margin-bottom: 5px;           
+            @media (max-width: $breakpoint-tablet) {
+                display: block;
             }
-        
-            &__position{
-                width: 70%;
-                display: flex;
-                justify-content: start;
-                
-        
-            &__line{
-                width: 30px;
-                height: 5px;
-                background-color: $resalt;
-                     
+            
+            &__skills{
+                height: 350px;
+                width: 380px;
+                margin-top: 50px;
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                   height: 40px;;
+                }
+                   
+                &__title{
+                    color: $text2;
+                    width: 100%;
+                    font-size: 1.7rem;
+                    text-align: left;
+                    margin-bottom: 5px;   
+                    
+                    $breakpoint-tablet: 500px;
+                    @media (max-width: $breakpoint-tablet) {
+                       height: 40px;
+                       text-align: center;
                     }
                 }
+
+              
+            
+                &__position{
+                    width: 70%;
+                    display: flex;
+                    justify-content: start;
+                    
+                    &__line{
+                        width: 30px;
+                        height: 5px;
+                        background-color: $resalt;
+                            
+                    }
+                
+                }
+
+            }
+
         
             &__box{
-              display: flex;
               margin-top: 50px;
-              
-        
+              height: 150px;
+             
+             
               $breakpoint-tablet: 500px;
               @media (max-width: $breakpoint-tablet) {
                   display: block;
               }
         
-                &__frontEnd{
-                    margin-top: 50px;
+                &__frontEnd{ 
                     width: 60%;
-                    height: 100px;
-
+                    height: 90px;
+                    margin-left: 30px;
+                    
                     $breakpoint-tablet: 500px;
-    @media (max-width: $breakpoint-tablet) {
-        width: 100%;
-    }
+                    @media (max-width: $breakpoint-tablet) {
+                        width: 100%;
+                    }
                              
                     @media (max-width: $breakpoint-tablet) {
                         width: 450px;
                     }
+                    
                     &__title{
                         color: $text2;
-                        font-size: 1.4rem;
-                        text-align: center;
+                        font-size: 1.2rem;
+                        text-align: start;
                         margin-bottom: 20px;
                         color: $resalt;
                     }
@@ -224,8 +247,8 @@
         
                         &__icon{
                             color: $text2;
-                            font-size: 2.5rem;
-                            margin-right: 20px;
+                            font-size: 2rem;
+                            margin-right: 30px;
                             text-align: center;
 
                             $breakpoint-tablet: 500px;
@@ -243,25 +266,26 @@
                 }
         
                 &__backEnd{
-                    margin-top: 50px;
-                    width: 900px;
-                    height: 100px;
+                    margin-top: 40px;
+                    margin-left: 30px;
+                    height: 90px;
+                   
                     @media (max-width: $breakpoint-tablet) {
                         width: 450px;
                     }
                         
                     &__title{
                         color: $text2;
-                        font-size: 1.4rem;
-                        text-align: center;
-                        margin-bottom: 20px;
+                        font-size: 1.2rem;
+                        text-align: start;
+                        margin-bottom: 15px;
                         color: $resalt;
                     }
         
                     &__icons{
                         display: flex;
                         
-                        justify-content: center;
+                        justify-content: start;
                         $breakpoint-tablet: 500px;
                         @media (max-width: $breakpoint-tablet) {
                             
@@ -269,8 +293,54 @@
         
                         &__icon{
                             color: $text2;
-                            font-size: 2.5rem;
-                            margin-right: 20px;
+                            font-size: 2rem;
+                            margin-right: 30px;
+                            text-align: center;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                font-size: 2rem;
+                                margin-right: 10px;
+                            }
+
+                            &__title{
+                                font-size: 0.8rem;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &__others{
+                    margin-top: 40px;
+                    margin-left: 30px;
+                    height: 90px;
+                    
+                    @media (max-width: $breakpoint-tablet) {
+                        width: 450px;
+                    }
+                        
+                    &__title{
+                        color: $text2;
+                        font-size: 1.2rem;
+                        text-align: start;
+                        margin-bottom: 15px;
+                        color: $resalt;
+                    }
+        
+                    &__icons{
+                        display: flex;
+                        justify-content: start;
+                        
+                        $breakpoint-tablet: 500px;
+                        @media (max-width: $breakpoint-tablet) {
+                            
+                        }
+        
+                        &__icon{
+                            color: $text2;
+                            font-size: 2rem;
+                            margin-right: 30px;
                             text-align: center;
 
                             $breakpoint-tablet: 500px;
@@ -282,8 +352,8 @@
                     }
                 }
             }
-        }   
-    }  
+          
+    }  }
 }
 
 

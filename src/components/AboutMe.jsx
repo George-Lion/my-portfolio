@@ -1,7 +1,16 @@
 import React, { Fragment } from "react";
 import pdf from "../resources/Jorge_Leon_CV.pdf";
 import img2 from "../img/me.png";
-import { SiPostgresql, SiFlask, SiMysql } from "react-icons/si";
+import {
+  SiPostgresql,
+  SiFlask,
+  SiMysql,
+  SiGithub,
+  SiGit,
+  SiHeroku,
+  SiTrello,
+  SiWindowsterminal,
+} from "react-icons/si";
 
 import styles from "./AboutMe.module.scss";
 
@@ -57,31 +66,33 @@ const AboutMe = () => {
 
           {/* SKILLS */}
 
-          <div className={styles.bloc2__box__skills} id="skills">
-            <div
-              className={styles.bloc2__box__skills__title}
-              data-aos="fade-up"
-            >
-              <p>Skills</p>
-            </div>
-            <div className={styles.bloc2__box__skills__position}>
-              <div className={styles.bloc2__box__skills__position__line}></div>
-            </div>
-            <div className={styles.bloc2__box__skills__box}>
-              <div className={styles.bloc2__box__skills__box__frontEnd}>
+          <div className={styles.bloc2__box__b1}>
+            <div className={styles.bloc2__box__b1__skills}>
+              <div
+                className={styles.bloc2__box__b1__skills__title}
+                data-aos="fade-up"
+              >
+                <p>Skills</p>
+              </div>
+              <div className={styles.bloc2__box__b1__skills__position}>
                 <div
-                  className={styles.bloc2__box__skills__box__frontEnd__title}
+                  className={styles.bloc2__box__b1__skills__position__line}
+                ></div>
+              </div>
+            </div>
+            <div className={styles.bloc2__box__b1__box}>
+              <div className={styles.bloc2__box__b1__box__frontEnd}>
+                <div
+                  className={styles.bloc2__box__b1__box__frontEnd__title}
                   data-aos="fade-up"
                   data-aos-anchor-placement="center-bottom"
                 >
                   <h4>Frontend</h4>
                 </div>
-                <div
-                  className={styles.bloc2__box__skills__box__frontEnd__icons}
-                >
+                <div className={styles.bloc2__box__b1__box__frontEnd__icons}>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -90,7 +101,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         HTML5
@@ -99,7 +110,7 @@ const AboutMe = () => {
                   </div>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -108,7 +119,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         CSS3
@@ -117,7 +128,7 @@ const AboutMe = () => {
                   </div>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -126,7 +137,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         JavaScript
@@ -135,7 +146,7 @@ const AboutMe = () => {
                   </div>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -144,7 +155,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         React
@@ -153,7 +164,7 @@ const AboutMe = () => {
                   </div>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -162,7 +173,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         Figma
@@ -171,7 +182,7 @@ const AboutMe = () => {
                   </div>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -180,7 +191,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         Sass
@@ -189,7 +200,7 @@ const AboutMe = () => {
                   </div>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -198,7 +209,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         Bootstrap
@@ -207,7 +218,7 @@ const AboutMe = () => {
                   </div>
                   <div
                     className={
-                      styles.bloc2__box__skills__box__frontEnd__icons__icon
+                      styles.bloc2__box__b1__box__frontEnd__icons__icon
                     }
                     data-aos="fade-up"
                     data-aos-anchor-placement="center-bottom"
@@ -216,7 +227,7 @@ const AboutMe = () => {
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
                         }
                       >
                         Responsive web
@@ -226,29 +237,27 @@ const AboutMe = () => {
                 </div>
               </div>
 
-              {/* BACKEND SKILLS*/}
+              {/* BACKEND*/}
 
-              <div className={styles.bloc2__box__skills__box__backEnd}>
+              <div className={styles.bloc2__box__b1__box__backEnd}>
                 <div
-                  className={styles.bloc2__box__skills__box__backEnd__title}
+                  className={styles.bloc2__box__b1__box__backEnd__title}
                   data-aos="fade-up"
                 >
                   <h4>Backend</h4>
                 </div>
                 <div
-                  className={styles.bloc2__box__skills__box__backEnd__icons}
+                  className={styles.bloc2__box__b1__box__backEnd__icons}
                   data-aos="fade-up"
                 >
                   <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
+                    className={styles.bloc2__box__b1__box__backEnd__icons__icon}
                   >
                     <i className="fab fa-python"></i>
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__backEnd__icons__icon__title
                         }
                       >
                         Python
@@ -256,16 +265,14 @@ const AboutMe = () => {
                     </div>
                   </div>
                   <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
+                    className={styles.bloc2__box__b1__box__backEnd__icons__icon}
                     data-aos="fade-up"
                   >
                     <i className="fab fa-npm"></i>
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__backEnd__icons__icon__title
                         }
                       >
                         NPM
@@ -273,16 +280,14 @@ const AboutMe = () => {
                     </div>
                   </div>
                   <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
+                    className={styles.bloc2__box__b1__box__backEnd__icons__icon}
                     data-aos="fade-up"
                   >
                     <SiPostgresql />
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__backEnd__icons__icon__title
                         }
                       >
                         Postgre
@@ -290,16 +295,14 @@ const AboutMe = () => {
                     </div>
                   </div>
                   <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
+                    className={styles.bloc2__box__b1__box__backEnd__icons__icon}
                     data-aos="fade-up"
                   >
                     <SiFlask />
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__backEnd__icons__icon__title
                         }
                       >
                         Flask
@@ -307,19 +310,107 @@ const AboutMe = () => {
                     </div>
                   </div>
                   <div
-                    className={
-                      styles.bloc2__box__skills__box__backEnd__icons__icon
-                    }
+                    className={styles.bloc2__box__b1__box__backEnd__icons__icon}
                     data-aos="fade-up"
                   >
                     <SiMysql />
                     <div data-aos="fade-up">
                       <p
                         className={
-                          styles.bloc2__box__skills__box__frontEnd__icons__icon__title
+                          styles.bloc2__box__b1__box__backEnd__icons__icon__title
                         }
                       >
                         Mysql
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={styles.bloc2__box__b1__box__backEnd__icons__icon}
+                    data-aos="fade-up"
+                  >
+                    <SiWindowsterminal />
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__b1__box__backEnd__icons__icon__title
+                        }
+                      >
+                        C. Terminal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/*   OTHERS */}
+
+              <div className={styles.bloc2__box__b1__box__others}>
+                <div
+                  className={styles.bloc2__box__b1__box__others__title}
+                  data-aos="fade-up"
+                >
+                  <h4>Others</h4>
+                </div>
+                <div
+                  className={styles.bloc2__box__b1__box__others__icons}
+                  data-aos="fade-up"
+                >
+                  <div
+                    className={styles.bloc2__box__b1__box__others__icons__icon}
+                  >
+                    <SiGithub />
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Github
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={styles.bloc2__box__b1__box__others__icons__icon}
+                    data-aos="fade-up"
+                  >
+                    <SiGit />
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Git
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={styles.bloc2__box__b1__box__others__icons__icon}
+                    data-aos="fade-up"
+                  >
+                    <div>
+                      <SiHeroku />
+                      <p
+                        className={
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Heroku
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={styles.bloc2__box__b1__box__others__icons__icon}
+                    data-aos="fade-up"
+                  >
+                    <SiTrello />
+                    <div>
+                      <p
+                        className={
+                          styles.bloc2__box__b1__box__frontEnd__icons__icon__title
+                        }
+                      >
+                        Trello
                       </p>
                     </div>
                   </div>
