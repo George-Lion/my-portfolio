@@ -5,8 +5,11 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { Link } from "react-scroll";
 import useLocalStorage from "use-local-storage";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+  const [t, i18n] = useTranslation("global");
+
   const [menuOpen, setMenuOpen] = useState(false);
   const menuToggler = () => setMenuOpen((p) => !p);
 
@@ -44,7 +47,7 @@ const Navbar = () => {
                   duration={500}
                   className={styles.nav__item}
                 >
-                  About me
+                  <p>{t("header.about-me")}</p>
                 </Link>
               </div>
               <div data-aos="fade-left">
@@ -66,13 +69,17 @@ const Navbar = () => {
                   duration={500}
                   className={styles.nav__item}
                 >
-                  Contact
+                  {t("header.contact")}
                 </Link>
               </div>
               <div data-aos="fade-left">
                 <div className="theme-toggle">
                   <i onClick={switchTheme} className="fas fa-toggle-on"></i>
                 </div>
+              </div>
+              <div>
+                <button onClick={() => i18n.changeLanguage("es")}>ES</button>
+                <button onClick={() => i18n.changeLanguage("en")}>EN</button>
               </div>
             </nav>
           </div>
