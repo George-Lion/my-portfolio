@@ -8,8 +8,10 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import useLocalStorage from "use-local-storage";
 import { switchTheme } from "../components/Navbar";
+import { useTranslation } from "react-i18next";
 
 const Lop = () => {
+  const [t, i18n] = useTranslation("global");
   let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
   let url3 = "https://www.instagram.com/accounts/login/";
@@ -73,7 +75,10 @@ const Lop = () => {
             />
           </div>
           <div data-aos="fade-left">
-            <p className={styles.header__box__dedication}> cvcvcv</p>
+            <p className={styles.header__box__dedication}>
+              {" "}
+              {t("header.about-me")}
+            </p>
           </div>
         </div>
       </div>

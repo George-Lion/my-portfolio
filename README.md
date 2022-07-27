@@ -8,7 +8,15 @@
 
 5-Mensajeria: npm i emailjs-com
 
-5-Animate on Scroll: npm install aos --save
+6-Traducciones (i18next):
+
+- npm install i18next --save
+- npm i react-i18next
+
+- yarn: yarn add i18next
+- yar add react-i18next
+
+7-Animate on Scroll: npm install aos --save
 
 Importe! secuencias de comandos, estilos e inicialice AOS:
 

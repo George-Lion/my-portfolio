@@ -11,10 +11,11 @@ import {
   SiTrello,
   SiWindowsterminal,
 } from "react-icons/si";
-
 import styles from "./AboutMe.module.scss";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <Fragment>
       <div className={styles.bloc2} id="about">
@@ -32,22 +33,18 @@ const AboutMe = () => {
             >
               <div>
                 <p className={styles.bloc2__box__content__box1__text0}>
-                  Discover
+                  {t("header.discover")}
                 </p>
               </div>
               <div
                 className={styles.bloc2__box__content__box1__me}
                 data-aos="fade-up"
               >
-                About me
+                {t("header.about-me")}
               </div>
               <div className={styles.bloc2__box__content__box1__line}></div>
               <p className={styles.bloc2__box__content__box1__text1}>
-                {" "}
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                {t("header.description")}
               </p>
               <div data-aos="fade-up">
                 <a
@@ -58,7 +55,7 @@ const AboutMe = () => {
                   download="Jorge_Leon_CV.pdf"
                   title="Click to download CV"
                 >
-                  Download CV
+                  {t("header.download")}
                 </a>
               </div>
             </div>
@@ -72,7 +69,7 @@ const AboutMe = () => {
                 className={styles.bloc2__box__b1__skills__title}
                 data-aos="fade-up"
               >
-                <p>Skills</p>
+                <p>{t("header.skills")}</p>
               </div>
               <div className={styles.bloc2__box__b1__skills__position}>
                 <div
