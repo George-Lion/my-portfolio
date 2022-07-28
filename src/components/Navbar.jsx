@@ -72,14 +72,24 @@ const Navbar = () => {
                   {t("header.contact")}
                 </Link>
               </div>
+              <div data-aos="fade-left" className={styles.nav__item}>
+                <button
+                  className={styles.nav__btn}
+                  onClick={() => i18n.changeLanguage("es")}
+                >
+                  ES
+                </button>
+                <button
+                  className={styles.nav__btn}
+                  onClick={() => i18n.changeLanguage("en")}
+                >
+                  EN
+                </button>
+              </div>
               <div data-aos="fade-left">
                 <div className="theme-toggle">
                   <i onClick={switchTheme} className="fas fa-toggle-on"></i>
                 </div>
-              </div>
-              <div>
-                <button onClick={() => i18n.changeLanguage("es")}>ES</button>
-                <button onClick={() => i18n.changeLanguage("en")}>EN</button>
               </div>
             </nav>
           </div>

@@ -35,7 +35,7 @@
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
-                    padding-top: 90px;
+                    padding-top: 120px;
                     font-size: 3.3rem;
                     text-align: center;
                 }
@@ -58,6 +58,7 @@
                 @media (max-width: $breakpoint-tablet) {
                     font-size: 2rem;
                     text-align: center;
+                    
                 }
 
                 $breakpoint-tablet: 420px;
@@ -90,21 +91,29 @@
                 &:hover {
                     transform: scale(1.2);
                 }
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                   
+                    margin-top: 90px;
+                    
+                }
             }
         
             &__photo1{
-                width: 600px;
+                width: 700px;
                 border-radius: 20px;
-                position: relative;
+                position: absolute;
                 z-index: 1;
-                left: -100px;
+                right: -500px;
+                margin-top: 60px;
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 90%;
                     left: 25px;
                     position: absolute;
-                    top: -140px;
+                    top: -20px;
                     
                 }
             }

@@ -2,14 +2,13 @@
 
 @import "./../SCSS/abstracts/variables.scss";
 
-
 .header {
     height:100px;
     color: var(--text-primary);
-    background-color: $m1;
+    background: $m1;
     z-index: 1000;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 20px;
    /*  box-shadow: 0 1px 5px $primary; */
 
    &.dark {
@@ -108,24 +107,37 @@
         right: 0;
     }
 
-    &__item {
-        display: block;
-        padding: $spacing-md;
-        cursor: pointer;
-        text-decoration: none;
-        color: inherit;
-        height: 100%;
-        transition: 0.3s ease color;
-        
-        &:hover {
-            color: $resalt;
+        &__item {
+            display: block;
+            padding: $spacing-md;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+            transition: 0.3s ease color;
+            
+            &:hover {
+                color: $resalt;
+            }
         }
-    }
+        
+        &__btn{
+            background-color:$m2;
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            margin-right: 3px;
+            cursor: pointer;
+
+            &:hover {
+                color: red;
+            }
+        }
 
     @include breakpoint(md) {
         position: static;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         background: initial;
         width: auto;
         padding: 0;

@@ -75,10 +75,7 @@ const Lop = () => {
             />
           </div>
           <div data-aos="fade-left">
-            <p className={styles.header__box__dedication}>
-              {" "}
-              {t("header.about-me")}
-            </p>
+            <p className={styles.header__box__dedication}>{/*  NEXT TEXT */}</p>
           </div>
         </div>
       </div>
