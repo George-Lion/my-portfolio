@@ -417,6 +417,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+      <div className={styles.bloc3}></div>
     </Fragment>
   );
 };

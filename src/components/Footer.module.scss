@@ -1,14 +1,39 @@
 @import "./../SCSS/abstracts/variables.scss";
 
 .footer {
-    height: 200px;
+    height: 280px;
     width: 100%;
    /*  background: $bg2; */
-   background: $bg2;
+   background: $m1;
     color: $text2;
+
+    &__logo{
+        width:100% ;
+        font-size: 40px;
+        padding-top: 60px;
+        color: $resalt;
+        text-align: center;
+        
+    }
 
     &__copyright{
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
+       
     }
+
+    &__ikon{
+        height: 20px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+
+        &__icon{
+            margin: 40px 10px 0px 10px;
+
+           
+            background-color: red;
+        }
+    }
+
 }

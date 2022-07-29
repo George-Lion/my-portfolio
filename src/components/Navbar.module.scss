@@ -123,15 +123,25 @@
         
         &__btn{
             background-color:$m2;
-            width: 25px;
-            height: 25px;
+            padding: 4px;
             border-radius: 5px;
             margin-right: 3px;
             cursor: pointer;
+        }
 
-            &:hover {
-                color: red;
-            }
+        &__bar{
+            height: 20px;
+            width: 2px;
+            margin: 0px 6px 0px 5px;
+            background-color: $bg;
+        }
+
+        &__btn2{
+            
+            padding: 4px;
+            border-radius: 5px;
+            margin-right: 3px;
+            cursor: pointer;
         }
 
     @include breakpoint(md) {

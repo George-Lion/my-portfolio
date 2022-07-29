@@ -2,9 +2,11 @@ import React, { Fragment, useState } from "react";
 import styles from "./Contact.module.scss";
 import { send } from "emailjs-com";
 import ReactTooltip from "react-tooltip";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   let url2 = "https://linkedin.com/in/jorgeleonb";
+  const [t, i18n] = useTranslation("global");
 
   const [toSend, setToSend] = useState({
     from_name: "",
@@ -39,9 +41,11 @@ const Contact = () => {
         <div className={styles.contact__master}>
           <div className={styles.contact__master__content1}>
             <h5 className={styles.contact__master__content1__more}>
-              Do you want to know something more?
+              {t("header.contact1")}
             </h5>
-            <h1 className={styles.contact__master__content1__title}>Contact</h1>
+            <h1 className={styles.contact__master__content1__title}>
+              {t("header.contact2")}
+            </h1>
             <div
               className={styles.contact__master__content1__line}
               data-aos="fade-up"
@@ -115,7 +119,7 @@ const Contact = () => {
                       : styles.contact__master__box1__content2__inputs2
                   }
                   name="reply_to"
-                  placeholder="Your email"
+                  placeholder={t("header.email")}
                   value={toSend.reply_to}
                   onChange={handleChange}
                 ></input>
@@ -161,7 +165,7 @@ const Contact = () => {
                       styles.contact__master__box1__content2__space__button2
                     }
                   >
-                    Send
+                    {t("header.send")}
                   </button>
                 )}
               </div>

@@ -99,6 +99,49 @@
                     
                 }
             }
+
+            &__mouse{
+                align-items: center;
+                width: 180px;
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 18px;
+                color: $text2;
+                margin-top: 250px;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                cursor: pointer;
+                animation: movebtn 3s ease-in-out infinite;
+                transition: all .5s ease-in-out;
+                
+
+                &__icon1{
+                   color: $resalt;
+                   font-size: 32px;
+                }
+
+                &__icon2{
+                    font-size: 100px;
+                    color: $resalt;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                @keyframes movebtn {
+                    0%{
+                      transform: translateY(0px);
+                    }
+                    20%{
+                        transform: translateY(-20px);
+                      }
+                    75%{
+                      transform: translateY(-20px);
+                    }
+                    100%{
+                      transform: translateY(0px);
+                    }
+                  }
+            }
         
             &__photo1{
                 width: 700px;

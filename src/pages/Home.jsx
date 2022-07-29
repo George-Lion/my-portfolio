@@ -7,8 +7,10 @@ import img5 from "../img/e.png";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import useLocalStorage from "use-local-storage";
+import { Link } from "react-scroll";
 import { switchTheme } from "../components/Navbar";
 import { useTranslation } from "react-i18next";
+import { RiMouseFill, RiArrowDropDownLine } from "react-icons/ri";
 
 const Lop = () => {
   const [t, i18n] = useTranslation("global");
@@ -66,7 +68,24 @@ const Lop = () => {
                 <i className="fab fa-instagram" title="Instagram"></i>
               </a>
             </div>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className={styles.nav__item}
+            >
+              <div className={styles.header__box__mouse}>
+                <RiMouseFill className={styles.header__box__mouse__icon1} />
+
+                <p>scroll down</p>
+                <RiArrowDropDownLine
+                  className={styles.header__box__mouse__icon2}
+                />
+              </div>
+            </Link>
           </div>
+
           <div data-aos="fade-up-right">
             <img
               className={styles.header__box__photo1}

@@ -5,6 +5,10 @@
         "discover": "Discover",
         "skills": "Skills",
         "description": "I am a graphic designer, passionate about digital art, I stand out for turning huge problems into great solutions. I started my career as a graphic designer and now I am specializing as a full stack developer, growing in knowledge and desire to improve myself looking for a work environment where I can combine work with creativity.",
-        "download": "Download CV"
+        "download": "Download CV",
+        "contact1":"Do you want to know something more",
+        "contact2":"Contact",
+        "email":"Your email",
+        "send":"Send"
     }
 }

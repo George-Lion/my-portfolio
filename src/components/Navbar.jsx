@@ -4,23 +4,13 @@ import styles from "./Navbar.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { Link } from "react-scroll";
-import useLocalStorage from "use-local-storage";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [t, i18n] = useTranslation("global");
-
   const [menuOpen, setMenuOpen] = useState(false);
   const menuToggler = () => setMenuOpen((p) => !p);
-
-  /* dark mode */
-
-  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
-
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
+  const [state, setState] = useState(false);
 
   useEffect(() => {
     AOS.init();
@@ -28,7 +18,7 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <div className={styles.header} data-theme={theme}>
+      <div className={styles.header}>
         <div className={styles.header__content}>
           <div data-aos="zoom-in">
             <span className={styles.logo}>
@@ -74,22 +64,26 @@ const Navbar = () => {
               </div>
               <div data-aos="fade-left" className={styles.nav__item}>
                 <button
-                  className={styles.nav__btn}
-                  onClick={() => i18n.changeLanguage("es")}
+                  className={state == true ? styles.nav__btn : styles.nav__btn2}
+                  onClick={() => {
+                    i18n.changeLanguage("es");
+                    setState(true);
+                  }}
                 >
-                  ES
+                  ESP
                 </button>
+                <div className={styles.nav__bar}></div>
                 <button
-                  className={styles.nav__btn}
-                  onClick={() => i18n.changeLanguage("en")}
+                  className={
+                    state == false ? styles.nav__btn : styles.nav__btn2
+                  }
+                  onClick={() => {
+                    i18n.changeLanguage("en");
+                    setState(false);
+                  }}
                 >
-                  EN
+                  ENG
                 </button>
-              </div>
-              <div data-aos="fade-left">
-                <div className="theme-toggle">
-                  <i onClick={switchTheme} className="fas fa-toggle-on"></i>
-                </div>
               </div>
             </nav>
           </div>
