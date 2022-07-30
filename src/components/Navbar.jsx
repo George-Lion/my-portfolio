@@ -48,7 +48,7 @@ const Navbar = () => {
                   duration={500}
                   className={styles.nav__item}
                 >
-                  Portfolio
+                  <p>{t("header.projects")}</p>
                 </Link>
               </div>
               <div data-aos="fade-left">

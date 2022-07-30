@@ -1,6 +1,8 @@
 {
     "header":{
         "about-me": "About me",
+        "projects":"Projects",
+        "works":"See more works",
         "contact": "Contact",
         "discover": "Discover",
         "skills": "Skills",
@@ -10,5 +12,6 @@
         "contact2":"Contact",
         "email":"Your email",
         "send":"Send"
+        
     }
 }

@@ -1,0 +1,65 @@
+@import "./../SCSS/abstracts/variables.scss";
+
+.title{
+    margin-top: 130px;
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+    color: $text2;
+    text-align: center;
+    
+    &__line{
+        width: 40px;
+        height: 10px;
+        background: $resalt;
+    }
+}
+
+.skills{
+    max-width: 1280px;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    padding: 20px;
+    gap:40px;
+
+    &__titlex{
+        color: $text2;
+        font-size: 1rem;
+    }
+
+    &__div1{
+           padding-left: 50px ;
+
+        &__title{
+            font-size: 1.6rem;
+            color: $resalt;
+            margin-bottom: 20px;
+            padding-left: 30px ;
+            
+        }
+            
+            &__box{
+                width: 100%;
+                height: 90px;
+
+                &__icons{
+                    margin-top: 10px;
+                    height: 90px;
+                    display: flex;
+                    margin: auto;
+                    margin-left: 30px;
+                    
+                    &__icon{
+                        font-size: 40px;
+                        color: white;
+                        text-align: center;
+                        margin-right: 40px;
+
+                        &__title1{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }   
+    }
+}

@@ -1,10 +1,7 @@
 @import "./../SCSS/abstracts/variables.scss";
 
 .bloc2{
-    height: 100%;
-    background-color: $m2;
-    max-height: 2000px;
-    min-height: 1000px;
+    height: 1200px;
     width: 100%;
 
 
@@ -12,7 +9,9 @@
     @media (max-width: $breakpoint-tablet) {
         width: 100%;
         padding-bottom: 100px;
-        height: 1400px;
+        height: 100px;
+
+
     }
 
     &__box{
@@ -140,6 +139,9 @@
                         font-weight: 600;
                         border-radius: 10px;
                         
+                        
+                      
+                        
                         $breakpoint-tablet: 500px;
                         @media (max-width: $breakpoint-tablet) {
                         
@@ -157,8 +159,14 @@
         
                         &:active {
                             box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-                            transform: translateY(2px);
+                            transform: translateY(0.9px);
                         
+                        }
+
+                        &_icon{
+                            font-size: 23px;
+                        vertical-align: bottom;
+                            
                         }
                     }
                 }
@@ -170,7 +178,7 @@
 
         &__b1{
             width: 1280px;
-            height: 500px;
+
             padding-left: 400px;
             margin: auto;
             
@@ -181,200 +189,45 @@
                 display: block;
             }
             
-            &__skills{
-                height: 30px;
-                width: 380px;
-                margin-top: 50px;
-
-                $breakpoint-tablet: 500px;
-                @media (max-width: $breakpoint-tablet) {
-                   height: 40px;;
-                }
-                   
-                &__title{
-                    color: $text2;
-                    width: 100%;
-                    font-size: 1.7rem;
-                    text-align: left;
-                    margin-bottom: 5px;   
-                    
-                    $breakpoint-tablet: 500px;
-                    @media (max-width: $breakpoint-tablet) {
-                       height: 40px;
-                       text-align: center;
-                    }
-                }
-
-              
             
-                &__position{
-                    width: 70%;
-                    display: flex;
-                    justify-content: start;
-                    
-                    &__line{
-                        width: 30px;
-                        height: 5px;
-                        background-color: $resalt;
-                            
-                    }
-                
-                }
-
-            }
-
-        
-            &__box{
-              margin-top: 50px;
-              height: 150px;
-             
-             
-              $breakpoint-tablet: 500px;
-              @media (max-width: $breakpoint-tablet) {
-                  display: block;
-              }
-        
-                &__frontEnd{ 
-                    width: 60%;
-                    height: 90px;
-                    margin-left: 30px;
-                    
-                    $breakpoint-tablet: 500px;
-                    @media (max-width: $breakpoint-tablet) {
-                        width: 100%;
-                    }
-                             
-                    @media (max-width: $breakpoint-tablet) {
-                        width: 450px;
-                    }
-                    
-                    &__title{
-                        color: $text2;
-                        font-size: 1.2rem;
-                        text-align: start;
-                        margin-bottom: 20px;
-                        color: $resalt;
-                    }
-        
-                    &__icons{
-                        display: flex;
-                        justify-content: left;
-        
-                        $breakpoint-tablet: 500px;
-                        @media (max-width: $breakpoint-tablet) {
-                            
-                        }
-        
-                        &__icon{
-                            color: $text2;
-                            font-size: 2rem;
-                            margin-right: 30px;
-                            text-align: center;
-
-                            $breakpoint-tablet: 500px;
-                            @media (max-width: $breakpoint-tablet) {
-                                font-size: 2rem;
-                                margin-right: 10px;
-                            }
-        
-                            &__title{
-                                font-size: 0.8rem;
-                                margin-top: 5px;
-                            }
-                        }
-                    }
-                }
-        
-                &__backEnd{
-                    margin-top: 40px;
-                    margin-left: 30px;
-                    height: 90px;
-                   
-                    @media (max-width: $breakpoint-tablet) {
-                        width: 450px;
-                    }
-                        
-                    &__title{
-                        color: $text2;
-                        font-size: 1.2rem;
-                        text-align: start;
-                        margin-bottom: 15px;
-                        color: $resalt;
-                    }
-        
-                    &__icons{
-                        display: flex;
-                        
-                        justify-content: start;
-                        $breakpoint-tablet: 500px;
-                        @media (max-width: $breakpoint-tablet) {
-                            
-                        }
-        
-                        &__icon{
-                            color: $text2;
-                            font-size: 2rem;
-                            margin-right: 30px;
-                            text-align: center;
-
-                            $breakpoint-tablet: 500px;
-                            @media (max-width: $breakpoint-tablet) {
-                                font-size: 2rem;
-                                margin-right: 10px;
-                            }
-
-                            &__title{
-                                font-size: 0.8rem;
-                                margin-top: 5px;
-                            }
-                        }
-                    }
-                }
-
-                &__others{
-                    margin-top: 40px;
-                    margin-left: 30px;
-                    height: 90px;
-                    
-                    @media (max-width: $breakpoint-tablet) {
-                        width: 450px;
-                    }
-                        
-                    &__title{
-                        color: $text2;
-                        font-size: 1.2rem;
-                        text-align: start;
-                        margin-bottom: 15px;
-                        color: $resalt;
-                    }
-        
-                    &__icons{
-                        display: flex;
-                        justify-content: start;
-                        
-                        $breakpoint-tablet: 500px;
-                        @media (max-width: $breakpoint-tablet) {
-                            
-                        }
-        
-                        &__icon{
-                            color: $text2;
-                            font-size: 2rem;
-                            margin-right: 30px;
-                            text-align: center;
-
-                            $breakpoint-tablet: 500px;
-                            @media (max-width: $breakpoint-tablet) {
-                                font-size: 2rem;
-                                margin-right: 10px;
-                            }
-                        }
-                    }
-                }
             }
           
-    }  }
+    }  
 }
 
+.nav{
+    width : 300px; 
+  background: #d9d9d9;
+  margin : 40px auto; 
 
+  &__slide{
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+
+    &__span {
+        padding : 30px;
+        background : #2d2f31; 
+        color : white;
+        font-size : 1.2em;
+        font-variant : small-caps;
+        cursor : pointer;
+        display: block;
+      }
+      
+      span::after {
+        float: right;
+        right: 10%;
+        content: "+";
+      }
+      
+  }
+
+  #touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
+}
 
