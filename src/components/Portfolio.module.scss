@@ -7,7 +7,7 @@
     padding-top: 50px;
 
 &__portfolio{
-    max-width: 1280px;
+    width: 1280px;
     margin: auto;
     max-height: auto;
     display: grid;
@@ -17,8 +17,11 @@
 
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
-    width: 100%;
-    margin: 20px auto 0px auto;
+    width: 450px;
+    margin-top: 1530px;
+    grid-template-columns: repeat(auto-fit,minmax(420px,1fr));
+    padding: 0px;
+    gap:20px;
     }
 
         &__box1{
@@ -26,7 +29,7 @@
             &__title{
                 color: $text2;
                 font-size: 2.2rem;
-                text-align: left;  
+                text-align: left;     
             }
 
             &__line{
@@ -34,6 +37,11 @@
                 height: 5px;
                 width: 40px;
                 margin-bottom: 450px;
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                    margin-bottom: 40px;
+                }
             }
         }
 
@@ -55,11 +63,18 @@
             bottom: 250px;
             width: auto;
             border-radius: 10px;
+
+              $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                     position:static;
+                }
             
                 &__img1{
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
                 }
+
+              
         }
 
         &__box4{
@@ -73,6 +88,11 @@
             border-radius: 10px;
             position: relative;
             bottom: 140px;
+
+            $breakpoint-tablet: 500px;
+            @media (max-width: $breakpoint-tablet) {
+            margin-top: 200px;
+            }
 
             &__text{
                 color: $resalt;
@@ -139,6 +159,8 @@
                                 font-size: 15px;
                                 line-height: 30px;
                                 font-weight: 400;
+
+   
                             }
                             
                         }

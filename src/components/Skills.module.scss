@@ -6,6 +6,12 @@
     font-size: 1.9rem;
     color: $text2;
     text-align: center;
+
+    $breakpoint-tablet: 500px;
+    @media (max-width: $breakpoint-tablet) {
+        text-align: left;
+        margin-left: 20px;
+    }
     
     &__line{
         width: 40px;
@@ -15,12 +21,20 @@
 }
 
 .skills{
-    max-width: 1280px;
+    width: 1280px;
     max-height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     padding: 20px;
     gap:40px;
+
+    $breakpoint-tablet: 500px;
+    @media (max-width: $breakpoint-tablet) {
+        grid-template-columns: repeat(auto-fit,minmax(480px,1fr));
+        width: 100%;
+        padding: 0px;
+        gap:0px;
+    }
 
     &__titlex{
         color: $text2;
@@ -29,13 +43,22 @@
 
     &__div1{
            padding-left: 50px ;
+           $breakpoint-tablet: 500px;
+           @media (max-width: $breakpoint-tablet) {
+               padding-left: 0px ;
+           }
 
         &__title{
             font-size: 1.6rem;
             color: $resalt;
             margin-bottom: 20px;
             padding-left: 30px ;
-            
+            $breakpoint-tablet: 500px;
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+                padding-left: 0px ;
+                text-align: center;
+            }
         }
             
             &__box{
@@ -55,8 +78,19 @@
                         text-align: center;
                         margin-right: 40px;
 
+                        $breakpoint-tablet: 500px;
+                        @media (max-width: $breakpoint-tablet) {
+                            font-size: 30px;
+                            margin-right: 30px;
+                        }
+
                         &__title1{
                             font-size: 0.8rem;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                            font-size: 0.7rem;
+                        }
                         }
                     }
                 }

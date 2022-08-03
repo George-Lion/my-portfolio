@@ -10,8 +10,6 @@
         width: 100%;
         padding-bottom: 100px;
         height: 100px;
-
-
     }
 
     &__box{
@@ -118,7 +116,7 @@
                     $breakpoint-tablet: 500px;
                     @media (max-width: $breakpoint-tablet) {
                     max-width: 400px;
-                    margin: 30px auto 30px auto;
+                    margin: 30px auto 60px auto;
                     font-size: 1rem;
                     }
 
@@ -139,13 +137,10 @@
                         font-weight: 600;
                         border-radius: 10px;
                         
-                        
-                      
-                        
                         $breakpoint-tablet: 500px;
                         @media (max-width: $breakpoint-tablet) {
-                        
-                        margin: auto; 
+                        width: 100%;
+                        margin-left: 150px;
                         }
         
                         $breakpoint-tablet: 420px;
@@ -153,8 +148,7 @@
                         justify-content: center;
                             margin-bottom: 10px;
                             padding: 10px;
-                            
-                            
+    
                         }
         
                         &:active {
@@ -178,12 +172,9 @@
 
         &__b1{
             width: 1280px;
-
             padding-left: 400px;
             margin: auto;
-            
-            
-
+           
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
                 display: block;
@@ -197,8 +188,8 @@
 
 .nav{
     width : 300px; 
-  background: #d9d9d9;
-  margin : 40px auto; 
+    background: #d9d9d9;
+    margin : 40px auto; 
 
   &__slide{
     clear:both;
