@@ -22,6 +22,14 @@
                 width: 100%;
                 display: block;
             }
+
+            $breakpoint-tablet: 390px;
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+                display: block;
+                padding-top: 50px;
+                
+            }
                 
             &__myName{
                 padding-top: 200px;
@@ -35,16 +43,22 @@
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
-                    padding-top: 120px;
-                    font-size: 3.3rem;
+                    padding-top: 150px;
+                    font-size: 3.2rem;
                     text-align: center;
                 }
+
 
                 $breakpoint-tablet: 420px;
                         @media (max-width: $breakpoint-tablet) {
                             padding-top: 90px;
                             font-size: 3rem;
                             text-align: center;
+                        }
+
+                        $breakpoint-tablet: 390px;
+                        @media (max-width: $breakpoint-tablet) {
+                            font-size: 2.6rem;  
                         }
             }
 
@@ -56,7 +70,7 @@
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     text-align: center;
                     
                 }
@@ -66,6 +80,11 @@
                     font-size: 1.7rem;
                     width: 100%;
                     text-align: center;
+                }
+
+                $breakpoint-tablet: 390px;
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: 1.4rem;  
                 }
             }
             &__icons{
