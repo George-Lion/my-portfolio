@@ -15,7 +15,7 @@
     
     &__line{
         width: 40px;
-        height: 10px;
+        height: 5px;
         background: $resalt;
     }
 }
@@ -43,6 +43,7 @@
 
     &__div1{
            padding-left: 50px ;
+
            $breakpoint-tablet: 500px;
            @media (max-width: $breakpoint-tablet) {
                padding-left: 0px ;
@@ -88,9 +89,9 @@
                             font-size: 0.8rem;
 
                             $breakpoint-tablet: 500px;
-                            @media (max-width: $breakpoint-tablet) {
-                            font-size: 0.7rem;
-                        }
+                                @media (max-width: $breakpoint-tablet) {
+                                font-size: 0.7rem;
+                            }
                         }
                     }
                 }

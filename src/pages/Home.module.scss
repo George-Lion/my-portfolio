@@ -80,7 +80,7 @@
                     font-size: 1.6rem;
                     justify-content: center;
                     position: absolute;
-                    top: 530px;
+                    margin-top: 350px;
                 }
                 
             }
@@ -113,6 +113,13 @@
                 cursor: pointer;
                 animation: movebtn 3s ease-in-out infinite;
                 transition: all .5s ease-in-out;
+                
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+               
+                        display: none;
+               
+                }
                 
 
                 &__icon1{
@@ -153,10 +160,12 @@
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
-                    width: 90%;
+                   
+                     width: 85%;
                     left: 25px;
+                    z-index: 6;
                     position: absolute;
-                    top: -20px;
+                    margin-top: 50px;;
                     
                 }
             }

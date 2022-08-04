@@ -9,7 +9,7 @@
 
     &__logo{
         width:100% ;
-        font-size: 40px;
+        font-size: 45px;
         padding-top: 60px;
         color: $resalt;
         text-align: center;
@@ -18,7 +18,7 @@
 
     &__copyright{
         text-align: center;
-        padding-top: 50px;
+        padding-top: 40px;
        
     }
 
@@ -30,9 +30,11 @@
 
         &__icon{
             margin: 40px 10px 0px 10px;
+            font-size: 20px;
 
-           
-            background-color: red;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 
