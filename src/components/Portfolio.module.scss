@@ -24,13 +24,29 @@
     gap:20px;
     }
 
+    $breakpoint-tablet: 390px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 350px;
+        font-size: 1.2rem;
+        margin: 300px auto 0px auto;
+        grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
+    padding: 0px;
+    gap:20px;
+    }
+
         &__box1{
 
             &__title{
                 color: $text2;
                 font-size: 2.2rem;
                 text-align: left;     
+
+                $breakpoint-tablet: 390px;
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: 1.8rem;
+                }
             }
+
 
             &__line{
                 background: $resalt;
@@ -73,8 +89,7 @@
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
                 }
-
-              
+    
         }
 
         &__box4{
@@ -94,6 +109,13 @@
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
             margin-top: 200px;
+            }
+
+            $breakpoint-tablet: 390px;
+            @media (max-width: $breakpoint-tablet) {
+            text-align: center;
+            height: 50px;
+            bottom: 120px;
             }
 
             &__text{
@@ -170,18 +192,6 @@
                 }
             }
 
-
-
-            /* .container:after{
-                content: "";
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                border-radius: 20px 20px 0 0;
-                opacity: 0.7;
-            } */
         }
 }
 }

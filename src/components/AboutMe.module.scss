@@ -73,9 +73,7 @@
         width: 80%;
         margin: 50px 0px 0px 35px;
        
-    }
-
-                
+    }   
         
             }
 
@@ -122,7 +120,7 @@
 
                 $breakpoint-tablet: 390px;
                 @media (max-width: $breakpoint-tablet) {
-                    font-size: 2.2rem;
+                    font-size: 1.8rem;
                     margin: 0px 0px 0px 0px;
                     
                 }
@@ -176,42 +174,63 @@
                     $breakpoint-tablet: 390px;
                     @media (max-width: $breakpoint-tablet) {
                         min-width: 350px;
-                        margin: 30px auto 60px auto;
-                        
+                        margin: 30px auto 40px auto;
+                        font-size: 0.9rem;
                         
                     }
 
-                    &__button{
-                        padding: 20px;
+                    &__btn{
+
+                        width: 100px;
                         background-color: $resalt;
                         color: $text;
                         font-weight: 600;
                         border-radius: 10px;
-                        
-                        $breakpoint-tablet: 500px;
-                        @media (max-width: $breakpoint-tablet) {
-                        width: 100%;
-                        margin-left: 150px;
-                        }
-        
-                        $breakpoint-tablet: 420px;
-                        @media (max-width: $breakpoint-tablet) {
+                        display: flex;
                         justify-content: center;
-                            margin-bottom: 10px;
-                            padding: 10px;
-    
-                        }
-        
-                        &:active {
-                            box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-                            transform: translateY(0.9px);
-                        
-                        }
 
-                        &_icon{
-                            font-size: 23px;
-                        vertical-align: bottom;
+                        $breakpoint-tablet: 390px;
+                        @media (max-width: $breakpoint-tablet) {
+                            width: 100%;
+                            height: 40px;
+                            font-size: 1.2rem;
+                            padding-top: 8px;
+
+                        }
+                        
+                        &__button{
+                            background-color: $resalt;
+                            color: $text;
+                            font-weight: 600;
+                            border-radius: 10px;
                             
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                            
+                            }
+            
+                            $breakpoint-tablet: 420px;
+                            @media (max-width: $breakpoint-tablet) {
+                            
+                            }
+            
+                            &:active {
+                                box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+                                transform: translateY(0.9px);
+                            
+                            }
+
+                            &__icon{
+                                font-size: 23px;
+                            vertical-align: bottom;
+
+                                $breakpoint-tablet: 390px;
+                                @media (max-width: $breakpoint-tablet) {   
+                                    margin-left: 5px;
+                                    font-size: 1.5rem;
+                                }
+                                
+                            }
                         }
                     }
                 }

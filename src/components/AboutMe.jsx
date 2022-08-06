@@ -52,9 +52,14 @@ const AboutMe = () => {
               <p className={styles.bloc2__box__content__box1__text1}>
                 {t("header.description")}
               </p>
-              <div data-aos="fade-up">
+              <div
+                className={styles.bloc2__box__content__box1__text1__btn}
+                data-aos="fade-up"
+              >
                 <a
-                  className={styles.bloc2__box__content__box1__text1__button}
+                  className={
+                    styles.bloc2__box__content__box1__text1__btn__button
+                  }
                   href={pdf}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -62,12 +67,14 @@ const AboutMe = () => {
                   title="Click to download CV"
                 >
                   {t("header.download")}{" "}
-                  <HiDocumentDownload
-                    className={
-                      styles.bloc2__box__content__box1__text1__button_icon
-                    }
-                  />
                 </a>
+                <div
+                  className={
+                    styles.bloc2__box__content__box1__text1__btn__button__icon
+                  }
+                >
+                  <HiDocumentDownload />
+                </div>
               </div>
             </div>
           </div>
