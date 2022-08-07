@@ -2,9 +2,14 @@
 
 .header{
     
-    max-width: 1280px;
+    width: 1280px;
     min-height: 850px;
     margin: auto;
+
+    $breakpoint-tablet: 800px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+    }
 
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
@@ -16,6 +21,12 @@
             margin: auto;
             justify-content: space-between;
             width: 95%;
+
+            $breakpoint-tablet: 800px;
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+                display: block;
+            }
 
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
@@ -40,6 +51,12 @@
                 font-size: 4rem;
                 z-index: 10;
                 
+                $breakpoint-tablet: 800px;
+                @media (max-width: $breakpoint-tablet) {
+                    padding-top: 100px;
+                    font-size: 3.7rem;
+                    text-align: center;
+                }
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
@@ -50,16 +67,16 @@
 
 
                 $breakpoint-tablet: 420px;
-                        @media (max-width: $breakpoint-tablet) {
-                            padding-top: 90px;
-                            font-size: 3rem;
-                            text-align: center;
-                        }
+                @media (max-width: $breakpoint-tablet) {
+                     padding-top: 90px;
+                     font-size: 3rem;
+                     text-align: center;
+                }
 
-                        $breakpoint-tablet: 390px;
-                        @media (max-width: $breakpoint-tablet) {
-                            font-size: 2.6rem;  
-                        }
+                $breakpoint-tablet: 390px;
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: 2.6rem;  
+                }
             }
 
             &__mytitle{
@@ -68,8 +85,18 @@
                 color: $text2;
                 font-size: 2rem;
 
+                $breakpoint-tablet: 800px;
+                @media (max-width: $breakpoint-tablet) {
+
+                    font-size: 2rem;
+                    text-align: center;
+                    padding-top: 10px;
+                    
+                }
+
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
+
                     font-size: 1.8rem;
                     text-align: center;
                     
@@ -77,6 +104,7 @@
 
                 $breakpoint-tablet: 420px;
                 @media (max-width: $breakpoint-tablet) {
+
                     font-size: 1.7rem;
                     width: 100%;
                     text-align: center;
@@ -87,11 +115,22 @@
                     font-size: 1.4rem;  
                 }
             }
+
             &__icons{
+
                 color: $text2;
                 font-size: 2.2rem;
                 margin-top: 30px;
                 display: flex;
+
+                $breakpoint-tablet: 800px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 100%;
+                    font-size: 2.6rem;
+                    justify-content: center;
+                    position: absolute;
+                    margin-top: 350px;
+                }
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
@@ -103,12 +142,22 @@
                 }
                 
             }
+
             &__icon{
+
                 margin-right: 30px;
                 margin-top: 30px;
                 
                 &:hover {
                     transform: scale(1.2);
+                }
+
+                $breakpoint-tablet: 800px;
+                @media (max-width: $breakpoint-tablet) {
+                   margin-right: 20px;
+                   margin-left: 20px;
+                    margin-top: 270px;
+                    
                 }
 
                 $breakpoint-tablet: 500px;
@@ -117,9 +166,18 @@
                     margin-top: 90px;
                     
                 }
+
+                $breakpoint-tablet: 390px;
+                @media (max-width: $breakpoint-tablet) {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    margin-top: 10px;
+                    
+                }
             }
 
             &__mouse{
+
                 align-items: center;
                 width: 180px;
                 height: 60px;
@@ -132,7 +190,14 @@
                 cursor: pointer;
                 animation: movebtn 3s ease-in-out infinite;
                 transition: all .5s ease-in-out;
-                
+
+                $breakpoint-tablet: 800px;
+                @media (max-width: $breakpoint-tablet) {
+               
+                        display: none;
+               
+                }
+
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
                
@@ -177,10 +242,21 @@
                 right: -500px;
                 margin-top: 60px;
 
+                $breakpoint-tablet: 800px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 80%;
+                    left: 5px;
+                    z-index: 6;
+                    position:fixed;
+                    margin: 50px auto 0px auto;
+                    right: 0;
+                    
+                }
+
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
                    
-                     width: 85%;
+                    width: 85%;
                     left: 25px;
                     z-index: 6;
                     position: absolute;
@@ -201,24 +277,6 @@
             }
     
         }
-
-        
-          /*       &__locoo{ 
-                    position: absolute;
-                    z-index: 1000;
-                            &__letricas{
-                                color:rgb(235, 8, 8);
-                                font-size: 3rem;
-                                position: absolute;
-                                z-index: 2000;
-                                bottom: 300px;
-                                text-align: center;
-                                background-color: blue;
-                                width: 100%;
-                                
-                        }
-                } */
-
-            }
+}
 
 
