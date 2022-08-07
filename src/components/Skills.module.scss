@@ -34,7 +34,15 @@
     padding: 20px;
     gap:40px;
 
-        $breakpoint-tablet: 500px;
+            $breakpoint-tablet: 800px;
+            @media (max-width: $breakpoint-tablet) {
+                grid-template-columns: repeat(auto-fit,minmax(800px,1fr));
+                width: 100%;
+                padding: 0px;
+                gap:0px;
+            }
+
+            $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
                 grid-template-columns: repeat(auto-fit,minmax(480px,1fr));
                 width: 100%;
@@ -52,14 +60,17 @@
 
     &__titlex{
         color: $text2;
-        font-size: 1rem;
-
-       
+        font-size: 1rem; 
     }
 
     &__div1{
            padding-left: 50px ;
 
+           $breakpoint-tablet: 800px;
+           @media (max-width: $breakpoint-tablet) {
+               padding-left: 0px ;
+           }
+ 
            $breakpoint-tablet: 500px;
            @media (max-width: $breakpoint-tablet) {
                padding-left: 0px ;
@@ -70,6 +81,12 @@
             color: $resalt;
             margin-bottom: 20px;
             padding-left: 30px ;
+
+            $breakpoint-tablet: 800px;
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 1.4rem;
+                text-align: center;
+            }
 
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
@@ -96,10 +113,17 @@
                     margin: auto;
                     margin-left: 30px;
 
+                    $breakpoint-tablet: 800px;
+                    @media (max-width: $breakpoint-tablet) {
+                        
+                        margin-left: 10px;
+                        justify-content: center;
+                    }
+
                     $breakpoint-tablet: 390px;
                     @media (max-width: $breakpoint-tablet) {
                         font-size: 28px;
-                         margin-left: 10px;
+                        margin-left: 10px;
                     }
 
                     
@@ -108,6 +132,13 @@
                         color: white;
                         text-align: center;
                         margin-right: 40px;
+
+                        $breakpoint-tablet: 800px;
+                        @media (max-width: $breakpoint-tablet) {
+                            font-size: 2.7rem;
+                            margin-right: 35px;
+                            margin-left: 35px;
+                    }
 
                         $breakpoint-tablet: 500px;
                         @media (max-width: $breakpoint-tablet) {
