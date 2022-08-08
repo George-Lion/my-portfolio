@@ -104,6 +104,16 @@
             background: white;
             border-radius: 10px;
 
+            &__dark {
+                color:white;
+                background-color: $ml1;
+              }
+                
+              &__light {
+                color:rgb(0, 0, 0);
+                background-color: $m1;
+              }
+
             &__img3{
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
@@ -113,10 +123,19 @@
         &__box3{
             height: 500px;
             position: relative;
-            background: white;
             bottom: 250px;
             width: auto;
             border-radius: 10px;
+
+            &__dark {
+                color:white;
+                background-color: $ml1;
+              }
+                
+              &__light {
+                color:rgb(0, 0, 0);
+                background-color: $m1;
+              }
 
             $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {
@@ -139,6 +158,17 @@
             height: 500px;
             border-radius: 10px;
             background: white;
+
+            &__dark {
+                color:white;
+                background-color: $ml1;
+              }
+                
+              &__light {
+                color:rgb(0, 0, 0);
+                background-color: $m1;
+              }
+ 
         }
 
         &__box5{

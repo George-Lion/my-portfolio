@@ -103,7 +103,7 @@ const AboutMe = ({ theme }) => {
             </div>
           </div>
           {/* SKILLS */}
-          <Skills />
+          <Skills theme={theme} />
         </div>
       </div>
       <div className={styles.bloc3}></div>

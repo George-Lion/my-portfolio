@@ -9,15 +9,20 @@ import {
   SiHeroku,
   SiTrello,
   SiWindowsterminal,
-  SiAdobephotoshop,
   SiAdobexd,
 } from "react-icons/si";
 import { DiIllustrator, DiPhotoshop } from "react-icons/di";
 
-const Skills = () => {
+const Skills = ({ theme }) => {
   return (
     <Fragment>
-      <div className={styles.title}>
+      <div
+        className={
+          theme == "dark"
+            ? styles.title + " " + styles.title__dark
+            : styles.title + " " + styles.title__light
+        }
+      >
         Skills
         <div className={styles.title__line}></div>
       </div>
@@ -35,7 +40,15 @@ const Skills = () => {
 
           <div className={styles.skills__div1__box__icons}>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -47,7 +60,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -59,7 +80,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -71,7 +100,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -83,7 +120,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -110,7 +155,15 @@ const Skills = () => {
 
           <div className={styles.skills__div1__box__icons}>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -122,7 +175,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -134,7 +195,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -146,7 +215,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -158,7 +235,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -170,7 +255,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -197,7 +290,15 @@ const Skills = () => {
 
           <div className={styles.skills__div1__box__icons}>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -209,7 +310,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -221,7 +330,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -233,7 +350,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -245,7 +370,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -257,7 +390,15 @@ const Skills = () => {
               </div>
             </div>
             <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -284,19 +425,15 @@ const Skills = () => {
 
           <div className={styles.skills__div1__box__icons}>
             <div
-              className={styles.skills__div1__box__icons__icon}
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <SiGithub />
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Github
-                </p>
-              </div>
-            </div>
-            <div
-              className={styles.skills__div1__box__icons__icon}
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
@@ -304,6 +441,26 @@ const Skills = () => {
               <div data-aos="fade-up">
                 <p className={styles.skills__div1__box__icons__icon__title1}>
                   Git
+                </p>
+              </div>
+            </div>
+            <div
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <SiGithub />
+              <div data-aos="fade-up">
+                <p className={styles.skills__div1__box__icons__icon__title1}>
+                  Github
                 </p>
               </div>
             </div>

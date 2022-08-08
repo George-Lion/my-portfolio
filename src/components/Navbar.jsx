@@ -86,7 +86,13 @@ const Navbar = ({ theme, setTheme }) => {
                 >
                   ESP
                 </button>
-                <div className={styles.nav__bar}></div>
+                <div
+                  className={
+                    theme == "dark"
+                      ? styles.nav__bar + " " + styles.nav__bar__dark
+                      : styles.nav__bar + " " + styles.nav__bar__light
+                  }
+                ></div>
                 <button
                   className={
                     state == false ? styles.nav__btn : styles.nav__btn2

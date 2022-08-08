@@ -4,12 +4,9 @@
 
 .header {
     height:100px;
-    /* color: var(--text-primary); */
-    /* background: $m1; */
     z-index: 1000;
     width: 100%;
     padding-top: 20px;
-   /*  box-shadow: 0 1px 5px $primary; */
 
    &__dark {
     color:white;
@@ -141,13 +138,23 @@
             border-radius: 5px;
             margin-right: 3px;
             cursor: pointer;
+            color: $text2;
         }
 
         &__bar{
             height: 20px;
             width: 2px;
             margin: 0px 6px 0px 5px;
-            background-color: $bg;
+
+            &__dark {
+                color:white;
+                background-color: $ml1;
+              }
+                
+              &__light {
+                color:rgb(0, 0, 0);
+                background-color: $m1;
+              }
         }
 
         &__btn2{

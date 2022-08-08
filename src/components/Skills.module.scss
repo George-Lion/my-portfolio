@@ -4,8 +4,15 @@
     margin-top: 130px;
     margin-bottom: 30px;
     font-size: 1.9rem;
-    color: $text2;
     text-align: center;
+
+    &__dark { 
+        color: $ml1;
+    }
+
+    &__light {
+        color:$m1; 
+    }
 
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
@@ -133,6 +140,14 @@
                         color: white;
                         text-align: center;
                         margin-right: 40px;
+
+                        &__dark { 
+                            color: $ml1;
+                        }
+                    
+                        &__light {
+                            color:$m1; 
+                        }
 
                         $breakpoint-tablet: 800px;
                         @media (max-width: $breakpoint-tablet) {

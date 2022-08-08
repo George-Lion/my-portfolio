@@ -35,21 +35,54 @@ const Portfolio = ({ theme }) => {
             </div>
             <div className={styles.master__portfolio__box1__line}></div>
           </div>
-          <div className={styles.master__portfolio__box2} data-aos="fade-up">
+          <div
+            className={
+              theme == "dark"
+                ? styles.master__portfolio__box2 +
+                  " " +
+                  styles.master__portfolio__box2__dark
+                : styles.master__portfolio__box2 +
+                  " " +
+                  styles.master__portfolio__box2__light
+            }
+            data-aos="fade-up"
+          >
             <img
               className={styles.master__portfolio__box2__img3}
               src="http://lh6.ggpht.com/-YENNFxijkjs/UbVW_PKcClI/AAAAAAAAYqY/nqrkLNeNJDA/image%25255B2%25255D.png?imgmax=800"
               alt=""
             />
           </div>
-          <div className={styles.master__portfolio__box3} data-aos="fade-up">
+          <div
+            className={
+              theme == "dark"
+                ? styles.master__portfolio__box3 +
+                  " " +
+                  styles.master__portfolio__box3__dark
+                : styles.master__portfolio__box3 +
+                  " " +
+                  styles.master__portfolio__box3__light
+            }
+            data-aos="fade-up"
+          >
             <img
               className={styles.master__portfolio__box3__img1}
               src={img1}
               alt=""
             />
           </div>
-          <div className={styles.master__portfolio__box4} data-aos="fade-up">
+          <div
+            className={
+              theme == "dark"
+                ? styles.master__portfolio__box4 +
+                  " " +
+                  styles.master__portfolio__box4__dark
+                : styles.master__portfolio__box4 +
+                  " " +
+                  styles.master__portfolio__box4__light
+            }
+            data-aos="fade-up"
+          >
             <img
               className={styles.master__portfolio__box2__img3}
               src="http://vanimg.s3.amazonaws.com/orange-8.jpg"
