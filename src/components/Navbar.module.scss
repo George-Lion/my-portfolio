@@ -4,18 +4,23 @@
 
 .header {
     height:100px;
-    color: var(--text-primary);
-    background: $m1;
+    /* color: var(--text-primary); */
+    /* background: $m1; */
     z-index: 1000;
     width: 100%;
     padding-top: 20px;
    /*  box-shadow: 0 1px 5px $primary; */
 
-   &.dark {
+   &__dark {
     color:white;
-    background-color: black;
+    background-color: $m1;
   }
     
+  &__light {
+    color:rgb(0, 0, 0);
+    background-color: $ml1;
+  }
+
    $breakpoint-tablet: 500px;
    @media (max-width: $breakpoint-tablet) {
     position: fixed;
@@ -85,6 +90,15 @@
     font-size: 50px;
     font-weight: 700;
     color: $resalt;
+
+    &__dark {
+        color:$resalt;
+      }
+        
+      &__light {
+        color:$m1;
+        
+      }
 
     $breakpoint-tablet: 500px;
         @media (max-width: $breakpoint-tablet) {
@@ -168,3 +182,8 @@
     }
 }
 
+.iconlight {
+    font-size: 1.7rem;
+    background-color: none;
+    cursor: pointer;
+}

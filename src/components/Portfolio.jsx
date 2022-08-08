@@ -7,17 +7,28 @@ import { Link } from "react-scroll";
 let url1 = "https://github.com/George-Lion";
 import { useTranslation } from "react-i18next";
 
-const Portfolio = () => {
+const Portfolio = ({ theme }) => {
   let url4 = "https://traveland-v2.herokuapp.com/";
   const [t, i18n] = useTranslation("global");
 
   return (
     <Fragment>
-      <div className={styles.master} id="portfolio">
+      <div
+        className={theme == "dark" ? styles.master__dark : styles.master__light}
+        id="portfolio"
+      >
         <div className={styles.master__portfolio}>
           <div className={styles.master__portfolio__box}>
             <div
-              className={styles.master__portfolio__box1__title}
+              className={
+                theme == "dark"
+                  ? styles.master__portfolio__box1__title +
+                    " " +
+                    styles.master__portfolio__box1__title__dark
+                  : styles.master__portfolio__box1__title +
+                    " " +
+                    styles.master__portfolio__box1__title__light
+              }
               data-aos="fade-up"
             >
               {t("header.projects")}

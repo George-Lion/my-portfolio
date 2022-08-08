@@ -8,11 +8,10 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 import useLocalStorage from "use-local-storage";
 import { Link } from "react-scroll";
-import { switchTheme } from "../components/Navbar";
 import { useTranslation } from "react-i18next";
 import { RiMouseFill, RiArrowDropDownLine } from "react-icons/ri";
 
-const Lop = () => {
+const Lop = ({ theme }) => {
   const [t, i18n] = useTranslation("global");
   let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
@@ -20,93 +19,160 @@ const Lop = () => {
 
   /*  dark mode */
 
-  const [theme, setTheme] = useLocalStorage("theme" ? "dark" : "light");
-
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
-
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <Fragment>
-      <div className={styles.header} data-theme={theme}>
-        <div className={styles.header__box}>
-          <div className="" data-aos="fade-right">
-            <h1 className={styles.header__box__myName}>Jorge León</h1>
-            <p className={styles.header__box__mytitle}>Full Stack Developer</p>
-            <div className={styles.header__box__icons}>
-              <a
-                href={url1}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.header__box__icon}
-                type="button"
-                onClick={() => {}}
-              >
-                <i className="fab fa-github" title="Github"></i>
-              </a>
-              <a
-                type="button"
-                href={url2}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.header__box__icon}
-              >
-                <i className="fab fa-linkedin-in" title="Linkedin"></i>
-              </a>
-              <a
-                type="button"
-                href={url3}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.header__box__icon}
-              >
-                <i className="fab fa-instagram" title="Instagram"></i>
-              </a>
-            </div>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className={styles.nav__item}
-            >
-              <div className={styles.header__box__mouse}>
-                <RiMouseFill className={styles.header__box__mouse__icon1} />
+      <div
+        className={
+          theme == "dark"
+            ? styles.body + " " + styles.body__dark
+            : styles.body + " " + styles.body__light
+        }
+      >
+        <div
+          className={
+            theme == "dark"
+              ? styles.body__header + " " + styles.body__header__dark
+              : styles.body__header + " " + styles.body__header__light
+          }
+        >
+          <div className={styles.body__header__box}>
+            <div className="" data-aos="fade-right">
+              <h1 className={styles.body__header__box__myName}>Jorge León</h1>
+              <p className={styles.body__header__box__mytitle}>
+                Full Stack Developer
+              </p>
+              <div className={styles.body__header__box__icons}>
+                <a
+                  href={url1}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={
+                    theme == "dark"
+                      ? styles.body__header__box__icon +
+                        " " +
+                        styles.body__header__box__icon__dark
+                      : styles.body__header__box__icon +
+                        " " +
+                        styles.body__header__box__icon__light
+                  }
+                  type="button"
+                  onClick={() => {}}
+                >
+                  <i className="fab fa-github" title="Github"></i>
+                </a>
 
-                <p>scroll down</p>
-                <RiArrowDropDownLine
-                  className={styles.header__box__mouse__icon2}
-                />
+                <a
+                  type="button"
+                  href={url2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={
+                    theme == "dark"
+                      ? styles.body__header__box__icon +
+                        " " +
+                        styles.body__header__box__icon__dark
+                      : styles.body__header__box__icon +
+                        " " +
+                        styles.body__header__box__icon__light
+                  }
+                >
+                  <i className="fab fa-linkedin-in" title="Linkedin"></i>
+                </a>
+
+                <a
+                  type="button"
+                  href={url3}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={
+                    theme == "dark"
+                      ? styles.body__header__box__icon +
+                        " " +
+                        styles.body__header__box__icon__dark
+                      : styles.body__header__box__icon +
+                        " " +
+                        styles.body__header__box__icon__light
+                  }
+                >
+                  <i className="fab fa-instagram" title="Instagram"></i>
+                </a>
               </div>
-            </Link>
-          </div>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className={styles.nav__item}
+              >
+                <div className={styles.body__header__box__mouse}>
+                  <RiMouseFill
+                    className={
+                      theme == "dark"
+                        ? styles.body__header__box__mouse__icon1 +
+                          " " +
+                          styles.body__header__box__mouse__icon1__dark
+                        : styles.body__header__box__mouse__icon1 +
+                          " " +
+                          styles.body__header__box__mouse__icon1__light
+                    }
+                  />
 
-          <div data-aos="fade-up-right">
-            <img
-              className={styles.header__box__photo1}
-              src={img5}
-              alt="Traveland page"
-            />
-          </div>
-          <div data-aos="fade-left">
-            <p className={styles.header__box__dedication}>{/*  NEXT TEXT */}</p>
+                  <p
+                    className={
+                      theme == "dark"
+                        ? styles.body__header__box__mouse__txt +
+                          " " +
+                          styles.body__header__box__mouse__txt__dark
+                        : styles.body__header__box__mouse__txt +
+                          " " +
+                          styles.body__header__box__mouse__txt__light
+                    }
+                  >
+                    scroll down
+                  </p>
+                  <RiArrowDropDownLine
+                    className={
+                      theme == "dark"
+                        ? styles.body__header__box__mouse__icon2 +
+                          " " +
+                          styles.body__header__box__mouse__icon2__dark
+                        : styles.body__header__box__mouse__icon2 +
+                          " " +
+                          styles.body__header__box__mouse__icon2__light
+                    }
+                  />
+                </div>
+              </Link>
+            </div>
+
+            <div data-aos="fade-up-right">
+              <img
+                className={styles.body__header__box__photo1}
+                src={img5}
+                alt="Traveland page"
+              />
+            </div>
+            <div data-aos="fade-left">
+              <p className={styles.body__header__box__dedication}>
+                {/*  NEXT TEXT */}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div className={styles.header__bottom}></div>
+      <div className={styles.body__header__bottom}></div>
 
       {/* ABOUT ME */}
 
-      <AboutMe />
+      <AboutMe theme={theme} />
 
       {/*  PORTFOLIO */}
 
-      <Portfolio />
+      <Portfolio theme={theme} />
 
       {/* Contact */}
 

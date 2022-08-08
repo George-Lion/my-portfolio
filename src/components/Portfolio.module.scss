@@ -6,6 +6,16 @@
     z-index: 1;
     padding-top: 50px;
 
+    &__dark {
+        color:white;
+        background-color: $m1;
+      }
+        
+      &__light {
+        color:rgb(0, 0, 0);
+        background-color: $ml1;
+      }
+
 &__portfolio{
     width: 1280px;
     margin: auto;
@@ -50,6 +60,14 @@
                 color: $text2;
                 font-size: 2.2rem;
                 text-align: left; 
+
+                &__dark {
+                    color:white;
+                  }
+                    
+                  &__light {
+                    color:rgb(0, 0, 0);
+                  }
                 
                 $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {

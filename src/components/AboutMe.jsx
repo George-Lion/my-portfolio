@@ -15,16 +15,22 @@ import {
   SiAdobexd,
 } from "react-icons/si";
 import { HiDocumentDownload } from "react-icons/hi";
-import { DiIllustrator, DiPhotoshop } from "react-icons/di";
 
 import styles from "./AboutMe.module.scss";
 import { useTranslation } from "react-i18next";
 
-const AboutMe = () => {
+const AboutMe = ({ theme }) => {
   const [t, i18n] = useTranslation("global");
   return (
     <Fragment>
-      <div className={styles.bloc2} id="about">
+      <div
+        className={
+          theme == "dark"
+            ? styles.bloc2 + " " + styles.bloc2__dark
+            : styles.bloc2 + " " + styles.bloc2__light
+        }
+        id="about"
+      >
         <div className={styles.bloc2__box} data-aos="fade-up">
           <div className={styles.bloc2__box__content} data-aos="fade-up">
             <div>
@@ -43,13 +49,31 @@ const AboutMe = () => {
                 </p>
               </div>
               <div
-                className={styles.bloc2__box__content__box1__me}
+                className={
+                  theme == "dark"
+                    ? styles.bloc2__box__content__box1__me +
+                      " " +
+                      styles.bloc2__box__content__box1__me__dark
+                    : styles.bloc2__box__content__box1__me +
+                      " " +
+                      styles.bloc2__box__content__box1__me__light
+                }
                 data-aos="fade-up"
               >
                 {t("header.about-me")}
               </div>
               <div className={styles.bloc2__box__content__box1__line}></div>
-              <p className={styles.bloc2__box__content__box1__text1}>
+              <p
+                className={
+                  theme == "dark"
+                    ? styles.bloc2__box__content__box1__text1 +
+                      " " +
+                      styles.bloc2__box__content__box1__text1__dark
+                    : styles.bloc2__box__content__box1__text1 +
+                      " " +
+                      styles.bloc2__box__content__box1__text1__light
+                }
+              >
                 {t("header.description")}
               </p>
               <div

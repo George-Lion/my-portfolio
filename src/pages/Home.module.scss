@@ -1,6 +1,19 @@
 @import "./../SCSS/abstracts/variables.scss";
 
-.header{
+
+.body{
+
+    &__dark {
+        color: $text2;
+        background-color: $m1;
+      }
+        
+    &__light {
+        color: $text;
+        background-color: $ml1;
+    }
+    
+    &__header{
     
     width: 1280px;
     min-height: 850px;
@@ -14,6 +27,16 @@
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
         width: 100%;
+    }
+
+    &__dark {
+        color: $text2;
+        background-color: $m1;
+      }
+        
+    &__light {
+        color: $textl;
+        background-color: $ml1;
     }
 
         &__box{
@@ -38,16 +61,14 @@
             @media (max-width: $breakpoint-tablet) {
                 width: 100%;
                 display: block;
-                padding-top: 50px;
-                
+                padding-top: 50px;    
             }
                 
             &__myName{
                 padding-top: 200px;
                 text-align: center;
                 width: 100%;
-                text-align: left;
-                color: $text2;
+                text-align: left;   
                 font-size: 4rem;
                 z-index: 10;
                 
@@ -82,12 +103,10 @@
             &__mytitle{
                 padding-top: 1rem;
                 text-align: left;
-                color: $text2;
                 font-size: 2rem;
 
                 $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {
-
                     font-size: 2rem;
                     text-align: center;
                     padding-top: 10px;
@@ -96,7 +115,6 @@
 
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
-
                     font-size: 1.8rem;
                     text-align: center;
                     
@@ -117,8 +135,6 @@
             }
 
             &__icons{
-
-                color: $text2;
                 font-size: 2.2rem;
                 margin-top: 30px;
                 display: flex;
@@ -144,13 +160,24 @@
             }
 
             &__icon{
-
                 margin-right: 30px;
                 margin-top: 30px;
+
+                &__dark {
+                    color: $text2;
+                    
+                  }
+                    
+                &__light {
+                    color: $textl;
+                    
+                }
                 
                 &:hover {
                     transform: scale(1.2);
                 }
+
+                
 
                 $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {
@@ -184,7 +211,6 @@
                 display: flex;
                 justify-content: space-between;
                 font-size: 18px;
-                color: $text2;
                 margin-top: 250px;
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
                 cursor: pointer;
@@ -209,6 +235,29 @@
                 &__icon1{
                    color: $resalt;
                    font-size: 32px;
+
+                    &__dark {
+                    color: $resalt;
+                    
+                    }
+                    
+                    &__light {
+                    color: $textl;
+                    
+                    }
+                }
+
+                &__txt{
+                    font-size: 1rem;
+                    &__dark {
+                        color: $resalt;
+                        
+                        }
+                        
+                        &__light {
+                        color: $textl;
+                        
+                        }
                 }
 
                 &__icon2{
@@ -216,6 +265,16 @@
                     color: $resalt;
                     height: 40px;
                     width: 40px;
+
+                    &__dark {
+                        color: $resalt;
+                        
+                        }
+                        
+                        &__light {
+                        color: $textl;
+                        
+                        }
                 }
 
                 @keyframes movebtn {
@@ -268,15 +327,12 @@
             &__dedication{
                 width: 350px;
                 margin-top:16rem;
-                
                 z-index: 0;
-                color: $text2;
                 text-align: justify;
                 line-height: 1.2;
                 font-size: 1.2rem;
             }
     
         }
-}
-
+}   }
 

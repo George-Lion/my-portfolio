@@ -4,6 +4,17 @@
     height: 1200px;
     width: 100%;
 
+    &__dark {
+        color: $text2;
+        background-color: $m1;
+      }
+        
+    &__light {
+        color: $textl;
+        background-color: $ml1;
+    }
+
+
     $breakpoint-tablet: 800px;
     @media (max-width: $breakpoint-tablet) {
         width: 100%;
@@ -137,6 +148,14 @@
                 margin-bottom: 10px;
                 padding-top: 5px;
 
+                &__dark {
+                    color: $text2;
+                  }
+                    
+                &__light {
+                    color: $textl;
+                }
+
                 $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {
                     font-size: 1.8rem;
@@ -192,6 +211,14 @@
                     margin-top: 25px;
                     margin-bottom: 65px;
 
+                    &__dark {
+                        color: $text2;
+                      }
+                        
+                    &__light {
+                        color: $textl;
+                    }
+
                     $breakpoint-tablet: 800px;
                     @media (max-width: $breakpoint-tablet) {
                         min-width: 350px;
@@ -227,7 +254,8 @@
 
                     &__btn{
 
-                        width: 100px;
+                        width: 200px;
+                        height: 50px;
                         background-color: $resalt;
                         color: $text;
                         font-weight: 600;
@@ -249,7 +277,7 @@
                             width: 100%;
                             height: 40px;
                             font-size: 1.2rem;
-                            padding-top: 8px;
+                            margin-top: 20px;
 
                         }
                         
@@ -258,6 +286,7 @@
                             color: $text;
                             font-weight: 600;
                             border-radius: 10px;
+                            margin-top: 15px;
                             
                             $breakpoint-tablet: 500px;
                             @media (max-width: $breakpoint-tablet) {
@@ -268,6 +297,11 @@
                             @media (max-width: $breakpoint-tablet) {
                             
                             }
+
+                            $breakpoint-tablet: 390px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-top: 0px;
+                            }
             
                             &:active {
                                 box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
@@ -277,7 +311,8 @@
 
                             &__icon{
                                 font-size: 23px;
-                                vertical-align: bottom;
+                                margin-top: 12px;
+                                margin-left: 5px;
 
                                 $breakpoint-tablet: 800px;
                                 @media (max-width: $breakpoint-tablet) {   
@@ -288,6 +323,8 @@
                                 $breakpoint-tablet: 390px;
                                 @media (max-width: $breakpoint-tablet) {   
                                     margin-left: 5px;
+                                    margin-top: 0px;
+                                    padding-bottom: 10px;
                                     font-size: 1.5rem;
                                 }
                                 

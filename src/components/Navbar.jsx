@@ -5,8 +5,10 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import { HiSun } from "react-icons/hi";
+import { RiMoonClearFill } from "react-icons/ri";
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
   const [t, i18n] = useTranslation("global");
   const [menuOpen, setMenuOpen] = useState(false);
   const menuToggler = () => setMenuOpen((p) => !p);
@@ -18,10 +20,22 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      <div className={styles.header}>
+      <div
+        className={
+          theme == "dark"
+            ? styles.header + " " + styles.header__dark
+            : styles.header + " " + styles.header__light
+        }
+      >
         <div className={styles.header__content}>
           <div data-aos="zoom-in">
-            <span className={styles.logo}>
+            <span
+              className={
+                theme == "dark"
+                  ? styles.logo + " " + styles.logo__dark
+                  : styles.logo + " " + styles.logo__light
+              }
+            >
               <i className="fab fa-gg-circle"></i>
             </span>
           </div>
@@ -85,6 +99,20 @@ const Navbar = () => {
                   ENG
                 </button>
               </div>
+              <button
+                className={
+                  theme == "dark" ? styles.header__dark : styles.header__light
+                }
+                onClick={() => {
+                  setTheme();
+                }}
+              >
+                {theme == "dark" ? (
+                  <HiSun className={styles.iconlight} />
+                ) : (
+                  <RiMoonClearFill className={styles.iconlight} />
+                )}
+              </button>
             </nav>
           </div>
           <div>
@@ -94,11 +122,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* <div className="row">
+        <div className="col-md-6 col-sm-12"></div>
+        <div className="col-md-6 col-sm-12"></div>
+      </div> */}
     </Fragment>
   );
 };
-export const switchTheme = () => {
-  const newTheme = theme === "light" ? "dark" : "light";
-  setTheme(newTheme);
-};
+
 export default Navbar;
