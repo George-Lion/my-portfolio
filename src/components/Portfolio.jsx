@@ -8,7 +8,8 @@ let url1 = "https://github.com/George-Lion";
 import { useTranslation } from "react-i18next";
 
 const Portfolio = ({ theme }) => {
-  let url4 = "https://traveland-v2.herokuapp.com/";
+  let url1 = "https://traveland-v2.herokuapp.com/";
+  let url2 = "https://github.com/George-Lion/FINAL-PROJECT-X";
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -33,8 +34,14 @@ const Portfolio = ({ theme }) => {
             >
               {t("header.projects")}
             </div>
+
+            {/* BOX 1 */}
+
             <div className={styles.master__portfolio__box1__line}></div>
           </div>
+
+          {/* BOX 2 */}
+
           <div
             className={
               theme == "dark"
@@ -52,7 +59,38 @@ const Portfolio = ({ theme }) => {
               src="http://lh6.ggpht.com/-YENNFxijkjs/UbVW_PKcClI/AAAAAAAAYqY/nqrkLNeNJDA/image%25255B2%25255D.png?imgmax=800"
               alt=""
             />
+
+            <div className={styles.master__portfolio__box2__button}>
+              <a
+                href={url1}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                onClick={() => {}}
+              >
+                <button className={styles.master__portfolio__box2__button__btn}>
+                  Demo
+                </button>
+              </a>
+              <a
+                href={url2}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                onClick={() => {}}
+              >
+                <button className={styles.master__portfolio__box2__button__btn}>
+                  Code
+                </button>
+              </a>
+              <button className={styles.master__portfolio__box2__button__btn}>
+                more info
+              </button>
+            </div>
           </div>
+
+          {/* BOX 3 */}
+
           <div
             className={
               theme == "dark"
@@ -70,7 +108,37 @@ const Portfolio = ({ theme }) => {
               src={img1}
               alt=""
             />
+            <div className={styles.master__portfolio__box2__button}>
+              <a
+                href={url1}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                onClick={() => {}}
+              >
+                <button className={styles.master__portfolio__box2__button__btn}>
+                  Demo
+                </button>
+              </a>
+              <a
+                href={url2}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                onClick={() => {}}
+              >
+                <button className={styles.master__portfolio__box2__button__btn}>
+                  Code
+                </button>
+              </a>
+              <button className={styles.master__portfolio__box2__button__btn}>
+                more info
+              </button>
+            </div>
           </div>
+
+          {/* BOX 4 */}
+
           <div
             className={
               theme == "dark"
@@ -88,7 +156,37 @@ const Portfolio = ({ theme }) => {
               src="http://vanimg.s3.amazonaws.com/orange-8.jpg"
               alt=""
             />
+
+            <div className={styles.master__portfolio__box2__button}>
+              <a
+                href={url1}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                onClick={() => {}}
+              >
+                <button className={styles.master__portfolio__box2__button__btn}>
+                  Demo
+                </button>
+              </a>
+              <a
+                href={url2}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                onClick={() => {}}
+              >
+                <button className={styles.master__portfolio__box2__button__btn}>
+                  Code
+                </button>
+              </a>
+              <button className={styles.master__portfolio__box2__button__btn}>
+                more info
+              </button>
+            </div>
           </div>
+
+          {/* BOX 5 */}
 
           <div className={styles.master__portfolio__box5}>
             <a

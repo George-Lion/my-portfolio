@@ -35,7 +35,7 @@ const Skills = ({ theme }) => {
             data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
           >
-            <h4>UI</h4>
+            <h4>UI design</h4>
           </div>
 
           <div className={styles.skills__div1__box__icons}>
