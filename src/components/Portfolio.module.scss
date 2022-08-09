@@ -4,7 +4,7 @@
     height: auto;
     width: 100%;
     z-index: 1;
-    padding-top: 50px;
+    padding-top: 100px;
 
     &__dark {
         color:white;
@@ -18,6 +18,7 @@
 
 &__portfolio{
     width: 1280px;
+    height: 100%;
     margin: auto;
     max-height: auto;
     display: grid;
@@ -25,11 +26,21 @@
                 padding: 20px;
                 gap:20px;
 
+                $breakpoint-tablet: 980px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 90%;
+        font-size: 1.2rem;
+        margin: 0px auto 0px auto;
+        grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
+        padding: 0px;
+        gap:20px;
+    }
+
     $breakpoint-tablet: 800px;
     @media (max-width: $breakpoint-tablet) {
         width: 90%;
         font-size: 1.2rem;
-        margin: 20px auto 0px auto;
+        margin: 0px auto 0px auto;
         grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
     padding: 0px;
     gap:20px;
@@ -48,7 +59,7 @@
     @media (max-width: $breakpoint-tablet) {
         width: 350px;
         font-size: 1.2rem;
-        margin: 300px auto 0px auto;
+        margin: 0px auto 0px auto;
         grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
     padding: 0px;
     gap:20px;
@@ -60,6 +71,7 @@
                 color: $text2;
                 font-size: 2.2rem;
                 text-align: left; 
+                
 
                 &__dark {
                     color:white;
@@ -68,7 +80,7 @@
                   &__light {
                     color:rgb(0, 0, 0);
                   }
-                
+                 
                 $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {
                     font-size: 1.9rem;
@@ -77,6 +89,7 @@
                 $breakpoint-tablet: 390px;
                 @media (max-width: $breakpoint-tablet) {
                     font-size: 1.8rem;
+                    padding-top: 10px;
                 }
             }
 
@@ -86,6 +99,11 @@
                 height: 5px;
                 width: 40px;
                 margin-bottom: 450px;
+
+                $breakpoint-tablet: 980px;
+            @media (max-width: $breakpoint-tablet) {
+                margin-bottom: 40px;
+            }
 
                 $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {
@@ -136,6 +154,11 @@
                 color:rgb(0, 0, 0);
                 background-color: $m1;
               }
+
+              $breakpoint-tablet: 980px;
+              @media (max-width: $breakpoint-tablet) {
+                position:static;
+                }
 
             $breakpoint-tablet: 800px;
                 @media (max-width: $breakpoint-tablet) {
@@ -208,7 +231,7 @@
         &__box{
             width: 90%;
             margin: auto;
-            
+
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
             width: 100%;

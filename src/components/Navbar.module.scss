@@ -26,9 +26,14 @@
    }
 
     &__content {
-        max-width: 80%;
+        width: 80%;
         margin: 0 auto;
         padding: 0 $spacing-md;
+
+        $breakpoint-tablet: 980px;
+                @media (max-width: $breakpoint-tablet) { 
+                    width: 100%;    
+                }
         @include breakpoint(md) {
             padding: 0 $spacing-lg;
         }

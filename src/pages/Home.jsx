@@ -156,11 +156,6 @@ const Lop = ({ theme }) => {
                 alt="Traveland page"
               />
             </div>
-            <div data-aos="fade-left">
-              <p className={styles.body__header__box__dedication}>
-                {/*  NEXT TEXT */}
-              </p>
-            </div>
           </div>
         </div>
       </div>

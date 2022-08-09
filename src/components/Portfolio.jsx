@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import img1 from "../img/Traveland1.png";
 import img3 from "../img/StarWars.jpg";
-import { HiArrowSmRight, HiDocumentDownload } from "react-icons/hi";
+import { HiArrowSmRight } from "react-icons/hi";
 import styles from "./Portfolio.module.scss";
 import { Link } from "react-scroll";
 let url1 = "https://github.com/George-Lion";
