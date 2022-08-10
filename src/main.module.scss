@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 *,
@@ -7,10 +8,14 @@
     box-sizing: border-box;
 }
 
-
+html, body{
+    font-family: "Ubuntu", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 main {
-
+    font-family: "Ubuntu", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,13 +24,6 @@ main {
         font-size: 38px;
         text-align: center;
         font-weight: 700;
-       
-   
-
-
-   
-
-     
     }
 }
 
@@ -63,5 +61,58 @@ button{
     h1{
         font-size: 1rem;
         color: green($color: #000000);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+
+$ubuntu-font: "Ubuntu", sans-serif;
+
+$bg: rgb(255, 255, 255);
+$bg2: #17202A ;
+$bg3:#208BDB;
+$bg4: #0a3a5f;
+$bg5: rgb(16, 22, 31) ;
+$m1: #2a2e3d;
+$m2: #1b1e27;
+$ml1: #ffffff;
+$textl: #151e24;
+$text: rgb(15, 15, 15);
+$text2: rgb(240, 240, 240);
+$text3: rgb(0, 121, 30);
+$resalt: #f5b956;
+$primary: rgb(22, 210, 247);
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+$header-height: 72px;
+
+$ss: 300px;
+$sm: 37.5em;
+$md: 48em;
+$lg: 64em;
+$xl: 75em;
+
+@mixin transform($transforms) {
+    -webkit-transform: $transforms;
+    -moz-transform: $transforms;
+    -ms-transform: $transforms;
+    -o-transform: $transforms;
+    transform: $transforms;
+  }
+
+@mixin scale($scale) { @include transform(scale($scale)); }
+
+@mixin translate($x, $y) { @include transform(translate($x, $y)); }
+  
+@mixin breakpoint($point) {
+    @if $point == md {
+        @media (min-width: $md) {
+            @content;
+        }
     }
 }
