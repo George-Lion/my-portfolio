@@ -33,9 +33,9 @@ const AboutMe = ({ theme }) => {
       >
         <div className={styles.bloc2__box} data-aos="fade-up">
           <div className={styles.bloc2__box__content} data-aos="fade-up">
-            <div>
+            <div className={styles.bloc2__box__content__picbox}>
               <img
-                className={styles.bloc2__box__content__picture1}
+                className={styles.bloc2__box__content__picbox__picture1}
                 src={img2}
               />
             </div>

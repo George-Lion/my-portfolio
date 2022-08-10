@@ -20,9 +20,9 @@
         margin-left: 20px;
     }
 
-    $breakpoint-tablet: 390px;
+    $breakpoint-tablet: 499px;
             @media (max-width: $breakpoint-tablet) {
-                margin-top: 70px;
+                margin-top: 40px;
                 font-size: 1.8rem;
             }
     
@@ -30,7 +30,7 @@
         width: 40px;
         height: 5px;
         background: $resalt;
-        margin-left: 605px;
+        
     }
 }
 
@@ -46,7 +46,6 @@
             @media (max-width: $breakpoint-tablet) {
                 width: 100%;
                 grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
-               
                 padding: 0px;
                 gap:0px;
             }
@@ -67,7 +66,7 @@
                 gap:0px;
             }
 
-            $breakpoint-tablet: 390px;
+            $breakpoint-tablet: 499px;
             @media (max-width: $breakpoint-tablet) {
                 grid-template-columns: repeat(auto-fit,minmax(80%,1fr));
                 width: 100%;
@@ -111,7 +110,7 @@
                 padding-left: 0px ;
                 text-align: center;
             }
-            $breakpoint-tablet: 390px;
+            $breakpoint-tablet: 499px;
             @media (max-width: $breakpoint-tablet) {
                 font-size: 1.4rem;
             }
@@ -124,7 +123,7 @@
 
             
                 &__icons{
-                    margin-top: 10px;
+                    
                     height: 90px;
                     display: flex;
                     margin-left: 30px;
@@ -136,9 +135,10 @@
                         justify-content: center;
                     }
 
-                    $breakpoint-tablet: 390px;
+                    $breakpoint-tablet: 499px;
                     @media (max-width: $breakpoint-tablet) {
                         font-size: 28px;
+                        justify-content: space-around;
                         margin-left: 10px;
                     }
 
@@ -170,7 +170,7 @@
                             margin-right: 30px;
                         }
 
-                        $breakpoint-tablet: 390px;
+                        $breakpoint-tablet: 499px;
                         @media (max-width: $breakpoint-tablet) {
                             font-size: 28px;
                             margin-right: 13px;
@@ -185,7 +185,7 @@
                                 font-size: 0.7rem;
                             }
 
-                            $breakpoint-tablet: 390px;
+                            $breakpoint-tablet: 499px;
                             @media (max-width: $breakpoint-tablet) {
                                 font-size: 0.6rem;
                             }

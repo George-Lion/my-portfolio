@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-
+:root{
+    /*fonts*/
+    --font-poppins: 'Poppins', sans-serif;
+    /*colors*/
+    --background:  #17202A;
+    --text-primary: #fff;
+    --text-secondary: #8e05c2;
+    --accent: #8e05c2;
+    --border: #333;
+    --form-bg: #fff;
+    --textPrimaryColor: #000;
+  --backgroundPrimaryColor: #fff;
+}
 
 $ubuntu-font: "Ubuntu", sans-serif;
 

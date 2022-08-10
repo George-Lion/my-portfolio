@@ -6,7 +6,6 @@ import AboutMe from "../components/AboutMe";
 import img5 from "../img/e.png";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
-import useLocalStorage from "use-local-storage";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import { RiMouseFill, RiArrowDropDownLine } from "react-icons/ri";
