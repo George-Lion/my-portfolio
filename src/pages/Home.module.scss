@@ -111,7 +111,7 @@
                         $breakpoint-tablet: 499px;
                         @media (max-width: $breakpoint-tablet) {
                             font-size: 2.8rem; 
-                            padding-top: 110px; 
+                            padding-top: 90px; 
                         }   
                     }
 
@@ -324,6 +324,7 @@
                 width: 700px;
                 border-radius: 20px;
                 margin-top: 70px;
+
                 $breakpoint-tablet: 1600px;
                 @media (max-width: $breakpoint-tablet) { 
                     width: 650px; 
@@ -363,6 +364,26 @@
                     z-index: 6;
                     position: absolute;
                     margin-top: 50px;
+                    
+                }
+
+                $breakpoint-tablet: 499px;
+                @media (max-width: $breakpoint-tablet) { 
+                    width: 400px;
+                    left: 0px;
+                    z-index: 6;
+                    position: absolute;
+                    margin: 50px auto 0px auto;
+                    
+                }
+
+                $breakpoint-tablet: 400px;
+                @media (max-width: $breakpoint-tablet) { 
+                    width: 350px;
+                    left: 0px;
+                    z-index: 6;
+                    position: absolute;
+                    margin: 50px auto 0px auto;
                     
                 }
 
