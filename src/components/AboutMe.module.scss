@@ -118,6 +118,17 @@
                     justify-content: left;
                 }
 
+                $breakpoint-tablet: 420px;
+                    @media (max-width: $breakpoint-tablet) {
+                        height: 320px;
+                        
+                    }
+
+                    $breakpoint-tablet: 377px;
+                    @media (max-width: $breakpoint-tablet) {
+                        height: 370px;
+                    }
+
                 &__text0{ 
                     color: $resalt;
                     font-size: 1.2rem;
@@ -213,7 +224,23 @@
                     $breakpoint-tablet: 500px;
                     @media (max-width: $breakpoint-tablet) {
                         width: 100%;
-                        margin: 30px 10px 30px 0px;
+                        margin: 30px 10px 40px 0px;
+                        font-size: 0.9rem;
+                        
+                    }
+
+                    $breakpoint-tablet: 377px;
+                    @media (max-width: $breakpoint-tablet) {
+                        width: 100%;
+                        margin: 30px 10px 45px 0px;
+                        font-size: 0.9rem;
+                        
+                    }
+
+                    $breakpoint-tablet: 340px;
+                    @media (max-width: $breakpoint-tablet) {
+                        width: 100%;
+                        margin: 30px 10px 60px 0px;
                         font-size: 0.9rem;
                         
                     }
