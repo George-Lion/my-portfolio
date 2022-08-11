@@ -78,7 +78,11 @@ const Navbar = ({ theme, setTheme }) => {
               </div>
               <div data-aos="fade-left" className={styles.nav__item}>
                 <button
-                  className={state == true ? styles.nav__btn : styles.nav__btn2}
+                  className={
+                    state == true
+                      ? styles.nav__item__btn
+                      : styles.nav__item__btn2
+                  }
                   onClick={() => {
                     i18n.changeLanguage("es");
                     setState(true);

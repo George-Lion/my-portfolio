@@ -5,6 +5,7 @@ import ReactTooltip from "react-tooltip";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
   const [t, i18n] = useTranslation("global");
 
@@ -51,6 +52,17 @@ const Contact = () => {
               data-aos="fade-up"
             ></div>
             <div className={styles.contact__master__ikon}>
+              <div className={styles.contact__master__ikon__icon}>
+                <a
+                  className={styles.footer__ikon__icon}
+                  href={url1}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <i className="fab fa-github" title="Github"></i>
+                </a>
+              </div>
               <div className={styles.contact__master__ikon__icon}>
                 <a
                   href={url2}

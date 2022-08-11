@@ -68,9 +68,14 @@
                 color: $text2;
                 font-size: 2rem;
                 text-align: center;
-               margin-right: 30px;
+                margin-right: 30px;
                 margin-bottom: 25px;
                 cursor: pointer;
+
+                $breakpoint-tablet: 500px;
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: 1.8rem;
+                }
 
                 &:hover {
                     transform: scale(1.2);
