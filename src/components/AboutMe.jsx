@@ -2,18 +2,6 @@ import React, { Fragment } from "react";
 import pdf from "../resources/Jorge_Leon_CV.pdf";
 import img2 from "../img/me.png";
 import Skills from "../components/Skills";
-import {
-  SiPostgresql,
-  SiFlask,
-  SiMysql,
-  SiGithub,
-  SiGit,
-  SiHeroku,
-  SiTrello,
-  SiWindowsterminal,
-  SiAdobephotoshop,
-  SiAdobexd,
-} from "react-icons/si";
 import { HiDocumentDownload } from "react-icons/hi";
 
 import styles from "./AboutMe.module.scss";

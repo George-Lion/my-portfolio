@@ -9,7 +9,7 @@
 
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
-        padding-top: 50px;
+        padding-top: 90px;
         width: 100%;
     }
 
@@ -48,7 +48,14 @@
                 width: 40px;
                 height: 5px;
                 background: $resalt;
+                margin-bottom: 40px;
+
+                $breakpoint-tablet: 500px;
+            @media (max-width: $breakpoint-tablet) {
                 margin-bottom: 10px;
+                
+            }
+
             }
 
            
@@ -56,12 +63,14 @@
 
         &__ikon{
             width: 20%;
+            margin-top: 20px;
+
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
                 display: flex;
                 width:90%;
                 justify-content: center;
-               
+                
             }
 
             &__icon{

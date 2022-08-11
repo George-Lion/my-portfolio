@@ -19,131 +19,14 @@ const Skills = ({ theme }) => {
       <div
         className={
           theme == "dark"
-            ? styles.title + " " + styles.title__dark
-            : styles.title + " " + styles.title__light
+            ? styles.titlec + " " + styles.titlec__dark
+            : styles.titlec + " " + styles.titlec__light
         }
       >
         Skills
-        <div className={styles.title__line}></div>
+        <div className={styles.titlec__line}></div>
       </div>
       <div className={styles.skills}>
-        {/* UI */}
-
-        <div className={styles.skills__div1}>
-          <div
-            className={styles.skills__div1__title}
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <h4>UI design</h4>
-          </div>
-
-          <div className={styles.skills__div1__box__icons}>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <i className="fab fa-figma"></i>
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Figma
-                </p>
-              </div>
-            </div>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <SiAdobexd />
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Adobe XD
-                </p>
-              </div>
-            </div>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <DiPhotoshop />
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Photoshop
-                </p>
-              </div>
-            </div>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <DiIllustrator />
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Illustrator
-                </p>
-              </div>
-            </div>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <i className="fas fa-mobile-alt"></i>
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Responsive web
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* FRONTEND */}
-
         <div className={styles.skills__div1}>
           <div
             className={styles.skills__div1__title}
@@ -322,26 +205,6 @@ const Skills = ({ theme }) => {
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
-              <i className="fab fa-npm"></i>
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  NPM
-                </p>
-              </div>
-            </div>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
               <SiPostgresql />
               <div data-aos="fade-up">
                 <p className={styles.skills__div1__box__icons__icon__title1}>
@@ -406,6 +269,121 @@ const Skills = ({ theme }) => {
               <div data-aos="fade-up">
                 <p className={styles.skills__div1__box__icons__icon__title1}>
                   Comand Line
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* UI */}
+
+        <div className={styles.skills__div1}>
+          <div
+            className={styles.skills__div1__title}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <h4>UI design</h4>
+          </div>
+
+          <div className={styles.skills__div1__box__icons}>
+            <div
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <i className="fab fa-figma"></i>
+              <div data-aos="fade-up">
+                <p className={styles.skills__div1__box__icons__icon__title1}>
+                  Figma
+                </p>
+              </div>
+            </div>
+            <div
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <SiAdobexd />
+              <div data-aos="fade-up">
+                <p className={styles.skills__div1__box__icons__icon__title1}>
+                  Adobe XD
+                </p>
+              </div>
+            </div>
+            <div
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <DiPhotoshop />
+              <div data-aos="fade-up">
+                <p className={styles.skills__div1__box__icons__icon__title1}>
+                  Photoshop
+                </p>
+              </div>
+            </div>
+            <div
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <DiIllustrator />
+              <div data-aos="fade-up">
+                <p className={styles.skills__div1__box__icons__icon__title1}>
+                  Illustrator
+                </p>
+              </div>
+            </div>
+            <div
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
+              <i className="fas fa-mobile-alt"></i>
+              <div data-aos="fade-up">
+                <p className={styles.skills__div1__box__icons__icon__title1}>
+                  Responsive web
                 </p>
               </div>
             </div>

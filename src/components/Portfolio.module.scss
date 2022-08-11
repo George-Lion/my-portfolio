@@ -17,13 +17,22 @@
         }
 
         &__portfolio{
-            width: 1280px;
-            height: 100%;
-            margin: auto;
+           width: 70%;
+           margin: auto;
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-            padding: 20px 0px 20px 20px;
+            padding: 20px 0px 20px 0px;
             gap:20px;
+
+            $breakpoint-tablet: 1460px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 70%;
+                    margin: auto;
+                     display: grid;
+                     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+                     padding: 20px 0px 20px 0px;
+                     gap:20px;
+                }
 
                 $breakpoint-tablet: 980px;
                 @media (max-width: $breakpoint-tablet) {
@@ -48,6 +57,7 @@
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 90%;
+                    height: 1550px;
                     font-size: 1.2rem;
                     margin: 0px auto 0px auto;
                     grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
@@ -55,8 +65,8 @@
                     gap:20px;
                 }
 
-            &__box1{
-
+                &__box1{
+                    width: 100%;
                 &__title{
                     color: $text2;
                     font-size: 2.2rem;
@@ -83,7 +93,7 @@
                     $breakpoint-tablet: 500px;
                     @media (max-width: $breakpoint-tablet) {
                         font-size: 1.8rem;
-                        padding-top: 10px;
+                        padding-top: 110px;
                     }
                 }
 
@@ -158,8 +168,7 @@
                         @media (max-width: $breakpoint-tablet) {
                             width: 95%;
                             height: 50px;
-                         
-                
+
                         }
 
                         &:active {
@@ -287,6 +296,7 @@
             text-align: center;
             height: 50px;
             bottom: 120px;
+            margin-top: 180px;
             }
 
             &__text{

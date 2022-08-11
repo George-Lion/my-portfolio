@@ -1,11 +1,12 @@
 @import "./../SCSS/abstracts/variables.scss";
 
-.title{
+.titlec{
     margin-top: 130px;
     margin-bottom: 30px;
     font-size: 1.9rem;
-    text-align: center;
-
+    width: 80%;
+    height: 100%;
+  
     &__dark { 
         color: $ml1;
     }
@@ -84,6 +85,7 @@
             color: $resalt;
             margin-bottom: 20px;
             padding-left: 30px ;
+            
 
             $breakpoint-tablet: 820px;
             @media (max-width: $breakpoint-tablet) {

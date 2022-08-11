@@ -19,8 +19,7 @@
     @media (max-width: $breakpoint-tablet) {
         width: 100%;
         height: 1200px;
-        margin-top: 100px;
-        
+        margin-top: 100px;     
     }
 
     $breakpoint-tablet: 500px;
@@ -28,52 +27,48 @@
         width: 100%;
         height: 100%;  
         margin-top: 0px;
-        padding-bottom: 40px;
+        padding-bottom: 0px;
     }
 
     &__box{
         margin: auto;
-        max-width: 1280px;
+        width: 70%;
         padding-top: 40px;
 
         $breakpoint-tablet: 980px;
-                @media (max-width: $breakpoint-tablet) { 
-                    width: 90%;    
-                }
+        @media (max-width: $breakpoint-tablet) { 
+            width: 90%;    
+        }
 
         $breakpoint-tablet: 500px;
-            @media (max-width: $breakpoint-tablet) {
-                width: 100%;
-                padding-top: 0px;
-                margin: 0px;
-                
-            }
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+            padding-top: 0px;
+            margin: 0px;
+        }
 
         &__content{
             display: flex;
             justify-content: left;
-            width: 95%;
+            width: 100%;
             margin: auto;
 
             $breakpoint-tablet: 980px;
-                @media (max-width: $breakpoint-tablet) {
-                    width: 100%;
-                    
-                }
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+            }
 
             $breakpoint-tablet: 800px;
             @media (max-width: $breakpoint-tablet) {
                 width: 90%;
-                justify-content: center;
-                
+                justify-content: center;        
             }
     
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
                 width: 90%;
                 display: block;
-                justify-content: center;
-                
+                justify-content: center;    
             }
 
             &__picbox{
@@ -123,34 +118,34 @@
                     justify-content: left;
                 }
 
-            &__text0{ 
-                color: $resalt;
-                font-size: 1.2rem;
+                &__text0{ 
+                    color: $resalt;
+                    font-size: 1.2rem;
 
-                $breakpoint-tablet: 800px;
-                @media (max-width: $breakpoint-tablet) {
-                    margin: 0px 0px 0px 0px;
+                    $breakpoint-tablet: 800px;
+                    @media (max-width: $breakpoint-tablet) {
+                        margin: 0px 0px 0px 0px;
                     
-                }
+                    }
 
-                $breakpoint-tablet: 500px;
-                @media (max-width: $breakpoint-tablet) {
-                    margin: 0px 0px 0px 0px;
+                    $breakpoint-tablet: 500px;
+                    @media (max-width: $breakpoint-tablet) {
+                        margin: 0px 0px 0px 0px;
                     
-                }
+                    }
 
-            }
+                }
         
-            &__me{
-                color: $text2;
-                font-size: 2.5rem;
-                text-align: left;
-                margin-bottom: 10px;
-                padding-top: 5px;
+                &__me{
+                    color: $text2;
+                    font-size: 2.5rem;
+                    text-align: left;
+                    margin-bottom: 10px;
+                    padding-top: 5px;
 
                 &__dark {
                     color: $text2;
-                  }
+                }
                     
                 &__light {
                     color: $textl;
@@ -192,12 +187,12 @@
 
                 &__text1{ 
                     color: $text2;
-                    width: 400px;
+                    width: 80%;
                     text-align: justify;
                     line-height: 1.4;
                     font-size: 1.1rem;
                     margin-top: 25px;
-                    margin-bottom: 65px;
+                    
 
                     &__dark {
                         color: $text2;
@@ -207,11 +202,11 @@
                         color: $textl;
                     }
 
-                    $breakpoint-tablet: 800px;
+                    $breakpoint-tablet: 1300px;
                     @media (max-width: $breakpoint-tablet) {
-                        width: 350px;
-                        margin: 30px auto 40px auto;
-                        font-size: 0.9rem;
+                        width: 400px;
+                        margin: 30px auto 0px auto;
+                        font-size: 1rem;
                         
                     }
 
@@ -233,6 +228,8 @@
                         border-radius: 10px;
                         display: flex;
                         justify-content: center;
+                        position: absolute;
+                        bottom: 0;
 
                         $breakpoint-tablet: 800px;
                         @media (max-width: $breakpoint-tablet) {
