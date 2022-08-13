@@ -313,25 +313,26 @@
         }
 
         &__box5{
-            height: 20px;
+            height: 600px;
             border-radius: 10px;
             position: relative;
             bottom: 140px;
+            margin-top: 30px;
             width: 100%;
 
             $breakpoint-tablet: 1050px;
             @media (max-width: $breakpoint-tablet) {
               position:static;
-             
+              height: 600px;
               
               }
                 
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
             text-align: center;
-            height: 50px;
-            bottom: 120px;
-            margin-top: 180px;
+            height: 100px;
+            bottom: 80px;
+            margin-top: 60px;
             }
 
                 &__content{
