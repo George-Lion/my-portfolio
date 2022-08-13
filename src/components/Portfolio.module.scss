@@ -54,7 +54,7 @@
                 @media (max-width: $breakpoint-tablet) {
                     width: 90%;
                     font-size: 1.2rem;
-                    height: 1900px;
+                    height: 2000px;
                     margin: 0px auto 0px auto;
                     grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
                     padding: 0px;
@@ -306,14 +306,12 @@
                 position:static;
                
                 
-                }
-
-            
+                } 
 
         }
 
         &__box5{
-            height: 600px;
+            height: 800px;
             border-radius: 10px;
             position: relative;
             bottom: 140px;
@@ -322,8 +320,10 @@
 
             $breakpoint-tablet: 1050px;
             @media (max-width: $breakpoint-tablet) {
-              position:static;
-              height: 600px;
+                position: static;
+                height: 180px;
+                margin-top: 160px;
+            
               
               }
                 

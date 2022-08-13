@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import img1 from "../img/Traveland1.png";
+import img2 from "../img/travel1.png";
 import img3 from "../img/StarWars.jpg";
 import { HiArrowSmRight } from "react-icons/hi";
 import styles from "./Portfolio.module.scss";
@@ -57,7 +58,7 @@ const Portfolio = ({ theme }) => {
           >
             <img
               className={styles.master__portfolio__box2__img3}
-              src={img1}
+              src={img2}
               alt=""
             />
 

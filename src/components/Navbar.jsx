@@ -78,6 +78,7 @@ const Navbar = ({ theme, setTheme }) => {
               </div>
               <div data-aos="fade-left" className={styles.nav__item}>
                 <button
+                  title="translate spanish"
                   className={
                     state == true
                       ? styles.nav__item__btn
@@ -98,6 +99,7 @@ const Navbar = ({ theme, setTheme }) => {
                   }
                 ></div>
                 <button
+                  title="translate english"
                   className={
                     state == false
                       ? styles.nav__item__btn
@@ -112,6 +114,7 @@ const Navbar = ({ theme, setTheme }) => {
                 </button>
               </div>
               <button
+                title="change mode"
                 className={
                   theme == "dark" ? styles.header__dark : styles.header__light
                 }

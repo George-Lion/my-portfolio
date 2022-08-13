@@ -229,10 +229,10 @@
 
             &__mouse{
                 align-items: center;
-                width: 180px;
+                width: auto;
                 height: 60px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: left;
                 font-size: 18px;
                 margin-top: 250px;
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -259,6 +259,7 @@
                 &__icon1{
                    color: $resalt;
                    font-size: 32px;
+                   padding-right: 5px;
 
                     &__dark {
                     color: $resalt;
