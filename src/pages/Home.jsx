@@ -131,7 +131,7 @@ const Lop = ({ theme }) => {
                           styles.body__header__box__mouse__txt__light
                     }
                   >
-                    scroll down
+                    {t("header.down")}
                   </p>
                   <RiArrowDropDownLine
                     className={

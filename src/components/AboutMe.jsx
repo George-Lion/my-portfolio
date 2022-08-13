@@ -64,30 +64,23 @@ const AboutMe = ({ theme }) => {
               >
                 {t("header.description")}
               </p>
-              <div
-                className={styles.bloc2__box__content__box1__text1__btn}
-                data-aos="fade-up"
+              <a
+                className={styles.bloc2__box__content__box1__text1__button}
+                href={pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Jorge_Leon_CV.pdf"
+                title="Click to download CV"
               >
-                <a
-                  className={
-                    styles.bloc2__box__content__box1__text1__btn__button
-                  }
-                  href={pdf}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download="Jorge_Leon_CV.pdf"
-                  title="Click to download CV"
-                >
-                  {t("header.download")}{" "}
-                </a>
+                {t("header.download")}{" "}
+                <HiDocumentDownload className={styles.icon} />
                 <div
                   className={
-                    styles.bloc2__box__content__box1__text1__btn__button__icon
+                    styles.bloc2__box__content__box1__text1__button__btn
                   }
-                >
-                  <HiDocumentDownload />
-                </div>
-              </div>
+                  data-aos="fade-up"
+                ></div>
+              </a>
             </div>
           </div>
           {/* SKILLS */}

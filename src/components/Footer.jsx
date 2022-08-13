@@ -2,8 +2,10 @@ import React, { Fragment } from "react";
 import styles from "./Footer.module.scss";
 let url1 = "https://github.com/George-Lion";
 let url2 = "https://linkedin.com/in/jorgeleonb";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <Fragment>
       <div className={styles.footer}>
@@ -12,7 +14,7 @@ const Footer = () => {
             <i className="fab fa-gg-circle"></i>
           </span>
         </div>
-        <p className={styles.footer__copyright}>Thanks for scrolling.</p>
+        <p className={styles.footer__copyright}>{t("header.thanks")}</p>
 
         <div className={styles.footer__ikon}>
           <a

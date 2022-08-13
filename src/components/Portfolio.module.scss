@@ -1,10 +1,13 @@
 @import "./../SCSS/abstracts/variables.scss";
 
 .master{
-    height: auto;
+    height: 1100px;
     width: 100%;
     z-index: 1;
     padding-top: 100px;
+
+   
+
 
         &__dark {
             color:white;
@@ -16,15 +19,18 @@
             background-color: $ml1;
         }
 
+        
+
         &__portfolio{
            width: 70%;
+           height: 1100px;
            margin: auto;
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
             padding: 20px 0px 20px 0px;
             gap:20px;
 
-            $breakpoint-tablet: 1460px;
+            $breakpoint-tablet: 1560px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 70%;
                     margin: auto;
@@ -34,17 +40,30 @@
                      gap:20px;
                 }
 
-                $breakpoint-tablet: 980px;
+                $breakpoint-tablet: 1360px;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 80%;
+                    margin: auto;
+                     display: grid;
+                     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+                     padding: 20px 0px 20px 0px;
+                     gap:20px;
+                }
+
+                $breakpoint-tablet: 1050px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 90%;
                     font-size: 1.2rem;
+                    height: 1900px;
                     margin: 0px auto 0px auto;
                     grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
                     padding: 0px;
                     gap:20px;
                 }
 
-                $breakpoint-tablet: 800px;
+              
+
+                $breakpoint-tablet: 820px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 90%;
                     font-size: 1.2rem;
@@ -57,7 +76,7 @@
                 $breakpoint-tablet: 500px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 90%;
-                    height: 1550px;
+                    height: auto;
                     font-size: 1.2rem;
                     margin: 0px auto 0px auto;
                     grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
@@ -80,7 +99,7 @@
                         color:rgb(0, 0, 0);
                     }
 
-                    $breakpoint-tablet: 980px;
+                    $breakpoint-tablet: 1050px;
                     @media (max-width: $breakpoint-tablet) {
                         padding-top: 100px;
                     }
@@ -93,7 +112,7 @@
                     $breakpoint-tablet: 500px;
                     @media (max-width: $breakpoint-tablet) {
                         font-size: 1.8rem;
-                        padding-top: 110px;
+                        padding-top: 80px;
                     }
                 }
 
@@ -103,10 +122,15 @@
                     width: 40px;
                     margin-bottom: 450px;
 
-                    $breakpoint-tablet: 980px;
+                    $breakpoint-tablet: 1050px;
                     @media (max-width: $breakpoint-tablet) {
                         margin-bottom: 40px;
                     }
+
+                    $breakpoint-tablet: 1049px;
+                    @media (max-width: $breakpoint-tablet) {
+                        margin-bottom: 40px;
+                }
 
                     $breakpoint-tablet: 800px;
                     @media (max-width: $breakpoint-tablet) {
@@ -123,10 +147,12 @@
         &__box2{
             background: white;
             border-radius: 10px;
+            height: 500px;
 
-            $breakpoint-tablet: 980px;
+            $breakpoint-tablet: 1050px;
               @media (max-width: $breakpoint-tablet) {
                 position:static;    
+                
             }
 
             &__dark {
@@ -142,7 +168,8 @@
             &__img3{
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
-                object-fit: contain;
+                height: 420px;
+                object-fit:cover;
                 }
 
                 &__button{
@@ -151,12 +178,13 @@
                     display: flex;
                     justify-content: center;
                     height: 70px;
-                    margin-top: 20px;
+                    margin-top: 10px;
 
                     &__btn{
                         cursor: pointer;
                         background-color: $m1;
-                        width: 200px;
+                        width: 100px;
+                        height: 40px;
                         padding: 5px;
                         margin: 0px 10px 0px 10px;
                         border-radius: 10px;
@@ -185,6 +213,7 @@
             position: relative;
             bottom: 250px;
             width: auto;
+            height: 500px;
             border-radius: 10px;
 
             &__dark {
@@ -197,7 +226,7 @@
                 background-color: $m1;
               }
 
-              $breakpoint-tablet: 980px;
+              $breakpoint-tablet: 1050px;
               @media (max-width: $breakpoint-tablet) {
                 position:static;
                
@@ -217,8 +246,9 @@
                 &__img1{
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
-                object-fit:contain;
-
+                height: 420px;
+                object-fit:cover;
+              
                     $breakpoint-tablet: 980px;
                     @media (max-width: $breakpoint-tablet) {
                         
@@ -255,9 +285,11 @@
         }
 
         &__box4{
+            
+            bottom: 250px;
+            width: auto;
             height: 500px;
             border-radius: 10px;
-            background: white;
 
             &__dark {
                 color:white;
@@ -269,27 +301,30 @@
                 background-color: $m1;
               }
 
-              $breakpoint-tablet: 980px;
+              $breakpoint-tablet: 1050px;
               @media (max-width: $breakpoint-tablet) {
                 position:static;
-                height: auto;
+               
                 
                 }
+
+            
 
         }
 
         &__box5{
-            height: 200px;
+            height: 20px;
             border-radius: 10px;
             position: relative;
             bottom: 140px;
             width: 100%;
-            justify-content: center;
 
-            $breakpoint-tablet: 980px;
-              @media (max-width: $breakpoint-tablet) {
-                margin-top: 200px;
-                }
+            $breakpoint-tablet: 1050px;
+            @media (max-width: $breakpoint-tablet) {
+              position:static;
+             
+              
+              }
                 
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
@@ -299,22 +334,44 @@
             margin-top: 180px;
             }
 
-            &__text{
-                color: $resalt;
-                font-size: 1.5rem;
-               width: 20px;
-                text-align: center;
-                cursor: pointer;
+                &__content{
+                    width: 250px;
+                    margin: auto;
+                    justify-content: center;
+                    animation: movebtn 3s ease-in-out infinite;
+                    transition: all .5s ease-in-out;
+
+                    @keyframes movebtn {
+                        0%{
+                          transform: translateX(0px);
+                        }
+                        
+                        75%{
+                          transform: translateX(-40px);
+                        }
+                        100%{
+                          transform: translateX(0px);
+                        }
+                    }
+
+                &__text{
+                    color: $resalt;
+                    width: 100%;
+                    font-size: 1.5rem;
+                    width: 20px;
+                    text-align: center;
+                    cursor: pointer;
                 
-                &__icon{
-                    height: 20px;
-                    width: 40px;       
+                    &__icon{
+                        height: 20px;
+                        width: 40px;       
+                    }
                 }
             }
         }
 
         &__box{
-            width: 90%;
+            width: 100%;
             margin: auto;
 
             $breakpoint-tablet: 500px;

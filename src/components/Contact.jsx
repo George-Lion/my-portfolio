@@ -168,7 +168,7 @@ const Contact = () => {
                       styles.contact__master__box1__content2__space__button
                     }
                   >
-                    Send
+                    {t("header.send")}
                   </button>
                 ) : (
                   <button

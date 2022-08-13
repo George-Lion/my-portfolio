@@ -139,15 +139,43 @@
             &:hover {
                 color: $resalt;
             }
-        }
-        
-        &__btn{
-            background-color:$m2;
-            padding: 4px;
-            border-radius: 5px;
-            margin-right: 3px;
-            cursor: pointer;
-            color: $text2;
+
+            &__btn{
+                background-color:$m2;
+                padding: 4px;
+                border-radius: 5px;
+                margin-right: 3px;
+                cursor: pointer;
+                
+
+                &__dark {
+                    color:$text2;
+                    
+                  }
+                    
+                  &__light {
+                    color:$text;
+                  }
+
+                
+            }
+    
+            &__btn2{
+                padding: 4px;
+                border-radius: 5px;
+                margin-right: 3px;
+                cursor: pointer;
+                
+                &__dark {
+                    color:$text2;
+                    
+                  }
+                    
+                  &__light {
+                    color:$text;
+
+                  }
+            }
         }
 
         &__bar{
@@ -166,13 +194,7 @@
               }
         }
 
-        &__btn2{
-            
-            padding: 4px;
-            border-radius: 5px;
-            margin-right: 3px;
-            cursor: pointer;
-        }
+       
 
     @include breakpoint(md) {
         position: static;

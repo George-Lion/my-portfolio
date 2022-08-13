@@ -1,7 +1,11 @@
 @import "./../SCSS/abstracts/variables.scss";
 
+.icon{
+    font-size: 20px;
+    margin-left: 10px;
+}
 .bloc2{
-    height: 1200px;
+    height: 1120px;
     width: 100%;
 
     &__dark {
@@ -12,6 +16,20 @@
     &__light {
         color: $textl;
         background-color: $ml1;
+    }
+
+    $breakpoint-tablet: 1066px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 100%;
+        height: 1320px;
+        
+    }
+
+    $breakpoint-tablet: 1050px;
+    @media (max-width: $breakpoint-tablet) {
+        height: 1120px;
+        width: 100%;
+        
     }
 
     $breakpoint-tablet: 820px;
@@ -32,7 +50,8 @@
     $breakpoint-tablet: 500px;
     @media (max-width: $breakpoint-tablet) {
         width: 100%;
-        height: 100%;  
+        height: 100%; 
+        padding-top: 5%; 
         margin-top: 0px;
         padding-bottom: 0px;
     }
@@ -41,6 +60,11 @@
         margin: auto;
         width: 70%;
         padding-top: 40px;
+
+        $breakpoint-tablet: 1360px;
+        @media (max-width: $breakpoint-tablet) {
+            width: 80%;
+        }
 
         $breakpoint-tablet: 980px;
         @media (max-width: $breakpoint-tablet) { 
@@ -322,10 +346,11 @@
                         
                     }
 
-                    &__btn{
+                    &__button{
 
                         width: 200px;
                         height: 50px;
+                        padding-top: 15px;
                         background-color: $resalt;
                         color: $text;
                         font-weight: 600;
@@ -335,6 +360,13 @@
                         position: absolute;
                         bottom: 0;
 
+                        &:active {
+                            box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+                            background-color: rgb(90, 62, 0);
+                            transform: translateY(0.9px);
+                        
+                        }
+                        
                         $breakpoint-tablet: 820px;
                         @media (max-width: $breakpoint-tablet) {
                             width: 100%;
@@ -363,12 +395,20 @@
 
                         }
                         
-                        &__button{
+                        &__btn{
                             background-color: $resalt;
                             color: $text;
                             font-weight: 600;
                             border-radius: 10px;
                             margin-top: 15px;
+
+                            
+                        &:active {
+                            box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+                            transform: translateY(0.8px);
+                        
+                        }
+                          
 
                             $breakpoint-tablet: 820px;
                             @media (max-width: $breakpoint-tablet) {
@@ -380,36 +420,8 @@
                                 margin-top: 0px;
                             }
             
-                            &:active {
-                                box-shadow:7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-                                transform: translateY(0.9px);
                             
-                            }
 
-                            &__icon{
-                                font-size: 23px;
-                                margin-top: 12px;
-                                margin-left: 5px;
-
-                             
-
-                                $breakpoint-tablet: 820px;
-                                @media (max-width: $breakpoint-tablet) {   
-                                    margin-left: 5px;
-                                    margin-top: 0px;
-                                    padding-bottom: 10px;
-                                    font-size: 1.5rem;
-                                }
-
-                                $breakpoint-tablet: 500px;
-                                @media (max-width: $breakpoint-tablet) {   
-                                    margin-left: 5px;
-                                    margin-top: 0px;
-                                    padding-bottom: 10px;
-                                    font-size: 1.5rem;
-                                }
-                                
-                            }
                         }
                     }
                 }

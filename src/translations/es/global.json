@@ -1,5 +1,6 @@
 {
     "header":{
+        "down": "desplazarse hacia abajo",
         "about-me": "Sobre mí",
         "projects":"Proyectos",
         "works":"Ver más trabajos",
@@ -11,6 +12,7 @@
         "contact1": "¿Quieres saber algo más?",
         "contact2": "Contacto",
         "email":"Email",
-        "send": "Enviar"
+        "send": "Enviar",
+        "thanks": "Gracias por desplazarte."
     }
 }

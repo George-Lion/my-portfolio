@@ -12,8 +12,10 @@ import {
   SiAdobexd,
 } from "react-icons/si";
 import { DiIllustrator, DiPhotoshop } from "react-icons/di";
+import { useTranslation } from "react-i18next";
 
 const Skills = ({ theme }) => {
+  const [t, i18n] = useTranslation("global");
   return (
     <Fragment>
       <div
@@ -23,7 +25,7 @@ const Skills = ({ theme }) => {
             : styles.titlec + " " + styles.titlec__light
         }
       >
-        Skills
+        {t("header.skills")}
         <div className={styles.titlec__line}></div>
       </div>
       <div className={styles.skills}>

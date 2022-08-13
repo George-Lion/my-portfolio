@@ -3,13 +3,14 @@ import img1 from "../img/Traveland1.png";
 import img3 from "../img/StarWars.jpg";
 import { HiArrowSmRight } from "react-icons/hi";
 import styles from "./Portfolio.module.scss";
-import { Link } from "react-scroll";
-let url1 = "https://github.com/George-Lion";
 import { useTranslation } from "react-i18next";
 
 const Portfolio = ({ theme }) => {
-  let url1 = "https://traveland-v2.herokuapp.com/";
+  let url1 = "https://github.com/George-Lion?tab=repositories";
   let url2 = "https://github.com/George-Lion/FINAL-PROJECT-X";
+  let url3 = "https://github.com/George-Lion/Starwars-Blog-Reading-List";
+  let url4 = "https://traveland-v2.herokuapp.com/";
+
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -56,13 +57,13 @@ const Portfolio = ({ theme }) => {
           >
             <img
               className={styles.master__portfolio__box2__img3}
-              src="http://lh6.ggpht.com/-YENNFxijkjs/UbVW_PKcClI/AAAAAAAAYqY/nqrkLNeNJDA/image%25255B2%25255D.png?imgmax=800"
+              src={img1}
               alt=""
             />
 
             <div className={styles.master__portfolio__box2__button}>
               <a
-                href={url1}
+                href={url4}
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
@@ -110,7 +111,7 @@ const Portfolio = ({ theme }) => {
             />
             <div className={styles.master__portfolio__box2__button}>
               <a
-                href={url1}
+                href={url4}
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
@@ -153,13 +154,13 @@ const Portfolio = ({ theme }) => {
           >
             <img
               className={styles.master__portfolio__box2__img3}
-              src="http://vanimg.s3.amazonaws.com/orange-8.jpg"
+              src={img3}
               alt=""
             />
 
             <div className={styles.master__portfolio__box2__button}>
               <a
-                href={url1}
+                href={url3}
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
@@ -170,7 +171,7 @@ const Portfolio = ({ theme }) => {
                 </button>
               </a>
               <a
-                href={url2}
+                href={url3}
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
@@ -189,20 +190,24 @@ const Portfolio = ({ theme }) => {
           {/* BOX 5 */}
 
           <div className={styles.master__portfolio__box5}>
-            <a
-              data-aos="fade-up"
-              href={url1}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.master__portfolio__box5__text}
-              type="button"
-              onClick={() => {}}
-            >
-              {t("header.works")}
-              <HiArrowSmRight
-                className={styles.master__portfolio__box5__text__icon}
-              />{" "}
-            </a>
+            <div className={styles.master__portfolio__box5__content}>
+              <a
+                data-aos="fade-up"
+                href={url1}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.master__portfolio__box5__content__text}
+                type="button"
+                onClick={() => {}}
+              >
+                {t("header.works")}
+                <HiArrowSmRight
+                  className={
+                    styles.master__portfolio__box5__content__text__icon
+                  }
+                />{" "}
+              </a>
+            </div>
           </div>
         </div>
       </div>

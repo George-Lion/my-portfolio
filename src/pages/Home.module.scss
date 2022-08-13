@@ -31,6 +31,11 @@
         width: 70%;
         margin: auto;
 
+        $breakpoint-tablet: 1360px;
+        @media (max-width: $breakpoint-tablet) {
+            width: 80%;
+        }
+
         $breakpoint-tablet: 980px;
         @media (max-width: $breakpoint-tablet) { 
             width: 90%;    
@@ -309,7 +314,7 @@
                     100%{
                       transform: translateY(0px);
                     }
-                  }
+                }
             }
         
             &__photo1{

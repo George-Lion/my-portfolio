@@ -99,7 +99,9 @@ const Navbar = ({ theme, setTheme }) => {
                 ></div>
                 <button
                   className={
-                    state == false ? styles.nav__btn : styles.nav__btn2
+                    state == false
+                      ? styles.nav__item__btn
+                      : styles.nav__item__btn2
                   }
                   onClick={() => {
                     i18n.changeLanguage("en");

@@ -1,5 +1,6 @@
 {
     "header":{
+        "down": "scroll down",
         "about-me": "About me",
         "projects":"Projects",
         "works":"See more works",
@@ -11,7 +12,7 @@
         "contact1":"Do you want to know something more",
         "contact2":"Contact",
         "email":"Your email",
-        "send":"Send"
-        
+        "send":"Send",
+        "thanks": "Thanks for scrolling."
     }
 }
