@@ -5,7 +5,7 @@ import img3 from "../img/StarWars.jpg";
 import { HiArrowSmRight } from "react-icons/hi";
 import styles from "./Portfolio.module.scss";
 import { useTranslation } from "react-i18next";
-import swal from 'sweetalert';
+import swal from '@sweetalert/with-react';
 
 const Portfolio = ({ theme }) => {
   let url1 = "https://github.com/George-Lion?tab=repositories";
@@ -135,9 +135,24 @@ const Portfolio = ({ theme }) => {
                 </button>
               </a>
               <button className={styles.master__portfolio__box2__button__btn} onClick={()=>{
-                swal("Traveland", t("header.traveland"), {
-                  buttons: {
-                    cancel: "OK"}});
+                swal({
+                  buttons:{
+                    cancel: "Close"
+                  },
+                  content: (
+                  <div className={styles.modal}>
+                    <h1>Traveland</h1>
+                    <br></br>
+                    <p className={styles.modal__text}>
+                    {t("header.traveland")}
+                    </p>
+                    <br></br>
+                    <p>
+                      React | JavaScript | HTML | CSS | Python | Flask
+                    </p>
+                  </div>
+                )
+                  })
               }}>
                 info
               </button>

@@ -6,9 +6,6 @@
     z-index: 1;
     padding-top: 100px;
 
-   
-
-
         &__dark {
             color:white;
             background-color: $m1;
@@ -19,35 +16,33 @@
             background-color: $ml1;
         }
 
-        
-
         &__portfolio{
-           width: 70%;
-           height: 1100px;
-           margin: auto;
+            width: 70%;
+            height: 1100px;
+            margin: auto;
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
             padding: 20px 0px 20px 0px;
             gap:20px;
 
-            $breakpoint-tablet: 1560px;
+                $breakpoint-tablet: 1560px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 70%;
                     margin: auto;
-                     display: grid;
-                     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-                     padding: 20px 0px 20px 0px;
-                     gap:20px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+                    padding: 20px 0px 20px 0px;
+                    gap:20px;
                 }
 
                 $breakpoint-tablet: 1360px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 80%;
                     margin: auto;
-                     display: grid;
-                     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-                     padding: 20px 0px 20px 0px;
-                     gap:20px;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+                    padding: 20px 0px 20px 0px;
+                    gap:20px;
                 }
 
                 $breakpoint-tablet: 1050px;
@@ -60,8 +55,6 @@
                     padding: 0px;
                     gap:20px;
                 }
-
-              
 
                 $breakpoint-tablet: 820px;
                 @media (max-width: $breakpoint-tablet) {
@@ -233,15 +226,15 @@
                 
                 }
 
-            $breakpoint-tablet: 820px;
-                @media (max-width: $breakpoint-tablet) {
-                     position:static;
-                }
+              $breakpoint-tablet: 820px;
+              @media (max-width: $breakpoint-tablet) {
+                position:static;
+              }
 
               $breakpoint-tablet: 500px;
-                @media (max-width: $breakpoint-tablet) {
-                     position:static;
-                }
+              @media (max-width: $breakpoint-tablet) {
+                position:static;
+              }
             
                 &__img1{
                 width: 100%;
@@ -251,8 +244,7 @@
               
                     $breakpoint-tablet: 980px;
                     @media (max-width: $breakpoint-tablet) {
-                        
-                
+   
                     }
 
                     &__button{
@@ -262,7 +254,6 @@
                         display: flex;
                         justify-content: center;
                         
-    
                         &__btn{
                             background-color: $m1;
                             width: 100%;
@@ -323,9 +314,7 @@
                 position: static;
                 height: 180px;
                 margin-top: 160px;
-            
-              
-              }
+            }
                 
             $breakpoint-tablet: 500px;
             @media (max-width: $breakpoint-tablet) {
@@ -423,7 +412,7 @@
                                 font-size: 15px;
                                 line-height: 30px;
                                 font-weight: 400;
-   
+
                             }
                             
                         }
@@ -433,4 +422,13 @@
 
         }
     }
+}
+
+.modal{
+  
+
+    &__text{
+        text-align: justify;
+    }
+    
 }

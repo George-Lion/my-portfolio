@@ -18,7 +18,7 @@
     $breakpoint-tablet: 820px;
     @media (max-width: $breakpoint-tablet) {
         text-align: left;
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-top: 70px;
         font-size: 1.8rem;
@@ -170,7 +170,7 @@
                     @media (max-width: $breakpoint-tablet) { 
                         font-size: 28px;
                         justify-content: space-around;
-                        margin-left: 10px;
+                        margin: auto;
                         width: 100%;
                     }
                     
@@ -178,7 +178,7 @@
                     @media (max-width: $breakpoint-tablet) { 
                         font-size: 28px;
                         justify-content: center;
-                        margin-left: 10px;
+                        
                         margin-bottom: 30px;
                     }
 
@@ -186,14 +186,14 @@
             @media (max-width: $breakpoint-tablet) {
                 font-size: 28px;
                 justify-content: space-around;
-                margin-left: 10px;
+                
             }
 
                     $breakpoint-tablet: 500px;
                     @media (max-width: $breakpoint-tablet) {
                         font-size: 28px;
                         justify-content: space-around;
-                        margin-left: 10px;
+                        
                     }
 
                     &__icon{
