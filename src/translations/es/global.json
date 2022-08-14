@@ -13,6 +13,8 @@
         "contact2": "Contacto",
         "email":"Email",
         "send": "Enviar",
-        "thanks": "Gracias por desplazarte."
+        "thanks": "Gracias por desplazarte.",
+        "traveland": "Aplicación web para conectar personas a través de la creación de rutas de viajes en las que pueden viajar juntos."
+
     }
 }

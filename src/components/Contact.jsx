@@ -3,10 +3,12 @@ import styles from "./Contact.module.scss";
 import { send } from "emailjs-com";
 import ReactTooltip from "react-tooltip";
 import { useTranslation } from "react-i18next";
+import swal from 'sweetalert';
 
 const Contact = () => {
   let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
+
   const [t, i18n] = useTranslation("global");
 
   const [toSend, setToSend] = useState({
@@ -20,10 +22,14 @@ const Contact = () => {
     e.preventDefault();
     send("service_bzdi6uk", "template_fmjumeo", toSend, "vxa6gldCtN3knNwsr")
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+        swal("message sent","tu mensaje se ha enviado correctamente", "success", {
+          buttons: {
+            cancel: "ok",}});
       })
       .catch((err) => {
-        console.log("FAILED...", err);
+        swal("message error","tu mensaje no se ha enviado", "error", {
+          buttons: {
+            cancel: "ok",}})
       });
   };
 

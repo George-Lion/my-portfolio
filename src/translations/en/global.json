@@ -13,6 +13,7 @@
         "contact2":"Contact",
         "email":"Your email",
         "send":"Send",
-        "thanks": "Thanks for scrolling."
+        "thanks": "Thanks for scrolling.",
+        "traveland": "Web application to connect people through the creation of travel routes in which they can travel together."
     }
 }
