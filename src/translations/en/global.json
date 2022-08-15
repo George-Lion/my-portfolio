@@ -14,6 +14,7 @@
         "email":"Your email",
         "send":"Send",
         "thanks": "Thanks for scrolling.",
-        "traveland": "Is a web application to connect people through the creation of travel routes in which they can travel together."
+        "traveland": "Is a web application to connect people through the creation of travel routes in which they can travel together.",
+        "wars": "Blog consuming Star Wars API that renders cards with the Characteristics of the characters, vehicles and planets of the saga."
     }
 }

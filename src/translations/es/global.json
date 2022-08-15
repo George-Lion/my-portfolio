@@ -14,7 +14,7 @@
         "email":"Email",
         "send": "Enviar",
         "thanks": "Gracias por desplazarte.",
-        "traveland": "Es una aplicación web que permite conectar personas a través de la creación de rutas de viajes en las que pueden viajar juntos."
-
+        "traveland": "Es una aplicación web que permite conectar personas a través de la creación de rutas de viajes en las que pueden viajar juntos.",
+        "wars": " Blog consumiendo Star Wars API que renderiza cartas con las características de los personajes, vehículos y planetas de la saga."
     }
 }

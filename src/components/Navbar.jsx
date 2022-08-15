@@ -78,7 +78,7 @@ const Navbar = ({ theme, setTheme }) => {
               </div>
               <div data-aos="fade-left" className={styles.nav__item}>
                 <button
-                  title="translate spanish"
+                  title="translate to spanish"
                   className={
                     state == true
                       ? styles.nav__item__btn
@@ -99,7 +99,7 @@ const Navbar = ({ theme, setTheme }) => {
                   }
                 ></div>
                 <button
-                  title="translate english"
+                  title="translate to english"
                   className={
                     state == false
                       ? styles.nav__item__btn
