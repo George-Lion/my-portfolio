@@ -25,6 +25,7 @@ const AboutMe = ({ theme }) => {
               <img
                 className={styles.bloc2__box__content__picbox__picture1}
                 src={img2}
+                data-aos="fade-up"
               />
             </div>
             <div

@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import img1 from "../img/Traveland1.png";
-import img2 from "../img/t2.jpg";
-import img3 from "../img/StarWars.jpg";
+import img2 from "../img/log.png";
+import img3 from "../img/star.png";
 import { HiArrowSmRight } from "react-icons/hi";
 import styles from "./Portfolio.module.scss";
 import { useTranslation } from "react-i18next";
