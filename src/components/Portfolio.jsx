@@ -1,11 +1,11 @@
 import React, { Fragment, useState } from "react";
 import img1 from "../img/Traveland1.png";
 import img2 from "../img/log.png";
-import img3 from "../img/star.png";
+import img3 from "../img/StarWars.jpg";
+import img4 from "../img/todo.png";
 import { HiArrowSmRight } from "react-icons/hi";
 import styles from "./Portfolio.module.scss";
 import { useTranslation } from "react-i18next";
-import swal from "@sweetalert/with-react";
 import {
   SiPostgresql,
   SiFlask,
@@ -23,6 +23,8 @@ const Portfolio = ({ theme }) => {
   let url2 = "https://github.com/George-Lion/FINAL-PROJECT-X";
   let url3 = "https://github.com/George-Lion/Starwars-Blog-Reading-List";
   let url4 = "https://traveland-v2.herokuapp.com/";
+  let url5 =
+    "https://github.com/George-Lion/Second-Part-of-the-TODO-list-adding-fetch";
 
   const [t, i18n] = useTranslation("global");
 
@@ -75,7 +77,7 @@ const Portfolio = ({ theme }) => {
             >
               <img
                 className={styles.master__portfolio__box4__img1}
-                src={img2}
+                src={img1}
                 alt=""
               />
               <div className={styles.master__portfolio__box2__button}>
@@ -240,15 +242,10 @@ const Portfolio = ({ theme }) => {
             >
               <img
                 className={styles.master__portfolio__box3__img1}
-                src={img1}
+                src={img3}
                 alt=""
               />
               <div className={styles.master__portfolio__box2__page}>
-                <div>
-                  <h1 className={styles.master__portfolio__box2__page}>
-                    Traveland
-                  </h1>
-                </div>
                 <div className={styles.master__portfolio__box2__button}>
                   <a
                     href={url4}
@@ -459,7 +456,7 @@ const Portfolio = ({ theme }) => {
             >
               <img
                 className={styles.master__portfolio__box4__img1}
-                src={img3}
+                src={img4}
                 alt=""
               />
               <div className={styles.master__portfolio__box2__button}>
@@ -478,7 +475,7 @@ const Portfolio = ({ theme }) => {
                   </button>
                 </a>
                 <a
-                  href={url2}
+                  href={url5}
                   target="_blank"
                   rel="noopener noreferrer"
                   type="button"
@@ -518,7 +515,7 @@ const Portfolio = ({ theme }) => {
               <div className={styles.master__portfolio__box4__img1}>
                 <div>
                   <h2 className={styles.master__portfolio__box4__img1__title}>
-                    Star Wars Blog
+                    TODO LIST
                   </h2>
                   <div className={styles.master__portfolio__box4__img1__box}>
                     <h4
@@ -526,7 +523,7 @@ const Portfolio = ({ theme }) => {
                         styles.master__portfolio__box4__img1__box__text
                       }
                     >
-                      {t("header.wars")}
+                      {t("header.todo")}
                     </h4>
                   </div>
                   <div
@@ -534,7 +531,7 @@ const Portfolio = ({ theme }) => {
                       styles.master__portfolio__box4__img1__tecnologies
                     }
                   >
-                    <p>Teconologies</p>
+                    <p>{t("header.technology")}</p>
                   </div>
                   <div className={styles.master__portfolio__box4__img1__icons}>
                     <div
@@ -591,34 +588,6 @@ const Portfolio = ({ theme }) => {
                         }
                       >
                         CSS3
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box4__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-python"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box4__img1__icons__name
-                        }
-                      >
-                        Python
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box4__img1__icons__text
-                      }
-                    >
-                      <SiFlask />
-                      <p
-                        className={
-                          styles.master__portfolio__box4__img1__icons__name
-                        }
-                      >
-                        Flask
                       </p>
                     </div>
                   </div>

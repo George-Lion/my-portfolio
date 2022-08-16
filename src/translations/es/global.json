@@ -18,6 +18,7 @@
         "c1": "- Uso de API propia y terceras como GoogleMaps y Cloudinary.",
         "c2": "- Autenticación con JWT y aplicación de librería react-geocode.",
         "technology": "Tecnologías utilizadas",
-        "wars": " Blog consumiendo Star Wars API que renderiza cartas con las características de los personajes, vehículos y planetas de la saga."
+        "wars": " Blog consumiendo Star Wars API que renderiza cartas con las características de los personajes, vehículos y planetas de la saga.",
+        "todo":  "Una app estructurada con react que agrega o elimina tareas de manera sincronizada con la base de datos."
     }
 }

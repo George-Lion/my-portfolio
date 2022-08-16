@@ -271,7 +271,7 @@
                     &__title{
                             color: $text;
                             text-align: center;
-                            margin-top: 40px;
+                            margin-top: 30px;
 
                             $breakpoint-tablet: 500px;
                             @media (max-width: $breakpoint-tablet) {
@@ -283,7 +283,7 @@
                         &__tecnologies{
                             color: $text;
                             text-align: center;
-                            margin-top: 40px;
+                            margin-top: 50px;
                             font-weight: 600;
                             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                             
@@ -310,7 +310,7 @@
                         &__text{
                             color: $text;
                             text-align: justify;
-                            font-weight: 400;
+                            font-weight: 600;
                             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
                             $breakpoint-tablet: 500px;
@@ -333,7 +333,7 @@
                             color: $text;
                             text-align: justify;
                             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                            font-weight: 100;
+                            font-weight: 600;
 
                             $breakpoint-tablet: 500px;
                             @media (max-width: $breakpoint-tablet) {  
@@ -354,7 +354,7 @@
                     &__icons{
                         width: 80%;
                         margin: 0px auto 0px auto;
-                        margin-top: 25px;
+                        margin-top: 15px;
                         display: flex;
                         justify-content: space-around;
 
@@ -378,6 +378,7 @@
                             font-size: 40px;
                             color: $text;
                             text-align: center;
+                            font-weight: 600px;
 
                             $breakpoint-tablet: 500px;
                             @media (max-width: $breakpoint-tablet) {
@@ -422,13 +423,13 @@
                         display: flex;
                         border-radius: 10px;
                         justify-content: center;
-                        background-color: $resalt;
+                        background-color: $resalt2;
                         text-align: center;
                         color: $text;
                         font-size: 1.2rem;
                         font-weight: 800;   
                         position: absolute;
-                        top: 390px;
+                        top: 430px;
                         left: 0;
                         right: 0;
                         bottom: 0;
@@ -439,7 +440,7 @@
                         @media (max-width: $breakpoint-tablet) {
                             padding-top: 7px;
                             font-size: 1rem;
-                            top: 390px;
+                            top: 430px;
                             left: 0;
                             right: 0;
                             bottom: 0;
@@ -544,7 +545,7 @@
                         &__tecnologies{
                             color: $text;
                             text-align: center;
-                            margin-top: 70px;
+                            margin-top: 50px;
                             font-weight: 500px;
 
                             $breakpoint-tablet: 500px;
@@ -599,6 +600,7 @@
                             font-size: 40px;
                             color: $text;
                             text-align: center;
+                            font-weight: 600px;
 
                             $breakpoint-tablet: 500px;
                             @media (max-width: $breakpoint-tablet) {
@@ -638,7 +640,7 @@
                         font-size: 1.2rem;
                         font-weight: 800;   
                         position: absolute;
-                        top: 350px;
+                        top: 430px;
                         left: 0;
                         right: 0;
                         bottom: 0;
@@ -649,7 +651,7 @@
                             @media (max-width: $breakpoint-tablet) {
                                 padding-top: 7px;
                                 font-size: 1rem;
-                                top: 380px;
+                                top: 430px;
                                 left: 0;
                                 right: 0;
                                 bottom: 0;

@@ -18,6 +18,7 @@
         "c1": "- Use of own API and third parties such as GoogleMaps and Cloudinary.",
         "c2": "- JWT authentication and react-geocode library application",
         "technology": "Technologies used",
-        "wars": "Blog consuming Star Wars API that renders cards with the Characteristics of the characters, vehicles and planets of the saga."
+        "wars": "Blog consuming Star Wars API that renders cards with the Characteristics of the characters, vehicles and planets of the saga.",
+        "todo":  "An app structured with react that adds or removes tasks from synchronized with the database."
     }
 }
