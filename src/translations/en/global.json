@@ -15,6 +15,9 @@
         "send":"Send",
         "thanks": "Thanks for scrolling.",
         "traveland": "Is a web application to connect people through the creation of travel routes in which they can travel together.",
+        "c1": "- Use of own API and third parties such as GoogleMaps and Cloudinary.",
+        "c2": "- JWT authentication and react-geocode library application",
+        "technology": "Technologies used",
         "wars": "Blog consuming Star Wars API that renders cards with the Characteristics of the characters, vehicles and planets of the saga."
     }
 }

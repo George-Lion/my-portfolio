@@ -147,7 +147,7 @@ const Portfolio = ({ theme }) => {
                       styles.master__portfolio__box4__img1__tecnologies
                     }
                   >
-                    <p>Teconologies</p>
+                    <p>Used technology</p>
                   </div>
                   <div className={styles.master__portfolio__box4__img1__icons}>
                     <div
@@ -240,41 +240,48 @@ const Portfolio = ({ theme }) => {
                 src={img1}
                 alt=""
               />
-              <div className={styles.master__portfolio__box2__button}>
-                <a
-                  href={url4}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="button"
-                  onClick={() => {}}
-                >
+              <div className={styles.master__portfolio__box2__page}>
+                <div>
+                  <h1 className={styles.master__portfolio__box2__page}>
+                    Traveland
+                  </h1>
+                </div>
+                <div className={styles.master__portfolio__box2__button}>
+                  <a
+                    href={url4}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="button"
+                    onClick={() => {}}
+                  >
+                    <button
+                      className={styles.master__portfolio__box2__button__btn}
+                    >
+                      Demo
+                    </button>
+                  </a>
+                  <a
+                    href={url2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    type="button"
+                    onClick={() => {}}
+                  >
+                    <button
+                      className={styles.master__portfolio__box2__button__btn}
+                    >
+                      Code
+                    </button>
+                  </a>
                   <button
                     className={styles.master__portfolio__box2__button__btn}
+                    onClick={() => {
+                      setPicture1(false);
+                    }}
                   >
-                    Demo
+                    info
                   </button>
-                </a>
-                <a
-                  href={url2}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="button"
-                  onClick={() => {}}
-                >
-                  <button
-                    className={styles.master__portfolio__box2__button__btn}
-                  >
-                    Code
-                  </button>
-                </a>
-                <button
-                  className={styles.master__portfolio__box2__button__btn}
-                  onClick={() => {
-                    setPicture1(false);
-                  }}
-                >
-                  info
-                </button>
+                </div>
               </div>
             </div>
           ) : (
@@ -304,12 +311,32 @@ const Portfolio = ({ theme }) => {
                       {t("header.traveland")}
                     </h4>
                   </div>
+                  <div className={styles.master__portfolio__box3__img1__box}>
+                    <h4
+                      className={
+                        styles.master__portfolio__box3__img1__box__text1
+                      }
+                    >
+                      {t("header.c1")}
+                    </h4>
+                  </div>
+
+                  <div className={styles.master__portfolio__box3__img1__box}>
+                    <h4
+                      className={
+                        styles.master__portfolio__box3__img1__box__text1
+                      }
+                    >
+                      {t("header.c2")}
+                    </h4>
+                  </div>
+
                   <div
                     className={
                       styles.master__portfolio__box3__img1__tecnologies
                     }
                   >
-                    <p>Teconologies</p>
+                    <p>{t("header.technology")}</p>
                   </div>
                   <div className={styles.master__portfolio__box3__img1__icons}>
                     <div

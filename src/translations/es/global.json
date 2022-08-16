@@ -15,6 +15,9 @@
         "send": "Enviar",
         "thanks": "Gracias por desplazarte.",
         "traveland": "Es una aplicación web que permite conectar personas a través de la creación de rutas de viajes en las que pueden viajar juntos.",
+        "c1": "- Uso de API propia y terceras como GoogleMaps y Cloudinary.",
+        "c2": "- Autenticación con JWT y aplicación de librería react-geocode.",
+        "technology": "Tecnologías utilizadas",
         "wars": " Blog consumiendo Star Wars API que renderiza cartas con las características de los personajes, vehículos y planetas de la saga."
     }
 }

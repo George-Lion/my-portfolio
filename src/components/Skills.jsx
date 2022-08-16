@@ -369,26 +369,6 @@ const Skills = ({ theme }) => {
                 </p>
               </div>
             </div>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <i className="fas fa-mobile-alt"></i>
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Responsive web
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -403,23 +383,23 @@ const Skills = ({ theme }) => {
             <h4>Version control</h4>
           </div>
 
-          <div className={styles.skills__div1__box__icons}>
+          <div className={styles.skills__div1__box__iconsgit}>
             <div
               className={
                 theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
+                  ? styles.skills__div1__box__iconsgit__icon +
                     " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
+                    styles.skills__div1__box__iconsgit__icon__dark
+                  : styles.skills__div1__box__iconsgit__icon +
                     " " +
-                    styles.skills__div1__box__icons__icon__light
+                    styles.skills__div1__box__iconsgit__icon__light
               }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
               <SiGit />
               <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
+                <p className={styles.skills__div1__box__iconsgit__icon__title1}>
                   Git
                 </p>
               </div>
@@ -427,19 +407,19 @@ const Skills = ({ theme }) => {
             <div
               className={
                 theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
+                  ? styles.skills__div1__box__iconsgit__icon +
                     " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
+                    styles.skills__div1__box__iconsgit__icon__dark
+                  : styles.skills__div1__box__iconsgit__icon +
                     " " +
-                    styles.skills__div1__box__icons__icon__light
+                    styles.skills__div1__box__iconsgit__icon__light
               }
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
               <SiGithub />
               <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
+                <p className={styles.skills__div1__box__iconsgit__icon__title1}>
                   Github
                 </p>
               </div>

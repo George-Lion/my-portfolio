@@ -179,15 +179,25 @@
                 object-fit:cover;
                 }
 
-              
+              &__page{
+                color: $text;
+                font-size: 1.3rem;
+                text-align: center;
+                margin-top: 10px;
+              }
 
                 &__button{
                     padding: 5px;
                     border-radius: 0px 0px 10px 10px;
                     display: flex;
                     justify-content: center;
-                    height: 70px;
+                    height: 60px;
                     margin-top: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    top: 300;
+                    left: 0;
+                    right: 0;
 
                     &__btn{
                         cursor: pointer;
@@ -250,45 +260,41 @@
               $breakpoint-tablet: 500px;
               @media (max-width: $breakpoint-tablet) {
                 position:static;
-                height: 400px;
-              }
-
-              $breakpoint-tablet: 390px;
-              @media (max-width: $breakpoint-tablet) {
-                position:static;
-                height: 310px;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
               }
             
                 &__img1{
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
-                height: 420px;
+                height: 390px;
                 object-fit: cover;
-                
-                $breakpoint-tablet: 500px;
-                @media (max-width: $breakpoint-tablet) {
-                    position:static;
-                    height: 280px;
-                }
-
-              $breakpoint-tablet: 390px;
-              @media (max-width: $breakpoint-tablet) {
-                position:static;
-                height: 230px;
-              }
-               
+     
                     &__title{
                             color: $text;
                             text-align: center;
-                            margin-top: 100px;
+                            margin-top: 40px;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-top:40px;
+                                font-size: 1.5rem;
+                            }
                         }
 
                         &__tecnologies{
                             color: $text;
                             text-align: center;
-                            margin-top: 70px;
-                            font-weight: 500px;
+                            margin-top: 40px;
+                            font-weight: 600;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                            
+                            font-size: 15px;
+                            margin-top: 40px;
+                            
+                            }
                         }
 
                     &__box{
@@ -296,51 +302,126 @@
                         margin: auto;
                         margin-top: 30px;
 
+                        $breakpoint-tablet: 500px;
+                        @media (max-width: $breakpoint-tablet) {
+                            width: 85%;
+                        }
+
+
                         &__text{
                             color: $text;
                             text-align: justify;
+                            font-weight: 100;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
                             $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) { 
+                                margin-top:30px;
+                                font-size: 15px;
+                                
+                            }
+
+                            $breakpoint-tablet: 460px;
                             @media (max-width: $breakpoint-tablet) {
-                                font-size:1rem;
+                                font-weight: 100;
+                                margin-top:30px;
+                                font-size: 14px;
+                            }
+
+                        }
+
+                        &__text1{
+                            color: $text;
+                            text-align: justify;
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            font-weight: 100;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {  
+                                font-size: 15px;
+                                
                             }
                             
-                            
+                            $breakpoint-tablet: 460px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-top:30px;
+                                font-size: 14px;
+                    
+                            }
+                             
                         }
                     }
 
                     &__icons{
-                        width: 60%;
-                        margin: auto;
+                        width: 80%;
+                        margin: 0px auto 0px auto;
                         margin-top: 25px;
                         display: flex;
                         justify-content: space-around;
 
                         $breakpoint-tablet: 500px;
-                        @media (max-width: $breakpoint-tablet) {
-                            margin-top: 5px;
-                        }
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-top: 10px;
+                                width: 80%;
+                                
+                            }
+                        
+                            $breakpoint-tablet: 390px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-top: 5px;
+                                height: 50px;
+                                
+                            }  
+                            
+                            
 
                         &__text{
                             font-size: 40px;
                             color: $text;
                             text-align: center;
-                            
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                font-size: 35px;
+                                
+                            }
+
+                            $breakpoint-tablet: 390px;
+                            @media (max-width: $breakpoint-tablet) {
+                                font-weight: 100;
+                                margin-top:10px;
+                                font-size: 28px;
+                                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+
+                            $breakpoint-tablet: 365px;
+                            @media (max-width: $breakpoint-tablet) {
+                                font-size: 27px;
+                                margin-left: 6px;
+                                margin-right: 6px;
+                                
+                            }
+                           
                         }
 
                         &__name{
                             font-size: 10px;
                             text-align: center;
                             font-weight: 600;
+
+                          
+                            
                         }
                     }
 
                     &__return{
-                        width: 100%;
-                        height: 50px;
-                        padding-top: 10px;
+                        width: 100px;
+                        height: 40px;
+                        padding-top: 6px;
                         display: flex;
-                        border-radius: 0px 0px 0px 0px;
+                        border-radius: 10px;
                         justify-content: center;
                         background-color: $resalt;
                         text-align: center;
@@ -348,8 +429,24 @@
                         font-size: 1.2rem;
                         font-weight: 800;   
                         position: absolute;
-                        bottom: 25px;
+                        top: 390px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
                         cursor: pointer;
+
+                        $breakpoint-tablet: 500px;
+                        @media (max-width: $breakpoint-tablet) {
+                            padding-top: 7px;
+                            font-size: 1rem;
+                            top: 390px;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                    
+                    }
                     }
 
                     &__button{
@@ -357,8 +454,7 @@
                         border-radius: 0px 0px 10px 10px;
                         display: flex;
                         justify-content: center;
-                        $breakpoint-tablet: 500px;
-                       
+
                         
                         &__btn{
                             background-color: $m1;
@@ -369,7 +465,11 @@
                             font-weight: 800;
                             margin: 0px 10px 0px 10px;
 
-                           
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                width:50px; 
+                        
+                            }
 
                         }
                     }
@@ -383,6 +483,7 @@
             width: auto;
             height: 500px;
             border-radius: 10px;
+           
 
             &__dark {
                 color:white;
@@ -408,36 +509,37 @@
               $breakpoint-tablet: 500px;
               @media (max-width: $breakpoint-tablet) {
                 position:static;
+                margin-bottom: 30px;
               }
 
-              $breakpoint-tablet: 390px;
+              $breakpoint-tablet: 460px;
               @media (max-width: $breakpoint-tablet) {
                 position:static;
-                height: 310px;
                 margin-bottom: 40px;
               }
             
                 &__img1{
-                width: 100%;
-                border-radius: 10px 10px 0px 0px;
-                height: 420px;
-                object-fit: cover;
+                    width: 100%;
+                    border-radius: 10px 10px 0px 0px;
+                    height: 420px;
+                    object-fit: cover;
               
                     $breakpoint-tablet: 980px;
                     @media (max-width: $breakpoint-tablet) {
    
                     }
 
-                    $breakpoint-tablet: 390px;
-                    @media (max-width: $breakpoint-tablet) {
-                      position:static;
-                      height: 230px;
-                    }
-
                         &__title{
                             color: $text;
                             text-align: center;
                             margin-top: 100px;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-top:50px;
+                                font-size: 1.5rem;
+                            }
+
                         }
 
                         &__tecnologies{
@@ -445,6 +547,15 @@
                             text-align: center;
                             margin-top: 70px;
                             font-weight: 500px;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                            font-weight: 600;
+                            font-size: 15px;
+                            
+                            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
+
                         }
 
                     &__box{
@@ -452,10 +563,22 @@
                         margin: auto;
                         margin-top: 30px;
 
+                        $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                width: 85%;
+                            }
+
                         &__text{
                             color: $text;
                             text-align: justify;
-                            
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                font-weight: 100;
+                                margin-top:40px;
+                                font-size: 15px;
+                                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            }
                             
                         }
                     }
@@ -467,10 +590,24 @@
                         display: flex;
                         justify-content: space-around;
 
+                        $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-top: 15px;
+                                
+                            }
+
                         &__text{
                             font-size: 40px;
                             color: $text;
                             text-align: center;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                margin-left: 10px;
+                                margin-right: 10px;
+                                font-size: 35px;
+                                
+                            }
                             
                         }
 
@@ -478,15 +615,23 @@
                             font-size: 10px;
                             text-align: center;
                             font-weight: 600;
+
+                            $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                
+                                font-size: 0.8rem;
+                                font-weight: 600;
+                                font-family: 'Courier New', Courier, monospace;
+                            }
                         }
                     }
 
                     &__return{
-                        width: 100%;
-                        height: 50px;
+                        width: 100px;
+                        height: 40px;
                         padding-top: 10px;
                         display: flex;
-                        border-radius: 0px 0px 0px 0px;
+                        border-radius: 10px;
                         justify-content: center;
                         background-color: $resalt;
                         text-align: center;
@@ -494,8 +639,24 @@
                         font-size: 1.2rem;
                         font-weight: 800;   
                         position: absolute;
-                        bottom: 25px;
+                        top: 350px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
                         cursor: pointer;
+
+                        $breakpoint-tablet: 500px;
+                            @media (max-width: $breakpoint-tablet) {
+                                padding-top: 7px;
+                                font-size: 1rem;
+                                top: 380px;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                margin: auto;
+                        
+                        }
                     }
 
                     &__button{
