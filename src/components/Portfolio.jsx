@@ -87,9 +87,10 @@ const Portfolio = ({ theme }) => {
                   onClick={() => {}}
                 >
                   <button
+                    title="Demo"
                     className={styles.master__portfolio__box2__button__btn}
                   >
-                    Demo
+                    <i className="fas fa-desktop"></i>
                   </button>
                 </a>
                 <a
@@ -100,18 +101,20 @@ const Portfolio = ({ theme }) => {
                   onClick={() => {}}
                 >
                   <button
+                    title="Code"
                     className={styles.master__portfolio__box2__button__btn}
                   >
-                    Code
+                    <i className="fas fa-code"></i>
                   </button>
                 </a>
                 <button
+                  title="Info"
                   className={styles.master__portfolio__box2__button__btn}
                   onClick={() => {
                     setPicture(false);
                   }}
                 >
-                  info
+                  <i className="fas fa-info-circle"></i>
                 </button>
               </div>
             </div>
@@ -255,9 +258,10 @@ const Portfolio = ({ theme }) => {
                     onClick={() => {}}
                   >
                     <button
+                      title="Demo"
                       className={styles.master__portfolio__box2__button__btn}
                     >
-                      Demo
+                      <i className="fas fa-desktop"></i>
                     </button>
                   </a>
                   <a
@@ -268,18 +272,20 @@ const Portfolio = ({ theme }) => {
                     onClick={() => {}}
                   >
                     <button
+                      title="Code"
                       className={styles.master__portfolio__box2__button__btn}
                     >
-                      Code
+                      <i className="fas fa-code"></i>
                     </button>
                   </a>
                   <button
                     className={styles.master__portfolio__box2__button__btn}
+                    title="Info"
                     onClick={() => {
                       setPicture1(false);
                     }}
                   >
-                    info
+                    <i className="fas fa-info-circle"></i>
                   </button>
                 </div>
               </div>
@@ -465,9 +471,10 @@ const Portfolio = ({ theme }) => {
                   onClick={() => {}}
                 >
                   <button
+                    title="Demo"
                     className={styles.master__portfolio__box2__button__btn}
                   >
-                    Demo
+                    <i className="fas fa-desktop"></i>
                   </button>
                 </a>
                 <a
@@ -478,18 +485,20 @@ const Portfolio = ({ theme }) => {
                   onClick={() => {}}
                 >
                   <button
+                    title="Code"
                     className={styles.master__portfolio__box2__button__btn}
                   >
-                    Code
+                    <i className="fas fa-code"></i>
                   </button>
                 </a>
                 <button
+                  title="Info"
                   className={styles.master__portfolio__box2__button__btn}
                   onClick={() => {
                     setPicture2(false);
                   }}
                 >
-                  info
+                  <i className="fas fa-info-circle"></i>
                 </button>
               </div>
             </div>

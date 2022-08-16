@@ -209,13 +209,12 @@
                         border-radius: 10px;
                         text-align: center;
                         color: $text2;
+                        font-size: 1.2rem;
                         font-weight: 800;
 
                         $breakpoint-tablet: 500px;
-                        @media (max-width: $breakpoint-tablet) {
-                            
-                            height: 40px;
-                            font-size: 1rem;
+                        @media (max-width: $breakpoint-tablet) { 
+                            height: 40px;    
 
                         }
 
@@ -311,7 +310,7 @@
                         &__text{
                             color: $text;
                             text-align: justify;
-                            font-weight: 100;
+                            font-weight: 400;
                             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
                             $breakpoint-tablet: 500px;
