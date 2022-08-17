@@ -14,7 +14,7 @@ const Lop = ({ theme }) => {
   const [t, i18n] = useTranslation("global");
   let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
-  let url3 = "https://www.instagram.com/accounts/login/";
+  let url3 = "https://www.instagram.com/geek.george/";
 
   /*  dark mode */
 

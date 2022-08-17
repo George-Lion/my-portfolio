@@ -152,7 +152,7 @@ const Portfolio = ({ theme }) => {
                       styles.master__portfolio__box4__img1__tecnologies
                     }
                   >
-                    <p>Used technology</p>
+                    <p>{t("header.technology")}</p>
                   </div>
                   <div className={styles.master__portfolio__box4__img1__icons}>
                     <div

@@ -8,6 +8,7 @@ import swal from "sweetalert";
 const Contact = () => {
   let url1 = "https://github.com/George-Lion";
   let url2 = "https://linkedin.com/in/jorgeleonb";
+  let url3 = "https://www.instagram.com/geek.george/";
 
   const [t, i18n] = useTranslation("global");
 
@@ -89,12 +90,16 @@ const Contact = () => {
                   <i className="fab fa-linkedin-in" title="Linkedin"></i>
                 </a>
               </div>
-              <div
-                className={styles.contact__master__ikon__icon}
-                data-aos="fade-up"
-              >
-                {" "}
-                <i className="fab fa-instagram" title="Instagram"></i>
+              <div className={styles.contact__master__ikon__icon}>
+                <a
+                  href={url3}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-aos="fade-up"
+                >
+                  {" "}
+                  <i className="fab fa-instagram" title="Instagram"></i>
+                </a>
               </div>
             </div>
           </div>

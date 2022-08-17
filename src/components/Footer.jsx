@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import styles from "./Footer.module.scss";
 let url1 = "https://github.com/George-Lion";
 let url2 = "https://linkedin.com/in/jorgeleonb";
+let url3 = "https://www.instagram.com/geek.george/";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
@@ -36,7 +37,7 @@ const Footer = () => {
           </a>
           <a
             className={styles.footer__ikon__icon}
-            href={url2}
+            href={url3}
             target="_blank"
             rel="noopener noreferrer"
           >
