@@ -48,7 +48,7 @@
      
         }
         
-
+       
         & > div {
             flex: 1;
             white-space: nowrap;
@@ -66,6 +66,18 @@
                 flex: 0;
             }
         }
+        
+        &__log{
+            padding-top: 4px;
+            width: 50px;
+
+            $breakpoint-tablet: 500px;
+            @media (max-width: $breakpoint-tablet) {
+               width: 40px;
+         
+            }
+        }
+        
     }
 
     &__button__container {

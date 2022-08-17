@@ -8,11 +8,17 @@
     color: $text2;
 
     &__logo{
-        width:100% ;
-        font-size: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         padding-top: 60px;
-        color: $resalt;
-        text-align: center;
+        
+        &__log{
+            width:40px ;
+
+            
+           
+        }
         
     }
 

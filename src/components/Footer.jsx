@@ -1,18 +1,19 @@
 import React, { Fragment } from "react";
 import styles from "./Footer.module.scss";
-let url1 = "https://github.com/George-Lion";
-let url2 = "https://linkedin.com/in/jorgeleonb";
-let url3 = "https://www.instagram.com/geek.george/";
+import img1 from "../img/LOGO.png";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  let url1 = "https://github.com/George-Lion";
+  let url2 = "https://linkedin.com/in/jorgeleonb";
+  let url3 = "https://www.instagram.com/geek.george/";
   const [t, i18n] = useTranslation("global");
   return (
     <Fragment>
       <div className={styles.footer}>
         <div className={styles.footer__logo} data-aos="zoom-in">
           <span>
-            <i className="fab fa-gg-circle"></i>
+            <img src={img1} className={styles.footer__logo__log} />
           </span>
         </div>
         <p className={styles.footer__copyright}>{t("header.thanks")}</p>

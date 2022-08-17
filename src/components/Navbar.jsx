@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from "react";
 import AOS from "aos";
 import styles from "./Navbar.module.scss";
 import { BiMenuAltRight } from "react-icons/bi";
+import img1 from "../img/LOGO.png";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
@@ -36,7 +37,7 @@ const Navbar = ({ theme, setTheme }) => {
                   : styles.logo + " " + styles.logo__light
               }
             >
-              <i className="fab fa-gg-circle"></i>
+              <img src={img1} className={styles.header__content__log} alt="" />
             </span>
           </div>
           <div>
