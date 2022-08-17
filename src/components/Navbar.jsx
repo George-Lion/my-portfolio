@@ -113,7 +113,7 @@ const Navbar = ({ theme, setTheme }) => {
                   ENG
                 </button>
               </div>
-              <button
+              {/* <button
                 title="change mode"
                 className={
                   theme == "dark" ? styles.header__dark : styles.header__light
@@ -127,7 +127,7 @@ const Navbar = ({ theme, setTheme }) => {
                 ) : (
                   <RiMoonClearFill className={styles.iconlight} />
                 )}
-              </button>
+              </button> */}
             </nav>
           </div>
           <div>
@@ -137,10 +137,6 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
         </div>
       </div>
-      {/* <div className="row">
-        <div className="col-md-6 col-sm-12"></div>
-        <div className="col-md-6 col-sm-12"></div>
-      </div> */}
     </Fragment>
   );
 };

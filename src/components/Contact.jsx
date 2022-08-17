@@ -3,7 +3,7 @@ import styles from "./Contact.module.scss";
 import { send } from "emailjs-com";
 import ReactTooltip from "react-tooltip";
 import { useTranslation } from "react-i18next";
-import swal from 'sweetalert';
+import swal from "sweetalert";
 
 const Contact = () => {
   let url1 = "https://github.com/George-Lion";
@@ -22,14 +22,23 @@ const Contact = () => {
     e.preventDefault();
     send("service_bzdi6uk", "template_fmjumeo", toSend, "vxa6gldCtN3knNwsr")
       .then((response) => {
-        swal("message sent","tu mensaje se ha enviado correctamente", "success", {
-          buttons: {
-            cancel: "ok",}});
+        swal(
+          "message sent",
+          "tu mensaje se ha enviado correctamente",
+          "success",
+          {
+            buttons: {
+              cancel: "ok",
+            },
+          }
+        );
       })
       .catch((err) => {
-        swal("message error","tu mensaje no se ha enviado", "error", {
+        swal("message error", "tu mensaje no se ha enviado", "error", {
           buttons: {
-            cancel: "ok",}})
+            cancel: "ok",
+          },
+        });
       });
   };
 
@@ -99,7 +108,7 @@ const Contact = () => {
                 type="text"
                 name="from_name"
                 className={styles.contact__master__box1__content2__inputs}
-                placeholder="From name"
+                placeholder={t("header.de")}
                 value={toSend.from_name}
                 onChange={handleChange}
               ></input>
@@ -107,7 +116,7 @@ const Contact = () => {
                 type="text"
                 className={styles.contact__master__box1__content2__inputs}
                 name="to_name"
-                placeholder="to name"
+                placeholder={t("header.para")}
                 value={toSend.to_name}
                 onChange={handleChange}
                 data-aos="fade-up"
@@ -122,7 +131,7 @@ const Contact = () => {
                   data-for="hola"
                   className={styles.contact__master__box1__content2__inputs}
                   name="reply_to"
-                  placeholder="Your email"
+                  placeholder={t("header.email")}
                   value={toSend.reply_to}
                   onChange={handleChange}
                 ></input>
@@ -157,7 +166,7 @@ const Contact = () => {
                 cols="50"
                 data-aos="fade-up"
                 name="message"
-                placeholder="Your message"
+                placeholder={t("header.message")}
                 value={toSend.message}
                 onChange={handleChange}
               ></textarea>

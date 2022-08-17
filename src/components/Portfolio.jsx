@@ -77,7 +77,7 @@ const Portfolio = ({ theme }) => {
             >
               <img
                 className={styles.master__portfolio__box4__img1}
-                src={img1}
+                src={img3}
                 alt=""
               />
               <div className={styles.master__portfolio__box2__button}>
@@ -88,15 +88,15 @@ const Portfolio = ({ theme }) => {
                   type="button"
                   onClick={() => {}}
                 >
-                  <button
+                  {/*  <button
                     title="Demo"
                     className={styles.master__portfolio__box2__button__btn}
                   >
                     <i className="fas fa-desktop"></i>
-                  </button>
+                  </button> */}
                 </a>
                 <a
-                  href={url2}
+                  href={url3}
                   target="_blank"
                   rel="noopener noreferrer"
                   type="button"
@@ -136,7 +136,7 @@ const Portfolio = ({ theme }) => {
               <div className={styles.master__portfolio__box4__img1}>
                 <div>
                   <h2 className={styles.master__portfolio__box4__img1__title}>
-                    Portfolio
+                    Star Wars Blog
                   </h2>
                   <div className={styles.master__portfolio__box4__img1__box}>
                     <h4
@@ -202,13 +202,13 @@ const Portfolio = ({ theme }) => {
                         styles.master__portfolio__box4__img1__icons__text
                       }
                     >
-                      <i className="fab fa-sass"></i>
+                      <i className="fab fa-bootstrap"></i>
                       <p
                         className={
                           styles.master__portfolio__box4__img1__icons__name
                         }
                       >
-                        Sass
+                        Bootstrap
                       </p>
                     </div>
                   </div>
@@ -242,7 +242,7 @@ const Portfolio = ({ theme }) => {
             >
               <img
                 className={styles.master__portfolio__box3__img1}
-                src={img3}
+                src={img1}
                 alt=""
               />
               <div className={styles.master__portfolio__box2__page}>
@@ -467,12 +467,12 @@ const Portfolio = ({ theme }) => {
                   type="button"
                   onClick={() => {}}
                 >
-                  <button
+                  {/*  <button
                     title="Demo"
                     className={styles.master__portfolio__box2__button__btn}
                   >
                     <i className="fas fa-desktop"></i>
-                  </button>
+                  </button> */}
                 </a>
                 <a
                   href={url5}
