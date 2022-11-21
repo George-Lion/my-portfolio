@@ -1,9 +1,9 @@
 {
-    "header":{
+    "header": {
         "down": "desplazarse hacia abajo",
         "about-me": "Sobre mí",
-        "projects":"Proyectos",
-        "works":"Ver más trabajos",
+        "projects": "Proyectos",
+        "works": "Ver más trabajos",
         "contact": "Contacto",
         "discover": "Descubre",
         "skills": "Habilidades",
@@ -11,17 +11,17 @@
         "download": "Descargar CV",
         "contact1": "¿Quieres saber algo más?",
         "contact2": "Contacto",
-        "de":"De",
-        "para":"Para",
-        "email":"Email",
-        "message":"Tu mensaje",
+        "de": "De",
+        "para": "Para",
+        "email": "Email",
+        "message": "Tu mensaje",
         "send": "Enviar",
         "thanks": "Gracias por desplazarte.",
         "traveland": "Es una aplicación web que permite conectar personas a través de la creación de rutas de viajes en las que pueden viajar juntos.",
         "c1": "- Uso de API propia y terceras como GoogleMaps y Cloudinary.",
         "c2": "- Autenticación con JWT y aplicación de librería react-geocode.",
         "technology": "Tecnologías utilizadas",
-        "wars": " Blog consumiendo Star Wars API que renderiza cartas con las características de los personajes, vehículos y planetas de la saga.",
-        "todo":  "Una app estructurada con react que agrega o elimina tareas de manera sincronizada con la base de datos."
+        "rell": " Cliente y servidor de Ecommerce creada con React.JS, Node.JS y MongoDb.",
+        "todo": "Una app estructurada con react que agrega o elimina tareas de manera sincronizada con la base de datos."
     }
 }

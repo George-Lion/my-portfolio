@@ -1,27 +1,27 @@
 {
-    "header":{
+    "header": {
         "down": "scroll down",
         "about-me": "About me",
-        "projects":"Projects",
-        "works":"See more works",
+        "projects": "Projects",
+        "works": "See more works",
         "contact": "Contact",
         "discover": "Discover",
         "skills": "Skills",
         "description": "I am a full-stack software developer graduated from 4Geeks Academy, working mainly with React.JS and Python Flask, after years of professional experience in graphic design. I consider that I am self-critical when evaluating my work and that teamwork provides more value than individual work. I am looking for a stable work environment that allows me to add value and continue learning.",
         "download": "Download CV",
-        "contact1":"Do you want to know something more",
-        "contact2":"Contact",
-        "de":"From",
-        "para":"To",
-        "email":"Email",
-        "message":"Your message",
-        "send":"Send",
+        "contact1": "Do you want to know something more",
+        "contact2": "Contact",
+        "de": "From",
+        "para": "To",
+        "email": "Email",
+        "message": "Your message",
+        "send": "Send",
         "thanks": "Thanks for scrolling.",
         "traveland": "Is a web application to connect people through the creation of travel routes in which they can travel together.",
         "c1": "- Use of own API and third parties such as GoogleMaps and Cloudinary.",
         "c2": "- JWT authentication and react-geocode library application",
         "technology": "Technologies used",
-        "wars": "Blog consuming Star Wars API that renders cards with the Characteristics of the characters, vehicles and planets of the saga.",
-        "todo":  "An app structured with react that adds or removes tasks from synchronized with the database."
+        "rell": "Ecommerce client and server built with React.JS, Node.JS and MongoDb.",
+        "todo": "An app structured with react that adds or removes tasks from synchronized with the database."
     }
 }

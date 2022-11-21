@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import img1 from "../img/Traveland1.png";
 import img2 from "../img/log.png";
-import img3 from "../img/StarWars.jpg";
+import img3 from "../img/t3.jpg";
 import img4 from "../img/todo.png";
 import { HiArrowSmRight } from "react-icons/hi";
 import styles from "./Portfolio.module.scss";
@@ -23,9 +23,8 @@ const Portfolio = ({ theme }) => {
   let url2 = "https://github.com/George-Lion/FINAL-PROJECT-X";
   let url3 = "https://github.com/George-Lion/Starwars-Blog-Reading-List";
   let url4 = "https://traveland-v2.herokuapp.com/";
-  let url5 =
-    "https://github.com/George-Lion/Second-Part-of-the-TODO-list-adding-fetch";
-
+  let url5 = "https://github.com/George-Lion/Second-Part-of-the-TODO-list-adding-fetch";
+  let url6 = "https://prueba-production-d40c.up.railway.app/";
   const [t, i18n] = useTranslation("global");
 
   const [picture, setPicture] = useState(true);
@@ -78,22 +77,22 @@ const Portfolio = ({ theme }) => {
               <img
                 className={styles.master__portfolio__box4__img1}
                 src={img3}
-                alt=""
+                alt="Relltronic project image"
               />
               <div className={styles.master__portfolio__box2__button}>
                 <a
-                  href={url4}
+                  href={url6}
                   target="_blank"
                   rel="noopener noreferrer"
                   type="button"
                   onClick={() => {}}
                 >
-                  {/*  <button
+                   <button
                     title="Demo"
                     className={styles.master__portfolio__box2__button__btn}
                   >
                     <i className="fas fa-desktop"></i>
-                  </button> */}
+                  </button>
                 </a>
                 <a
                   href={url3}
@@ -136,7 +135,7 @@ const Portfolio = ({ theme }) => {
               <div className={styles.master__portfolio__box4__img1}>
                 <div>
                   <h2 className={styles.master__portfolio__box4__img1__title}>
-                    Star Wars Blog
+                    Relltronic Ecommerce
                   </h2>
                   <div className={styles.master__portfolio__box4__img1__box}>
                     <h4
@@ -144,7 +143,7 @@ const Portfolio = ({ theme }) => {
                         styles.master__portfolio__box4__img1__box__text
                       }
                     >
-                      {t("header.wars")}
+                      {t("header.rell")}
                     </h4>
                   </div>
                   <div
@@ -243,7 +242,7 @@ const Portfolio = ({ theme }) => {
               <img
                 className={styles.master__portfolio__box3__img1}
                 src={img1}
-                alt=""
+                alt="traveland project image"
               />
               <div className={styles.master__portfolio__box2__page}>
                 <div className={styles.master__portfolio__box2__button}>
