@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import pdf from "../resources/Jorge_Leon_CV.pdf";
+import pdf from "../resources/JORGE_LEÓN_CV.pdf";
 import img2 from "../img/me.png";
 import Skills from "../components/Skills";
 import { HiDocumentDownload } from "react-icons/hi";
@@ -70,7 +70,7 @@ const AboutMe = ({ theme }) => {
                 href={pdf}
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Jorge_Leon_CV.pdf"
+                download="JORGE_LEÓN_CV.pdf"
                 title="Click to download CV"
               >
                 {t("header.download")}{" "}
