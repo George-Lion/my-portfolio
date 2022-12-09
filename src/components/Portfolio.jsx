@@ -24,7 +24,7 @@ const Portfolio = ({ theme }) => {
   let url3 = "https://github.com/George-Lion/Starwars-Blog-Reading-List";
   let url4 = "https://traveland-v2.herokuapp.com/";
   let url5 = "https://github.com/George-Lion/Second-Part-of-the-TODO-list-adding-fetch";
-  let url6 = "https://prueba-production-d40c.up.railway.app/";
+  let url6 = "https://rell-tronic.up.railway.app/";
   const [t, i18n] = useTranslation("global");
 
   const [picture, setPicture] = useState(true);
