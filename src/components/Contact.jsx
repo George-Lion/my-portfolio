@@ -54,7 +54,7 @@ const Contact = () => {
 
   return (
     <Fragment>
-      <div className="contact" id="contact">
+      <div className={styles.contact} id="contact">
         <div className={styles.contact__master}>
           <div className={styles.contact__master__content1}>
             <h5 className={styles.contact__master__content1__more}>
