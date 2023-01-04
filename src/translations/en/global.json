@@ -17,11 +17,9 @@
         "message": "Your message",
         "send": "Send",
         "thanks": "Thanks for scrolling.",
-        "traveland": "Is a web application to connect people through the creation of travel routes in which they can travel together.",
-        "c1": "- Use of own API and third parties such as GoogleMaps and Cloudinary.",
-        "c2": "- JWT authentication and react-geocode library application",
+        "traveland": "E-commerce developed in React using libraries such as Redux for managing global states and axios for HTTP requests, storing the data in MongoDB.",
         "technology": "Technologies used",
-        "rell": "Ecommerce client and server built with React.JS, Node.JS and MongoDb.",
-        "todo": "An app structured with react that adds or removes tasks from synchronized with the database."
+        "rell": "World Home is a web application for real estate developed in React. For routing implement React Router v6 and hooks like useState, useEffect, useContext in the component lifecycle.",
+        "todo": "Traveland is a web application to connect people through the creation of travel routes in which they can travel together."
     }
 }

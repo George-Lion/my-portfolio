@@ -17,11 +17,9 @@
         "message": "Tu mensaje",
         "send": "Enviar",
         "thanks": "Gracias por desplazarte.",
-        "traveland": "Es una aplicación web que permite conectar personas a través de la creación de rutas de viajes en las que pueden viajar juntos.",
-        "c1": "- Uso de API propia y terceras como GoogleMaps y Cloudinary.",
-        "c2": "- Autenticación con JWT y aplicación de librería react-geocode.",
+        "traveland": "E-commerce desarrollada en React utilizando librerías como Redux para el manejo de estados globales y axios para peticiones HTTP, almacenando los datos en MongoDB.",
         "technology": "Tecnologías utilizadas",
-        "rell": " Cliente y servidor de Ecommerce creada con React.JS, Node.JS y MongoDb.",
-        "todo": "Una app estructurada con react que agrega o elimina tareas de manera sincronizada con la base de datos."
+        "rell": " World Home es una aplicación web para el comercio inmobiliario desarrollada en React. Para el enrutamiento implementa React Router v6 y hooks como useState, useEffect, useContext en el ciclo de vida de los componentes.",
+        "todo": "Traveland es una aplicación web para conectar personas a través de la creación de rutas de viajes en las que pueden viajar juntos."
     }
 }

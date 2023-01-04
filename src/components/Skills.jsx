@@ -6,10 +6,9 @@ import {
   SiMysql,
   SiGithub,
   SiGit,
-  SiHeroku,
-  SiTrello,
   SiWindowsterminal,
   SiAdobexd,
+  SiNodedotjs,
 } from "react-icons/si";
 import { DiIllustrator, DiPhotoshop } from "react-icons/di";
 import { useTranslation } from "react-i18next";
@@ -187,6 +186,26 @@ const Skills = ({ theme }) => {
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom"
             >
+              <SiNodedotjs />
+              <div data-aos="fade-up">
+                <p className={styles.skills__div1__box__icons__icon__title1}>
+                  Node.js
+                </p>
+              </div>
+            </div>
+            <div
+              className={
+                theme == "dark"
+                  ? styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__dark
+                  : styles.skills__div1__box__icons__icon +
+                    " " +
+                    styles.skills__div1__box__icons__icon__light
+              }
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+            >
               <i className="fab fa-python"></i>
               <div data-aos="fade-up">
                 <p className={styles.skills__div1__box__icons__icon__title1}>
@@ -251,26 +270,6 @@ const Skills = ({ theme }) => {
               <div data-aos="fade-up">
                 <p className={styles.skills__div1__box__icons__icon__title1}>
                   Mysql
-                </p>
-              </div>
-            </div>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__dark
-                  : styles.skills__div1__box__icons__icon +
-                    " " +
-                    styles.skills__div1__box__icons__icon__light
-              }
-              data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom"
-            >
-              <SiWindowsterminal />
-              <div data-aos="fade-up">
-                <p className={styles.skills__div1__box__icons__icon__title1}>
-                  Comand Line
                 </p>
               </div>
             </div>
