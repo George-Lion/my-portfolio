@@ -137,7 +137,7 @@
                 &__picture1{
                     height: 350px;
                     margin: 50px 60px 0px 0px;
-                    border-radius: 10px;
+                    border-radius: 100px 10px 100px 10px;
 
                     $breakpoint-tablet: 980px;
                     @media (max-width: $breakpoint-tablet) {
