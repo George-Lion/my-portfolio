@@ -1,635 +1,111 @@
-import React, { Fragment, useState } from "react";
-import img1 from "../img/Traveland1.png";
-import img2 from "../img/log.png";
-import img3 from "../img/t3.jpg";
-import img4 from "../img/WH.jpg";
-import { HiArrowSmRight } from "react-icons/hi";
+import React, { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import styles from "./Portfolio.module.scss";
 import { useTranslation } from "react-i18next";
-import { SiFlask, SiNodedotjs, SiMongodb } from "react-icons/si";
 
-const Portfolio = ({ theme }) => {
-  let url1 = "https://github.com/George-Lion?tab=repositories";
-  let url2 = "https://github.com/George-Lion/FINAL-PROJECT-X";
-  let url3 = "https://github.com/George-Lion/real-state";
-  let url4 = "https://world-home.vercel.app/";
-  let url5 = "https://rell-tronic.up.railway.app/";
-  let url6 = "https://traveland-v2.herokuapp.com/";
-  let url7 = "https://github.com/George-Lion/Ecommerce";
+import "./../components/Port.css";
+import { webs } from "./../data/DataPortfolio";
+
+function App({ theme }) {
+  const [defaultImage, setDefaultImage] = useState({});
   const [t, i18n] = useTranslation("global");
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
-  const [picture, setPicture] = useState(true);
-  const [picture1, setPicture1] = useState(true);
-  const [picture2, setPicture2] = useState(true);
+  const handleErrorImage = (data) => {
+    setDefaultImage((prev) => ({
+      ...prev,
+      [data.target.alt]: data.target.alt,
+    }));
+  };
 
   return (
-    <Fragment>
-      <div
-        className={theme == "dark" ? styles.master__dark : styles.master__light}
-        id="portfolio"
-      >
-        <div className={styles.master__portfolio}>
-          <div className={styles.master__portfolio__box}>
-            <div
-              className={
-                theme == "dark"
-                  ? styles.master__portfolio__box1__title +
-                    " " +
-                    styles.master__portfolio__box1__title__dark
-                  : styles.master__portfolio__box1__title +
-                    " " +
-                    styles.master__portfolio__box1__title__light
-              }
-              data-aos="fade-up"
-            >
-              {t("header.projects")}
-            </div>
-
-            {/* BOX 1 */}
-
-            <div className={styles.master__portfolio__box1__line}></div>
+    <div
+      className={theme == "dark" ? styles.master__dark : styles.master__light}
+      id="portfolio"
+    >
+      <div className={styles.master__portfolio}>
+        <div className={styles.master__portfolio__box}>
+          <div
+            className={
+              theme == "dark"
+                ? styles.master__portfolio__box1__title +
+                  " " +
+                  styles.master__portfolio__box1__title__dark
+                : styles.master__portfolio__box1__title +
+                  " " +
+                  styles.master__portfolio__box1__title__light
+            }
+            data-aos="fade-up"
+          >
+            {t("header.projects")}
           </div>
 
-          {/* BOX 2 */}
+          {/* BOX 1 */}
 
-          {picture == true ? (
-            <div
-              className={
-                theme == "dark"
-                  ? styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__dark
-                  : styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__light
-              }
-              data-aos="fade-up"
-            >
-              <img
-                className={styles.master__portfolio__box4__img1}
-                src={img4}
-                alt="Relltronic project image"
-              />
-              <div className={styles.master__portfolio__box2__button}>
-                <a
-                  href={url4}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="button"
-                  onClick={() => {}}
-                >
-                  <button
-                    title="Demo"
-                    className={styles.master__portfolio__box2__button__btn}
-                  >
-                    <i className="fas fa-desktop"></i>
-                  </button>
+          <div className={styles.master__portfolio__box1__line}></div>
+        </div>
+        <div className="all">
+          <div className="Content">
+            <Slider {...settings}>
+              {webs.map((item, id) => (
+                <a key={id} href={item.url} target="_blank">
+                  <div className="card">
+                    <div className="card-top">
+                      <img
+                        src={item.img}
+                        alt={item.name}
+                        onError={handleErrorImage}
+                      />
+                      <h1>{item.name}</h1>
+                    </div>
+                    <div className="card-bottom">
+                      <h3></h3>
+                      <span className="category"></span>
+                    </div>
+                  </div>
                 </a>
-                <a
-                  href={url3}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="button"
-                  onClick={() => {}}
-                >
-                  <button
-                    title="Code"
-                    className={styles.master__portfolio__box2__button__btn}
-                  >
-                    <i className="fas fa-code"></i>
-                  </button>
-                </a>
-                <button
-                  title="Info"
-                  className={styles.master__portfolio__box2__button__btn}
-                  onClick={() => {
-                    setPicture(false);
-                  }}
-                >
-                  <i className="fas fa-info-circle"></i>
-                </button>
-              </div>
-            </div>
-          ) : (
-            <div
-              className={
-                theme == "dark"
-                  ? styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__dark
-                  : styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__light
-              }
-              data-aos="fade-up"
-            >
-              <div className={styles.master__portfolio__box4__img1}>
-                <div>
-                  <h2 className={styles.master__portfolio__box4__img1__title}>
-                    World Home
-                  </h2>
-                  <div className={styles.master__portfolio__box4__img1__box}>
-                    <h4
-                      className={
-                        styles.master__portfolio__box4__img1__box__text
-                      }
-                    >
-                      {t("header.rell")}
-                    </h4>
-                  </div>
-                  <div
-                    className={
-                      styles.master__portfolio__box4__img1__tecnologies
-                    }
-                  >
-                    <p>{t("header.technology")}</p>
-                  </div>
-                  <div className={styles.master__portfolio__box4__img1__icons}>
-                    <div
-                      className={
-                        styles.master__portfolio__box4__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-react"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box4__img1__icons__name
-                        }
-                      >
-                        React
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box4__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-js-square"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box4__img1__icons__name
-                        }
-                      >
-                        JavaScript
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box4__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-html5"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box4__img1__icons__name
-                        }
-                      >
-                        HTML5
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box4__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-bootstrap"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box4__img1__icons__name
-                        }
-                      >
-                        Bootstrap
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  className={styles.master__portfolio__box4__img1__return}
-                  onClick={() => {
-                    setPicture(true);
-                  }}
-                >
-                  close
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* BOX 3 */}
-
-          {picture1 == true ? (
-            <div
-              className={
-                theme == "dark"
-                  ? styles.master__portfolio__box3 +
-                    " " +
-                    styles.master__portfolio__box3__dark
-                  : styles.master__portfolio__box3 +
-                    " " +
-                    styles.master__portfolio__box3__light
-              }
-              data-aos="fade-up"
-            >
-              <img
-                className={styles.master__portfolio__box3__img1}
-                src={img3}
-                alt="traveland project image"
-              />
-              <div className={styles.master__portfolio__box2__page}>
-                <div className={styles.master__portfolio__box2__button}>
-                  <a
-                    href={url5}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    type="button"
-                    onClick={() => {}}
-                  >
-                    <button
-                      title="Demo"
-                      className={styles.master__portfolio__box2__button__btn}
-                    >
-                      <i className="fas fa-desktop"></i>
-                    </button>
-                  </a>
-                  <a
-                    href={url7}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    type="button"
-                    onClick={() => {}}
-                  >
-                    <button
-                      title="Code"
-                      className={styles.master__portfolio__box2__button__btn}
-                    >
-                      <i className="fas fa-code"></i>
-                    </button>
-                  </a>
-                  <button
-                    className={styles.master__portfolio__box2__button__btn}
-                    title="Info"
-                    onClick={() => {
-                      setPicture1(false);
-                    }}
-                  >
-                    <i className="fas fa-info-circle"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div
-              className={
-                theme == "dark"
-                  ? styles.master__portfolio__box3 +
-                    " " +
-                    styles.master__portfolio__box3__dark
-                  : styles.master__portfolio__box3 +
-                    " " +
-                    styles.master__portfolio__box3__light
-              }
-              data-aos="fade-up"
-            >
-              <div className={styles.master__portfolio__box3__img1}>
-                <div>
-                  <h2 className={styles.master__portfolio__box3__img1__title}>
-                    Rell Tronic
-                  </h2>
-                  <div className={styles.master__portfolio__box3__img1__box}>
-                    <h4
-                      className={
-                        styles.master__portfolio__box3__img1__box__text
-                      }
-                    >
-                      {t("header.traveland")}
-                    </h4>
-                  </div>
-
-                  <div
-                    className={
-                      styles.master__portfolio__box3__img1__tecnologies
-                    }
-                  >
-                    <p>{t("header.technology")}</p>
-                  </div>
-                  <div className={styles.master__portfolio__box3__img1__icons}>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-react"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        React
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-js-square"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        JavaScript
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-html5"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        HTML5
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-css3-alt"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        CSS3
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <SiNodedotjs />
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        Node.js
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <SiMongodb />
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        MongoDb
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  className={styles.master__portfolio__box3__img1__return}
-                  onClick={() => {
-                    setPicture1(true);
-                  }}
-                >
-                  close
-                </button>
-              </div>
-            </div>
-          )}
-          {/* BOX 4 */}
-
-          {picture2 == true ? (
-            <div
-              className={
-                theme == "dark"
-                  ? styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__dark
-                  : styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__light
-              }
-              data-aos="fade-up"
-            >
-              <img
-                className={styles.master__portfolio__box4__img1}
-                src={img1}
-                alt=""
-              />
-              <div className={styles.master__portfolio__box2__button}>
-                <a
-                  href={url6}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="button"
-                  onClick={() => {}}
-                >
-                  <button
-                    title="Demo"
-                    className={styles.master__portfolio__box2__button__btn}
-                  >
-                    <i className="fas fa-desktop"></i>
-                  </button>
-                </a>
-                <a
-                  href={url2}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="button"
-                  onClick={() => {}}
-                >
-                  <button
-                    title="Code"
-                    className={styles.master__portfolio__box2__button__btn}
-                  >
-                    <i className="fas fa-code"></i>
-                  </button>
-                </a>
-                <button
-                  title="Info"
-                  className={styles.master__portfolio__box2__button__btn}
-                  onClick={() => {
-                    setPicture2(false);
-                  }}
-                >
-                  <i className="fas fa-info-circle"></i>
-                </button>
-              </div>
-            </div>
-          ) : (
-            <div
-              className={
-                theme == "dark"
-                  ? styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__dark
-                  : styles.master__portfolio__box4 +
-                    " " +
-                    styles.master__portfolio__box4__light
-              }
-              data-aos="fade-up"
-            >
-              <div className={styles.master__portfolio__box4__img1}>
-                <div>
-                  <h2 className={styles.master__portfolio__box4__img1__title}>
-                    Traveland
-                  </h2>
-                  <div className={styles.master__portfolio__box4__img1__box}>
-                    <h4
-                      className={
-                        styles.master__portfolio__box4__img1__box__text
-                      }
-                    >
-                      {t("header.todo")}
-                    </h4>
-                  </div>
-                  <div
-                    className={
-                      styles.master__portfolio__box4__img1__tecnologies
-                    }
-                  >
-                    <p>{t("header.technology")}</p>
-                  </div>
-
-                  <div className={styles.master__portfolio__box3__img1__icons}>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-react"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        React
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-js-square"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        JavaScript
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-html5"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        HTML5
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-css3-alt"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        CSS3
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <i className="fab fa-python"></i>
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        Python
-                      </p>
-                    </div>
-                    <div
-                      className={
-                        styles.master__portfolio__box3__img1__icons__text
-                      }
-                    >
-                      <SiFlask />
-                      <p
-                        className={
-                          styles.master__portfolio__box3__img1__icons__name
-                        }
-                      >
-                        Flask
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  className={styles.master__portfolio__box4__img1__return}
-                  onClick={() => {
-                    setPicture2(true);
-                  }}
-                >
-                  close
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* BOX 5 */}
-
-          <div className={styles.master__portfolio__box5}>
-            <div className={styles.master__portfolio__box5__content}>
-              <a
-                data-aos="fade-up"
-                href={url1}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.master__portfolio__box5__content__text}
-                type="button"
-                onClick={() => {}}
-              >
-                {t("header.works")}
-                <HiArrowSmRight
-                  className={
-                    styles.master__portfolio__box5__content__text__icon
-                  }
-                />{" "}
-              </a>
-            </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
-};
+}
 
-export default Portfolio;
+export default App;

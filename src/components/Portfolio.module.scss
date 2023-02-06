@@ -1,5 +1,6 @@
 @import "./../SCSS/abstracts/variables.scss";
 
+
 .master{
     height: 1100px;
     width: 100%;
@@ -18,19 +19,16 @@
 
         &__portfolio{
             width: 70%;
-            height: 1100px;
+            height: 800px;
             margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
             padding: 20px 0px 20px 0px;
-            gap:60px;
+           
 
                 $breakpoint-tablet: 1560px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 70%;
                     margin: auto;
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+                    
                     padding: 20px 0px 20px 0px;
                     gap:20px;
                 }
@@ -38,10 +36,7 @@
                 $breakpoint-tablet: 1360px;
                 @media (max-width: $breakpoint-tablet) {
                     width: 80%;
-                    margin: auto;
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-                    padding: 20px 0px 20px 0px;
+                    margin: auto; 
                     gap:20px;
                 }
 
@@ -51,8 +46,6 @@
                     font-size: 1.2rem;
                     height: 2000px;
                     margin: 0px auto 0px auto;
-                    grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
-                    padding: 0px;
                     gap:20px;
                 }
 
@@ -61,7 +54,6 @@
                     width: 90%;
                     font-size: 1.2rem;
                     margin: 0px auto 0px auto;
-                    grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
                     padding: 0px;
                     gap:20px;
                 }
@@ -72,7 +64,6 @@
                     height: auto;
                     font-size: 1.2rem;
                     margin: 0px auto 0px auto;
-                    grid-template-columns: repeat(auto-fit,minmax(90%,1fr));
                     padding: 0px;
                     gap:20px;
                 }
@@ -120,7 +111,7 @@
                     background: $resalt;
                     height: 5px;
                     width: 40px;
-                    margin-bottom: 450px;
+                    margin-bottom: 100px;
 
                     $breakpoint-tablet: 1050px;
                     @media (max-width: $breakpoint-tablet) {
